@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 public class HomeController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		request.setAttribute("loginPage", "account/login.jsp");
 		request.setAttribute("slidePage", "home/homeSlide.jsp");
-		request.setAttribute("articlePage", "home/homeArticle.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 

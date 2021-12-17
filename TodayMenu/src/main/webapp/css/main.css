@@ -1,0 +1,39 @@
+@charset "EUC-KR";
+
+/* reset */
+body { margin: 0; padding: 0; }
+a:link { color: black; text-decoration: none;}
+a:visited { color: black; text-decoration: none;}
+a:hover { color: gray; }
+
+/* layout */
+#wrapTable { height:1300px; width:100%; text-align: center; }
+#header { height: 140px; width:100%; background-image : url('../img/indexImg/banner.png'); }
+#header a:hover { color: black; }
+#header #headerLogo { width: 33.333%; }
+#header #headerTitle { width: 33.333%; font-size: 35pt; }
+#header #headerLogin { width: 33.333%; margin-right: 1%; }
+/* header */
+
+#nav { height: 60px; width: 70%; margin: 0 auto; }
+#nav div { width: 15%; float: left; line-height: 80px; }
+#nav .navMenus { font-size: 15pt; margin: 0 5%; border: 1px solide black;  }
+/* nav */
+
+#content { height: 1000px; width: 70%; margin: 0 auto;  }
+#content .slideArray { height: 40%; }
+#content #slide { height: 100%; width: 100%; }
+#content #slide #slideImg { height: 100%; width: 100%; }
+#content .contentsArray { width: 33.333%; }
+#content .contents { height: 100%; width: 100%; }
+#content .contents .contentTitle { width: 70%; text-align: left; }
+#content .contents .moveContent { width: 30%; text-align: right; } 
+#content .contents .contentImg { height: 70%; }
+#content .contents .contentDetail { height: 30%; }
+/* content */
+
+#footer { height: 100px; width:80%; margin:0 auto; }
+#footerBackground { background: #e0e0e0; }
+/* footer */
+/* //layout */
+

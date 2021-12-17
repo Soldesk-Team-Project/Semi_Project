@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1> 슬라이드 출력 </h1>
+	<h1> Slide Page~~!! </h1>
 </body>
 </html>
