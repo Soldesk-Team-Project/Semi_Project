@@ -94,6 +94,9 @@ insert into menu1 values(menu1_seq.nextval, 7, '카페모카', 'img/menu/카페모카.jf
 insert into menu1 values(menu1_seq.nextval, 7, '팥빙수', 'img/menu/팥빙수.jfif');
 insert into menu1 values(menu1_seq.nextval, 7, '플레인요거트스무디', 'img/menu/플레인요거트스무디.jfif');
 insert into menu1 values(menu1_seq.nextval, 7, '흑당밀크티', 'img/menu/흑당밀크티.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, '흑당밀크티', 'img/menu/흑당밀크티.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, '샌드위치', 'img/menu/샌드위치.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, '토스트', 'img/menu/토스트.jpg');
 -- 커피 & 디저트 데이터
 
 select * from menu1;

@@ -10,15 +10,24 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="0" id="wrapTable">
+	<table border="1" id="wrapTable">
+		<tr>
+			<td id="loginBackground">
+				<!-- login -->
+				<table border="1" id="headerLogin">
+					<tr>
+						<td id="headerLogin"><jsp:include page="${loginPage }"></jsp:include></td>										
+					</tr>
+				</table>
+				<!-- //login -->
+			</td>
+		</tr>
 		<tr>
 			<td>
 				<!-- header -->
-				<table border="0" id="header">
+				<table border="1" id="header">
 					<tr>
-						<td id="headerLogo"><a href="HomeController"><img alt="Logo" src="img/icon/icon.jpg" width="50px"></a></td>
-						<td colspan="2" id="headerTitle"><a href="HomeController">사이트 제목</a></td>
-						<td id="headerLogin"><jsp:include page="${loginPage }"></jsp:include></td>
+						<td id="headerLogo"><a href="HomeController"><img alt="Logo" src="img/icon/logo.png" width="150px"></a></td>
 					</tr>
 				</table>
 				<!-- //header -->
@@ -28,21 +37,19 @@
 			<td>
 				<!-- nav -->
 				<div id="nav">
-					<hr style="border: solid 1px black;">
 					<div class="navMenus"><a href="#">전체식당</a></div>
 					<div class="navMenus"><a href="#">랜덤식당</a></div>
 					<div class="navMenus"><a href="#">추천기사</a></div>
-					<img alt="" src="img/menu/카츠동.jfif">
 					<div class="navMenus"><a href="#">계산기</a></div>
-					<hr style="border: solid 1px black;">
+					<hr style="border: dashed 1px gray;">
 				</div>
 				<!-- //nav -->
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<!-- contents -->
-				<table border="0" id="content">
+				<!-- content(slide) -->
+				<table border="1" id="slideTable">
 					<tr>
 						<td colspan="3" class="slideArray">
 							<table border="1" id="slide">
@@ -52,53 +59,44 @@
 							</table>
 						</td>
 					</tr>
+				</table>
+				<!-- //slide -->	
+			</td>
+		</tr>
+		<tr>	
+			<td>
+				<table border="1" id="contentTitle">
 					<tr>
-						<!-- //content1 -->
-						<td class="contentsArray">
-							<table border="1" class="contents">
-								<tr>
-									<td class="contentTitle">content1 title</td>
-									<td class="moveContent">+ 더보기</td>
-								</tr>
-								<tr>
-									<td colspan="2" class="contentImg">content1 Img</td>
-								</tr>
-								<tr>
-									<td colspan="2" class="contentDetail">content1 detail</td>
-								</tr>
-							</table>
-						</td>
-						<td class="contentsArray">
-							<table border="1" class="contents">
-								<tr>
-									<td class="contentTitle">content1 title</td>
-									<td class="moveContent">+ 더보기</td>
-								</tr>
-								<tr>
-									<td colspan="2" class="contentImg">content2 Img</td>
-								</tr>
-								<tr>
-									<td colspan="2" class="contentDetail">content2 detai135135135135135l</td>
-								</tr>
-							</table>
-							<!-- //content2 -->
-						</td>
-						<td class="contentsArray">
-							<table border="1" class="contents">
-								<tr>
-									<td class="contentTitle">content1 title</td>
-									<td class="moveContent">+ 더보기</td>
-								</tr>
-								<tr>
-									<td colspan="2" class="contentImg">content3 Img</td>
-								</tr>
-								<tr>
-									<td colspan="2" class="contentDetail">content3 detail</td>
-								</tr>
-							</table>
-							<!-- //content3 -->
-						</td>
+						<td id="story"> 맛집 스토리 </td>
+						<td id="plus"><a href="#">+ 더보기</a></td>
 					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<!-- content(article) -->
+				<table border="1" id="content">
+					<c:forEach begin="1" end="2">
+						<tr>
+							<!-- //content1 -->
+							<c:forEach begin="1" end="3">
+								<td class="contentsArray">
+									<table border="1" class="contents">
+										<tr>
+											<td class="contentsImg">content img</td>
+										</tr>
+										<tr>
+											<td class="contentsTitle">content title</td>
+										</tr>
+										<tr>
+											<td class="contentsDetail">content detail</td>
+										</tr>
+									</table>
+								</td>
+							</c:forEach>
+						</tr>
+					</c:forEach>
 				</table>
 				<!-- //content -->
 			</td>
@@ -106,7 +104,7 @@
 		<tr>
 			<td id="footerBackground" >
 				<!-- footer -->
-				<table border="0" id="footer">
+				<table border="1" id="footer">
 					<tr>
 						<td>
 							<table border="1" id="footerDetail">
