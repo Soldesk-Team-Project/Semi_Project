@@ -32,6 +32,7 @@
 					<div class="navMenus"><a href="#">전체식당</a></div>
 					<div class="navMenus"><a href="#">랜덤식당</a></div>
 					<div class="navMenus"><a href="#">추천기사</a></div>
+					<img alt="" src="img/menu/카츠동.jfif">
 					<div class="navMenus"><a href="#">계산기</a></div>
 					<hr style="border: solid 1px black;">
 				</div>
