@@ -1,19 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
 	<form action="HomeController" method="get" id="loginForm">
-		<!-- ÄÁ¼Á : ÃÖ¼Ò 3ÀÚ ÃÖ´ë 12ÀÚ (¹Ú½º ¾È¿¡ µé¾î°¥ ¼ö ÀÖµµ·Ï) -->
+		<!-- ì»¨ì…‰ : ìµœì†Œ 3ìž ìµœëŒ€ 12ìž (ë°•ìŠ¤ ì•ˆì— ë“¤ì–´ê°ˆ ìˆ˜ ìžˆë„ë¡) -->
 		ID : <input class="loginInput">
 		PW : <input type="password" class="loginInput"> <p>
-		<button type="button" onclick="location.href='www.naver.com'">¸¶ÀÌÆäÀÌÁö</button>
-		<button>·Î±×ÀÎ</button>
-		<button type="button" onclick="location.href='www.naver.com'">È¸¿ø°¡ÀÔ</button>
+		<button type="button" onclick="location.href='www.naver.com'">ë§ˆì´íŽ˜ì´ì§€</button>
+		<button>ë¡œê·¸ì¸</button>
+		<button type="button" onclick="location.href='www.naver.com'">íšŒì›ê°€ìž…</button>
 	</form>
 </body>
 </html>

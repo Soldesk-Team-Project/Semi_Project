@@ -1,22 +1,23 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/login.css">
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="1" id="wrapTable">
+	<table border="0" id="wrapTable">
 		<tr>
 			<td>
 				<!-- header -->
-				<table border="1" id="header">
+				<table border="0" id="header">
 					<tr>
 						<td id="headerLogo"><a href="HomeController"><img alt="Logo" src="img/icon/icon.jpg" width="50px"></a></td>
-						<td colspan="2" id="headerTitle"><a href="HomeController">»çÀÌÆ® Á¦¸ñ</a></td>
+						<td colspan="2" id="headerTitle"><a href="HomeController">ì‚¬ì´íŠ¸ ì œëª©</a></td>
 						<td id="headerLogin"><jsp:include page="${loginPage }"></jsp:include></td>
 					</tr>
 				</table>
@@ -28,10 +29,10 @@
 				<!-- nav -->
 				<div id="nav">
 					<hr style="border: solid 1px black;">
-					<div class="navMenus"><a href="#">ÀüÃ¼½Ä´ç</a></div>
-					<div class="navMenus"><a href="#">·£´ı½Ä´ç</a></div>
-					<div class="navMenus"><a href="#">ÃßÃµ±â»ç</a></div>
-					<div class="navMenus"><a href="#">°è»ê±â</a></div>
+					<div class="navMenus"><a href="#">ì „ì²´ì‹ë‹¹</a></div>
+					<div class="navMenus"><a href="#">ëœë¤ì‹ë‹¹</a></div>
+					<div class="navMenus"><a href="#">ì¶”ì²œê¸°ì‚¬</a></div>
+					<div class="navMenus"><a href="#">ê³„ì‚°ê¸°</a></div>
 					<hr style="border: solid 1px black;">
 				</div>
 				<!-- //nav -->
@@ -40,7 +41,7 @@
 		<tr>
 			<td>
 				<!-- contents -->
-				<table border="1" id="content">
+				<table border="0" id="content">
 					<tr>
 						<td colspan="3" class="slideArray">
 							<table border="1" id="slide">
@@ -51,11 +52,12 @@
 						</td>
 					</tr>
 					<tr>
+						<!-- //content1 -->
 						<td class="contentsArray">
 							<table border="1" class="contents">
 								<tr>
 									<td class="contentTitle">content1 title</td>
-									<td class="moveContent">+ ´õº¸±â</td>
+									<td class="moveContent">+ ë”ë³´ê¸°</td>
 								</tr>
 								<tr>
 									<td colspan="2" class="contentImg">content1 Img</td>
@@ -64,13 +66,12 @@
 									<td colspan="2" class="contentDetail">content1 detail</td>
 								</tr>
 							</table>
-							<!-- //content1 -->
 						</td>
 						<td class="contentsArray">
 							<table border="1" class="contents">
 								<tr>
 									<td class="contentTitle">content1 title</td>
-									<td class="moveContent">+ ´õº¸±â</td>
+									<td class="moveContent">+ ë”ë³´ê¸°</td>
 								</tr>
 								<tr>
 									<td colspan="2" class="contentImg">content2 Img</td>
@@ -85,7 +86,7 @@
 							<table border="1" class="contents">
 								<tr>
 									<td class="contentTitle">content1 title</td>
-									<td class="moveContent">+ ´õº¸±â</td>
+									<td class="moveContent">+ ë”ë³´ê¸°</td>
 								</tr>
 								<tr>
 									<td colspan="2" class="contentImg">content3 Img</td>
@@ -104,13 +105,13 @@
 		<tr>
 			<td id="footerBackground" >
 				<!-- footer -->
-				<table border="1" id="footer">
+				<table border="0" id="footer">
 					<tr>
 						<td>
 							<table border="1" id="footerDetail">
 								<tr>
 									<td colspan="2">
-										¼³¸í ~~~~~~~~~~~~
+										ì„¤ëª… ~~~~~~~~~~~~
 									</td>
 								</tr>
 							</table>	
@@ -119,12 +120,12 @@
 							<table class="team">
 								<tr>
 									<td class="teamImg">
-										ÆÀ¿ø 1
+										íŒ€ì› 1
 									</td>
 								</tr>
 								<tr>
 									<td class="teamDetail">
-										ÆÀ¿ø 1
+										íŒ€ì› 1
 									</td>
 								</tr>
 							</table>	
@@ -133,12 +134,12 @@
 							<table class="team">
 								<tr>
 									<td class="teamImg">
-										ÆÀ¿ø 2
+										íŒ€ì› 2
 									</td>
 								</tr>
 								<tr>
 									<td class="teamDetail">
-										ÆÀ¿ø 2
+										íŒ€ì› 2
 									</td>
 								</tr>
 							</table>	
@@ -147,12 +148,12 @@
 							<table class="team">
 								<tr>
 									<td class="teamImg">
-										ÆÀ¿ø 3
+										íŒ€ì› 3
 									</td>
 								</tr>
 								<tr>
 									<td class="teamDetail">
-										ÆÀ¿ø 3
+										íŒ€ì› 3
 									</td>
 								</tr>
 							</table>	
@@ -161,12 +162,12 @@
 							<table class="team">
 								<tr>
 									<td class="teamImg">
-										ÆÀ¿ø 4
+										íŒ€ì› 4
 									</td>
 								</tr>
 								<tr>
 									<td class="teamDetail">
-										ÆÀ¿ø 4
+										íŒ€ì› 4
 									</td>
 								</tr>
 							</table>	
