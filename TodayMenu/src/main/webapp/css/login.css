@@ -6,4 +6,6 @@
 
 #loginForm button { background-color:transparent; border: 0; outline: 0; padding-top: 4px; }
 #loginForm #loginButton { font-size: 11pt; font-weight: bold; }
+#loginForm #loginButton:hover { cursor: pointer; color: gray; }
 #loginForm .indexButton { font-size: 11pt; font-weight: bold; color: white; }
+#loginForm .indexButton:hover { cursor: pointer; color: #eeeeee; }

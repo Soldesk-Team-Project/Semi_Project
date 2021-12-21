@@ -1,179 +1,124 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/myPage.css">
+<script type="text/javascript" src="js/account.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="1" id="wrapTable">
+	<table border="0" class="wrapTable">
 		<tr>
 			<td id="loginBackground">
 				<!-- login -->
-				<table border="1" id="headerLogin">
+				<table border="0" id="headerLogin">
 					<tr>
-						<td id="headerLogin"><jsp:include page="${loginPage }"></jsp:include></td>										
+						<td id="headerLogin"><jsp:include page="${loginPage }"></jsp:include></td>
 					</tr>
-				</table>
-				<!-- //login -->
+				</table> <!-- //login -->
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<!-- header -->
-				<table border="1" id="header">
+				<table border="0" id="header">
 					<tr>
-						<td id="headerLogo"><a href="HomeController"><img alt="Logo" src="img/icon/logo.png" width="150px"></a></td>
+						<td id="headerLogo"><a href="HomeController"><img
+								alt="Logo" src="img/icon/logo.png" width="150px"></a></td>
 					</tr>
-				</table>
-				<!-- //header -->
+				</table> <!-- //header -->
 			</td>
 		</tr>
 		<tr>
 			<td>
 				<!-- nav -->
 				<div id="nav">
-					<div class="navMenus"><a href="#">전체식당</a></div>
-					<div class="navMenus"><a href="#">랜덤식당</a></div>
-					<div class="navMenus"><a href="#">추천기사</a></div>
-					<div class="navMenus"><a href="#">계산기</a></div>
+					<div class="navMenus">
+						<a href="#">전체식당</a>
+					</div>
+					<div class="navMenus">
+						<a href="#">랜덤식당</a>
+					</div>
+					<div class="navMenus">
+						<a href="#">추천기사</a>
+					</div>
+					<div class="navMenus">
+						<a href="#">계산기</a>
+					</div>
 					<hr style="border: dashed 1px gray;">
-				</div>
-				<!-- //nav -->
+				</div> <!-- //nav -->
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<!-- content(slide) -->
-				<table border="1" id="slideTable">
+				<jsp:include page="${contentPage }"></jsp:include>
+			</td>
+		</tr>
+		<tr>
+			<td id="footerBackground">
+				<!-- footer -->
+				<table border="0" id="footer">
 					<tr>
-						<td colspan="3" class="slideArray">
-							<table border="1" id="slide">
+						<td>
+							<table border="0" id="footerDetail">
 								<tr>
-									<td id="slideImg"><jsp:include page="${slidePage }"></jsp:include></td>
+									<td>설명 ~~~~~~~~~~~~</td>
+								</tr>
+								<tr>
+									<td>설명 ~~~~~~~~~~~~</td>
+								</tr>
+								<tr>
+									<td>설명 ~~~~~~~~~~~~</td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table class="team">
+								<tr>
+									<td class="teamImg">팀원 1</td>
+								</tr>
+								<tr>
+									<td class="teamDetail">팀원 1</td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table class="team">
+								<tr>
+									<td class="teamImg">팀원 2</td>
+								</tr>
+								<tr>
+									<td class="teamDetail">팀원 2</td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table class="team">
+								<tr>
+									<td class="teamImg">팀원 3</td>
+								</tr>
+								<tr>
+									<td class="teamDetail">팀원 3</td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table class="team">
+								<tr>
+									<td class="teamImg">팀원 4</td>
+								</tr>
+								<tr>
+									<td class="teamDetail">팀원 4</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
-				</table>
-				<!-- //slide -->	
-			</td>
-		</tr>
-		<tr>	
-			<td>
-				<table border="1" id="contentTitle">
-					<tr>
-						<td id="story"> 맛집 스토리 </td>
-						<td id="plus"><a href="#">+ 더보기</a></td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<!-- content(article) -->
-				<table border="1" id="content">
-					<c:forEach begin="1" end="2">
-						<tr>
-							<!-- //content1 -->
-							<c:forEach begin="1" end="3">
-								<td class="contentsArray">
-									<table border="1" class="contents">
-										<tr>
-											<td class="contentsImg">content img</td>
-										</tr>
-										<tr>
-											<td class="contentsTitle">content title</td>
-										</tr>
-										<tr>
-											<td class="contentsDetail">content detail</td>
-										</tr>
-									</table>
-								</td>
-							</c:forEach>
-						</tr>
-					</c:forEach>
-				</table>
-				<!-- //content -->
-			</td>
-		</tr>
-		<tr>
-			<td id="footerBackground" >
-				<!-- footer -->
-				<table border="1" id="footer">
-					<tr>
-						<td>
-							<table border="1" id="footerDetail">
-								<tr>
-									<td colspan="2">
-										설명 ~~~~~~~~~~~~
-									</td>
-								</tr>
-							</table>	
-						</td>
-						<td>
-							<table class="team">
-								<tr>
-									<td class="teamImg">
-										팀원 1
-									</td>
-								</tr>
-								<tr>
-									<td class="teamDetail">
-										팀원 1
-									</td>
-								</tr>
-							</table>	
-						</td>
-						<td>
-							<table class="team">
-								<tr>
-									<td class="teamImg">
-										팀원 2
-									</td>
-								</tr>
-								<tr>
-									<td class="teamDetail">
-										팀원 2
-									</td>
-								</tr>
-							</table>	
-						</td>
-						<td>
-							<table class="team">
-								<tr>
-									<td class="teamImg">
-										팀원 3
-									</td>
-								</tr>
-								<tr>
-									<td class="teamDetail">
-										팀원 3
-									</td>
-								</tr>
-							</table>	
-						</td>
-						<td>
-							<table class="team">
-								<tr>
-									<td class="teamImg">
-										팀원 4
-									</td>
-								</tr>
-								<tr>
-									<td class="teamDetail">
-										팀원 4
-									</td>
-								</tr>
-							</table>	
-						</td>
-					</tr>
-				</table>
-				<!-- //footer -->
+				</table> <!-- //footer -->
 			</td>
 		</tr>
 	</table>

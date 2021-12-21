@@ -12,7 +12,7 @@
 		ID <input class="loginInput"> &nbsp;&nbsp;
 		PW <input type="password" class="loginInput"> 
 		<button id="loginButton">로그인</button> <br>
-		<button type="button" class="indexButton" onclick="location.href='www.naver.com'">마이페이지 &nbsp;&nbsp;&nbsp;&nbsp;|</button>
+		<button type="button" class="indexButton" onclick="moveMyPage()">마이페이지 &nbsp;</button>|
 		<button type="button" class="indexButton" onclick="location.href='www.naver.com'">회원가입</button>
 	</form>
 </body>
