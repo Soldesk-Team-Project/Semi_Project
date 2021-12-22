@@ -12,14 +12,15 @@
 		<tr>
 			<td>
 				<!-- content(slide) -->
-				<table border="1" id="slideTable">
+				<table border="0" id="slideTable">
 					<tr>
 						<td colspan="3" class="slideArray">
-							<table border="1" id="slide">
-								<tr>
-									<td id="slideImg">slide</td>
-								</tr>
-							</table>
+							<div class="bxslider">
+								<div><img src="img/slide/01.jpg"></div>
+								<div><img src="img/slide/02.jpg"></div>
+								<div><img src="img/slide/03.jpg"></div>
+								<div><img src="img/slide/04.jpg"></div>
+							</div>
 						</td>
 					</tr>
 				</table> <!-- //slide -->

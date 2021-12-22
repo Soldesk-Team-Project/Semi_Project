@@ -9,10 +9,23 @@
 <link rel="stylesheet" href="css/login.css">
 <link rel="stylesheet" href="css/myPage.css">
 <link rel="stylesheet" href="css/randomMenu.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script type="text/javascript" src="js/account.js"></script>
 <script type="text/javascript" src="js/randomMenu.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="js/accountPay.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script>
+$(document).ready(function(){
+   $('.bxslider').bxSlider({
+     auto: true,
+     autoControls: false,
+     stopAutoOnClick: true,
+     pager: false,
+   });
+});
+</script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -33,7 +46,7 @@
 				<table border="0" id="header">
 					<tr>
 						<td id="headerLogo"><a href="HomeController"><img
-								alt="Logo" src="img/icon/logo.png" width="150px"></a></td>
+								alt="Logo" src="img/icon/logo.png" width="20%"></a></td>
 					</tr>
 				</table> <!-- //header -->
 			</td>

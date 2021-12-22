@@ -1,10 +1,6 @@
 function moveMyPage(id) {
-	
-	if (id != null) {
-		location.href="MyPageC"
-	} else {
-		location.href="HomeController"
-	}
+
+	location.href="MyPageC"
 }
 
 function deleteAccount(id) {
