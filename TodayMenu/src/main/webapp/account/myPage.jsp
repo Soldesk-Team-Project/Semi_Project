@@ -48,8 +48,8 @@
 									</tr>
 									<tr>
 										<td colspan="2" id="editAccount" >
-											<button class="editAccountButton">수정하기</button>
-											<button class="editAccountButton">탈퇴하기</button>
+											<button class="editAccountButton" onclick="location.href='UpdateAccountC'">수정하기</button>
+											<button class="editAccountButton" onclick="deleteAccount()">탈퇴하기</button>
 										</td>
 									</tr>
 								</table>
@@ -66,7 +66,7 @@
 							<table id="accountBookTable" border="1">
 								<tr style="height: 30%;">
 									<td colspan="2">
-										<form action="">
+										<form action="MyPageC" method="post">
 											<table border="0" style="width: 100%;">
 												<tr>
 													<td class="accountBookInputLeft">사용 금액</td>
