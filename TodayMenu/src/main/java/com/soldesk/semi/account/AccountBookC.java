@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 public class AccountBookC extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		AccountDAO.resetAccountBook(request);
+		
+		AccountDAO.setSpend(request);
+		AccountDAO.login(request);
 		AccountDAO.loginCheck(request);
 		request.setAttribute("contentPage", "account/accountInfo.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
@@ -19,7 +23,12 @@ public class AccountBookC extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		AccountDAO.updateAccountBook(request);
 		
+		AccountDAO.setSpend(request);
+		AccountDAO.loginCheck(request);
+		request.setAttribute("contentPage", "account/accountInfo.jsp");
+		request.getRequestDispatcher("index.jsp").forward(request, response);
 		
 	}
 

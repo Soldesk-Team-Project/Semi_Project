@@ -21,7 +21,7 @@ public class UpdateAccountC extends HttpServlet {
 		AccountDAO.updateAccount(request);
 		AccountDAO.login(request);
 		AccountDAO.loginCheck(request);
-		request.setAttribute("contentPage", "home/home.jsp");
+		request.setAttribute("contentPage", "account/accountInfo.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 

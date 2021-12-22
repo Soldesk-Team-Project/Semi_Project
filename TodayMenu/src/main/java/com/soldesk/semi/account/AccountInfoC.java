@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 public class AccountInfoC extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		AccountDAO.setSpend(request);
 		AccountDAO.loginCheck(request);
 		request.setAttribute("contentPage", "account/accountInfo.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
@@ -18,12 +19,7 @@ public class AccountInfoC extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		// DB에 소비데이터 등록하기
-		AccountDAO.updateSpend(request);
-		
-		request.setAttribute("loginPage", "account/login.jsp");
-		request.setAttribute("contentPage", "account/accountInfo.jsp");
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+
 	}
 
 }

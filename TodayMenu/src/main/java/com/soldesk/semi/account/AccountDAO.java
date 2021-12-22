@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Iterator;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -134,7 +135,7 @@ public class AccountDAO {
 		DateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd");
 
 		String idd =(String) request.getAttribute("idd");	
-		String pww =(String) request.getAttribute("pww");	
+		String pww =(String) request.getAttribute("pww");
 		
 		if (idd !=null) {
 			userId = idd;
@@ -175,7 +176,7 @@ public class AccountDAO {
 
 					HttpSession hs = request.getSession();
 					hs.setAttribute("accountInfo", a);
-					hs.setMaxInactiveInterval(60000);
+					hs.setMaxInactiveInterval(60000 * 50000);
 					
 					request.setAttribute("r", "로그인 성공!");
 				} else {
@@ -337,8 +338,133 @@ public class AccountDAO {
 	}
 
 	public static void updateAccountBook(HttpServletRequest request) {
-		// TODO Auto-generated method stub
+
+		HttpSession hs = request.getSession();
+		Account a = (Account) hs.getAttribute("accountInfo");
+
+		int money = Integer.parseInt(request.getParameter("pay"));
+		String where = request.getParameter("where");
+		
+		System.out.println(money);
+		System.out.println(where);
+		
+		// 값 넣을 정보 가져오기
+		String spend = a.getSpend();
+		String pay = a.getPay();
+		
+		int pay2 = Integer.parseInt(pay); 
+		
+//		System.out.println(spend);
+//		System.out.println(pay);
+
+		String[] spend2 = spend.split(" ");
+		
+		int[] spend3 = Arrays.stream(spend2).mapToInt(Integer::parseInt).toArray();	
+		
+		if (where.equals("1")) {
+			spend3[0] += money;
+		} else if (where.equals("2")) {
+			spend3[1] += money;
+		} else if (where.equals("3")) {
+			spend3[2] += money;
+		} else {
+			spend3[3] += money;
+		}
+		
+		// 값 대입하기
+		for (int i = 0; i < spend3.length; i++) {
+			pay2 += spend3[i];
+		}
+		
+		pay = Integer.toString(pay2);
+		a.setPay(pay);
+				
+		spend = Arrays.toString(spend3).replaceAll("[^0-9 ]","");
+		a.setSpend(spend);
+		System.out.println(spend);
+
+		// DB에 대입시키기
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		
+		String sql = "update account1 set a_spend=?, a_pay=? where a_id=?";
+		
+		try {
+			
+			con = DBManager.connect();
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setString(1, spend);
+			pstmt.setString(2, pay);
+			pstmt.setString(3, a.getId());
+			
+			if (pstmt.executeUpdate() == 1) {
+				System.out.println("수정 성공!");
+			} else {
+				System.out.println("수정 실패!");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(con, pstmt, null);
+		}
 		
 	}
 
+	public static void setSpend(HttpServletRequest request) {
+		
+		HttpSession hs = request.getSession();
+		Account a = (Account) hs.getAttribute("accountInfo");
+		
+		String spend = a.getSpend();
+		String[] spend2 = spend.split(" ");
+		
+		int[] spend3 = Arrays.stream(spend2).mapToInt(Integer::parseInt).toArray();	
+		
+		request.setAttribute("food", spend3[0]);
+		request.setAttribute("cafe", spend3[1]);
+		request.setAttribute("shopping", spend3[2]);
+		request.setAttribute("beauty", spend3[3]);
+	}
+
+	public static void resetAccountBook(HttpServletRequest request) {
+
+		HttpSession hs = request.getSession();
+		Account a = (Account) hs.getAttribute("accountInfo");
+		
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		
+		String sql = "update account1 set a_pw=?, a_spend=?, a_pay=? where a_id=?";
+		
+		try {
+			
+			con = DBManager.connect();
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setString(1, a.getPw());
+			pstmt.setString(2, "0 0 0 0 ");
+			pstmt.setString(3, "0");
+			pstmt.setString(4, a.getId());
+			
+			request.setAttribute("idd", a.getId());
+			request.setAttribute("pww", a.getPw());
+			
+			request.setAttribute("food", 0);
+			request.setAttribute("cafe", 0);
+			request.setAttribute("shopping", 0);
+			request.setAttribute("beauty", 0);
+			
+			if (pstmt.executeUpdate() == 1) {
+				System.out.println("수정 성공!");
+			} else {
+				System.out.println("수정 실패!");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(con, pstmt, null);
+		}	
+	}
 }
+

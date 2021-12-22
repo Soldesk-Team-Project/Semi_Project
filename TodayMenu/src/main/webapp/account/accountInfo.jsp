@@ -4,6 +4,33 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script type="text/javascript">
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+	
+  ['종류', '소비금액'],
+  ['식비', ${food }],
+  ['카페/디저트', ${cafe }],
+  ['쇼핑', ${shopping }],
+  ['미용', ${beauty }]
+]);
+
+var options = {
+  title: '소비 비율',
+  width: 300,
+  height: 400,
+  fontSize: 15, 
+  legend : 'none',
+  backgroundColor: '#ffccbc',
+  is3D: true
+};
+
+var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+	chart.draw(data, options);
+}
+</script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -66,7 +93,7 @@
 							<table id="accountBookTable" border="1">
 								<tr style="height: 30%;">
 									<td colspan="2">
-										<form action="AccountBookC">
+										<form action="AccountBookC" method="post">
 											<table border="0" style="width: 100%;">
 												<tr>
 													<td class="accountBookInputLeft">사용 금액</td>
@@ -82,7 +109,10 @@
 													</select></td>
 												</tr>
 												<tr>
-													<td colspan="2" style="width: 5%;"><button class="accountBookButton">등록</button></td>
+													<td colspan="2" style="width: 5%;">
+														<button class="accountBookButton">등록</button>
+														<button class="accountBookButton" type="button" onclick="location.href='AccountBookC'">리셋</button>											
+													</td>
 												</tr>
 											</table>
 										</form>
