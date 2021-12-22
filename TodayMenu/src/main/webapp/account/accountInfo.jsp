@@ -20,36 +20,36 @@
 								<table border="1" id="viewAccount">
 									<tr>
 										<td class="accountDataLeft">ID</td>
-										<td class="accountDataRight">name</td>
+										<td class="accountDataRight">${sessionScope.accountInfo.id}</td>
 									</tr>
 									<tr>
 										<td class="accountDataLeft">이름</td>
-										<td class="accountDataRight">name</td>
+										<td class="accountDataRight">${sessionScope.accountInfo.name}</td>
 									</tr>
 									<tr>
 										<td class="accountDataLeft">생년월일</td>
-										<td class="accountDataRight">name</td>
+										<td class="accountDataRight">${sessionScope.accountInfo.birth}</td>
 									</tr>
 									<tr>
 										<td class="accountDataLeft">주소</td>
-										<td class="accountDataRight">name</td>
+										<td class="accountDataRight">${sessionScope.accountInfo.addr}</td>
 									</tr>
 									<tr>
 										<td class="accountDataLeft">전화번호</td>
-										<td class="accountDataRight">name</td>
+										<td class="accountDataRight">${sessionScope.accountInfo.phone}</td>
 									</tr>
 									<tr>
 										<td class="accountDataLeft">질문</td>
-										<td class="accountDataRight">name</td>
+										<td class="accountDataRight">${sessionScope.accountInfo.qestion}</td>
 									</tr>
 									<tr>
 										<td class="accountDataLeft">해답</td>
-										<td class="accountDataRight">name</td>
+										<td class="accountDataRight">${sessionScope.accountInfo.answer}</td>
 									</tr>
 									<tr>
 										<td colspan="2" id="editAccount" >
-											<button class="editAccountButton" onclick="location.href='UpdateAccountC'">수정하기</button>
-											<button class="editAccountButton" onclick="deleteAccount()">탈퇴하기</button>
+											<button class="editAccountButton" type="button" onclick="location.href='UpdateAccountC'">수정하기</button>
+											<button class="editAccountButton" type="button" onclick="deleteAccount(${sessionScope.accountInfo.id})">탈퇴하기</button>
 										</td>
 									</tr>
 								</table>
@@ -66,7 +66,7 @@
 							<table id="accountBookTable" border="1">
 								<tr style="height: 30%;">
 									<td colspan="2">
-										<form action="MyPageC" method="post">
+										<form action="AccountBookC">
 											<table border="0" style="width: 100%;">
 												<tr>
 													<td class="accountBookInputLeft">사용 금액</td>
@@ -93,10 +93,10 @@
 									<td style="width: 60%; ">
 										<table border="0" style="width:100%;">
 											<tr>
-												<td style="font-size: 13pt; ">~~님의 가계부입니다.</td>
+												<td style="font-size: 13pt; ">${sessionScope.accountInfo.name }님의 가계부입니다.</td>
 											</tr>
 											<tr>
-												<td>총 사용 금액은 ~~입니다.</td>
+												<td>총 사용 금액은 ${sessionScope.accountInfo.pay }원입니다.</td>
 											</tr>
 										</table>
 									</td>

@@ -16,7 +16,7 @@ a:hover { color: gray; }
 #wrapTable { height:1765px; width:100%; text-align: center; }
 #header { height: 380px; width:100%; }
 #headerLogin { height: 60px; width: 90%; text-align: right; margin: 0 auto; }
-#loginBackground { background: #f29b76; }
+#loginBackground { background: #f29b76; width:10000px; }
 #header a:hover { color: black;}
 #header #headerLogo { width: 100%; text-align: center; }
 #header #headerTitle { width: 33.333%; font-size: 35pt; }
@@ -27,7 +27,6 @@ a:hover { color: gray; }
 #nav div { width: 15%; float: left; line-height: 80px; text-align: center; }
 #nav .navMenus { height: 65px; margin: 0 5%; font-size: 20pt; }
 #nav .navMenus a { color: #ff8f6b; font-family: 'CookieRunBold';}
-
 /* nav */
 
 #slideTable { height: 260px; width:80%; margin:0 auto;}

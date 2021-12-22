@@ -5,7 +5,7 @@ var data = google.visualization.arrayToDataTable([
 
 /*let spend = element.getAttribute('spend');*/
 	
-  ['종류', '소비액'],
+  ['종류', '소비금액'],
   ['식비', 550000],
   ['쇼핑', 435000],
   ['카페/디저트', 100500],

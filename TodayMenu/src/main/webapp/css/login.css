@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
-#loginForm { font-size: 10pt; font-weight: bold; }
+.loginForm { font-size: 10pt; font-weight: bold; font-family: 'CookieRunBold'; }
 
-#loginForm .loginInput { width: 110px; height: 10px; }
+.loginForm .loginInput { width: 110px; height: 10px; }
 
-#loginForm button { background-color:transparent; border: 0; outline: 0; padding-top: 4px; }
-#loginForm #loginButton { font-size: 11pt; font-weight: bold; }
-#loginForm #loginButton:hover { cursor: pointer; color: gray; }
-#loginForm .indexButton { font-size: 11pt; font-weight: bold; color: white; }
-#loginForm .indexButton:hover { cursor: pointer; color: #eeeeee; }
+.loginForm button { background-color:transparent; border: 0; outline: 0; padding-top: 4px; font-family: 'CookieRunBold'; }
+.loginForm #loginButton { font-size: 11pt; font-weight: bold;  }
+.loginForm #loginButton:hover { cursor: pointer; color: gray; }
+.indexButton { font-size: 11pt; font-weight: bold; color: white; }
+.indexButton:hover { cursor: pointer; color: #eeeeee; }
+/* Login system */
+
+#regTable { width: 50%; height: 100%; margin: 0 auto; }
+
+/* Reg System */

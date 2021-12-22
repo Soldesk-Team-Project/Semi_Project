@@ -1,8 +1,3 @@
-function moveMyPage(id) {
-
-	location.href="MyPageC"
-}
-
 function deleteAccount(id) {
 	
 	let ok = confirm('정말 탈퇴 합니까?');

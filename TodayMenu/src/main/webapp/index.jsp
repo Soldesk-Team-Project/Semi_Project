@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/login.css">
-<link rel="stylesheet" href="css/myPage.css">
+<link rel="stylesheet" href="css/accountInfo.css">
 <link rel="stylesheet" href="css/randomMenu.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script type="text/javascript" src="js/account.js"></script>
