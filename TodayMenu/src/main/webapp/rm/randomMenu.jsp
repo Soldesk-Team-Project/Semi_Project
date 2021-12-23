@@ -12,13 +12,13 @@
 			<tr id="randomMenuButton">
 				<td>
 					<div class="page">
-					  <button class="fun-btn" value="1" id="rmbtn">랜덤추천</button>
+					  <button class="fun-btn" name="rmbtn" value="1">랜덤추천</button>
 					</div>
 				</td>
 			</tr>
 			<tr id="randomMenuImg">
 				<td>
-					<jsp:include page="${randomResultPage }"></jsp:include>
+					<img alt="추천결과" src="${menu.img } " style="width: 100%; height: 100%;">
 				</td>
 			</tr>
 			<tr id="randomMenuDetail">

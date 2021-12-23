@@ -37,17 +37,17 @@ insert into menu1 values(menu1_seq.nextval, 1, '회', 'img/menu/회.jpg');
 insert into menu1 values(menu1_seq.nextval, 1, '회덮밥', 'img/menu/회덮밥.jfif');
 -- 한식 데이터
 
-insert into menu1 values(menu1_seq.nextval, 2, '볶음밥', 'img/menu/볶음밥.jpg');
+insert into menu1 values(menu1_seq.nextval, 2, '볶음밥', 'img/menu/볶음밥.jfif');
 insert into menu1 values(menu1_seq.nextval, 2, '마라탕', 'img/menu/마라탕.jfif');
 insert into menu1 values(menu1_seq.nextval, 2, '마파두부', 'img/menu/마파두부.jfif');
-insert into menu1 values(menu1_seq.nextval, 2, '짜장면', 'img/menu/볶음밥.jpg');
+insert into menu1 values(menu1_seq.nextval, 2, '짜장면', 'img/menu/짜장면.jpg');
 insert into menu1 values(menu1_seq.nextval, 2, '짬뽕', 'img/menu/짬뽕.jpg');
 -- 중식 데이터
 
 insert into menu1 values(menu1_seq.nextval, 3, '라멘', 'img/menu/라멘.jfif');
 insert into menu1 values(menu1_seq.nextval, 3, '사케동', 'img/menu/사케동.jfif');
 insert into menu1 values(menu1_seq.nextval, 3, '에비텐동', 'img/menu/에비텐동.jfif');
-insert into menu1 values(menu1_seq.nextval, 3, '우나기동', 'img/menu/우나기동.jfif');
+insert into menu1 values(menu1_seq.nextval, 3, '우나기동', 'img/menu/우나기동.jpg');
 insert into menu1 values(menu1_seq.nextval, 3, '일식돈가스', 'img/menu/일식돈가스.jfif');
 insert into menu1 values(menu1_seq.nextval, 3, '차슈동', 'img/menu/차슈동.jfif');
 insert into menu1 values(menu1_seq.nextval, 3, '초밥', 'img/menu/초밥.jfif');
@@ -93,11 +93,12 @@ insert into menu1 values(menu1_seq.nextval, 7, '카페라떼', 'img/menu/카페라떼.jf
 insert into menu1 values(menu1_seq.nextval, 7, '카페모카', 'img/menu/카페모카.jfif');
 insert into menu1 values(menu1_seq.nextval, 7, '팥빙수', 'img/menu/팥빙수.jfif');
 insert into menu1 values(menu1_seq.nextval, 7, '플레인요거트스무디', 'img/menu/플레인요거트스무디.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, '흑당밀크티', 'img/menu/흑당밀크티.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, '흑당밀크티', 'img/menu/흑당밀크티.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, '흑당밀크티', 'img/menu/흑당밀크티.jpg');
 insert into menu1 values(menu1_seq.nextval, 7, '샌드위치', 'img/menu/샌드위치.jfif');
 insert into menu1 values(menu1_seq.nextval, 7, '토스트', 'img/menu/토스트.jpg');
 -- 커피 & 디저트 데이터
+
+insert into menu1 values(999, 999, '기본이미지', 'img/icon/고민하는얼굴.png');
 
 select * from menu1;
 

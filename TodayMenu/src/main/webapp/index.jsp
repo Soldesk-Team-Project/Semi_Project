@@ -79,7 +79,7 @@ $(document).ready(function(){
 		<tr>
 			<td id="footerBackground">
 				<!-- footer -->
-				<table border="1" id="footer">
+				<table border="0" id="footer">
 					<tr>
 						<td>
 							<table border="0" id="footerDetail">
@@ -95,11 +95,11 @@ $(document).ready(function(){
 							</table>
 						</td>
 						<td>
-							<table border="1" class="team">
+							<table class="team">
 								<tr>
 									<td class="teamImg"><img alt="준석" src="img/icon/팀원사진.png"></td>
 									<td class="teamDetail">
-										팀원 <br>
+										팀장 <br>
 										오준석 <p>
 										화이팅
 									</td>

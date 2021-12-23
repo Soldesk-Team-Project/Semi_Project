@@ -30,9 +30,6 @@ a:hover { color: gray; }
 /* nav */
 
 #slideTable { height: 260px; width:80%; margin:0 auto;}
-/* #slideTable .slideArray { height: 40%; } 사용 안 함 */
-/* #slideTable #slide { height: 100%; width: 100%; } 사용 안 함*/
-/* #slideTable #slide #slideImg { height: 100%; width: 100%; }사용 안 함*/
 /* slide */
 
 #contentTitle { height: 60px; width: 75%; margin: 0 auto; }
@@ -56,5 +53,3 @@ a:hover { color: gray; }
 #footer .team .teamDetail { width: 200px; padding-top: 10px; color: white; }
 #footerBackground { background:  #f29b76; text-align: center; }
 /* footer */
-/* //layout */
-
