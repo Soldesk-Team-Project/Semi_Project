@@ -23,7 +23,21 @@
 			</tr>
 			<tr id="randomMenuDetail">
 				<td>
-					he
+					<table border="1">
+						<tr>
+							<td class="rmDetailLeft">음식 정보 및 식당 추천</td>
+							<td class="rmDetailRight">디저트</td>
+						</tr>
+						<tr>
+							<td class="rmDetailLeft">식당 추천</td>
+							<td class="rmDetailRight">
+								<img alt="추천결과" src="${dessert.img }" style="width: 100%; height: 100%;">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="rmResult">${menu.name } 먹고  ${dessert.name } ㄱㄱ</td>
+						</tr>
+					</table>
 				</td>
 			</tr>
 		</table>

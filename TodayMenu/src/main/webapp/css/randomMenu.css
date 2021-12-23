@@ -2,8 +2,14 @@
 
 #randomMenuTable { height: 1300px; width: 60%; margin: 0 auto; }
 #randomMenuTable #randomMenuButton { height: 10%; }
+
 #randomMenuTable #randomMenuImg { height: 70%; }
+
 #randomMenuTable #randomMenuDetail { height: 20%; }
+#randomMenuTable #randomMenuDetail table { height: 100%; width: 100%; }
+#randomMenuTable #randomMenuDetail table .rmDetailLeft { width: 60%; }
+#randomMenuTable #randomMenuDetail table .rmDetailRight { width: 40%; }
+
 
 .page { width: 60%; height: 10%; display: flex; justify-content: center; margin: 0 auto; }
 .color-bg-start { background-color: salmon; }

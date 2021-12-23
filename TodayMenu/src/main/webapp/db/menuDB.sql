@@ -24,8 +24,8 @@ insert into menu1 values(menu1_seq.nextval, 1, '두부김치', 'img/menu/두부김치.jp
 insert into menu1 values(menu1_seq.nextval, 1, '만두전골', 'img/menu/만두전골.jfif');
 insert into menu1 values(menu1_seq.nextval, 1, '물회', 'img/menu/물회.jfif');
 insert into menu1 values(menu1_seq.nextval, 1, '비빔밥', 'img/menu/비빔밥.jpg');
-insert into menu1 values(menu1_seq.nextval, 1, '볶음밥', 'img/menu/볶음밥.jpg');
-insert into menu1 values(menu1_seq.nextval, 1, '부대찌개', 'img/menu/부대찌개.jpg');
+insert into menu1 values(menu1_seq.nextval, 1, '볶음밥', 'img/menu/볶음밥.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, '부대찌개', 'img/menu/부대찌개.jfif');
 insert into menu1 values(menu1_seq.nextval, 1, '삼계탕', 'img/menu/삼계탕.jfif');
 insert into menu1 values(menu1_seq.nextval, 1, '소고기', 'img/menu/소고기.jfif');
 insert into menu1 values(menu1_seq.nextval, 1, '수육정식', 'img/menu/수육정식.jfif');
@@ -55,7 +55,7 @@ insert into menu1 values(menu1_seq.nextval, 3, '카츠동', 'img/menu/카츠동.jfif')
 insert into menu1 values(menu1_seq.nextval, 3, '메밀소바', 'img/menu/메밀소바.jpg');
 -- 일식 데이터
 
-insert into menu1 values(menu1_seq.nextval, 4, '샐러드', 'img/menu/샐러드.jfif');
+insert into menu1 values(menu1_seq.nextval, 4, '샐러드', 'img/menu/샐러드.jpg');
 insert into menu1 values(menu1_seq.nextval, 4, '스파게티', 'img/menu/스파게티.jfif');
 insert into menu1 values(menu1_seq.nextval, 4, '파스타', 'img/menu/파스타.jpg');
 insert into menu1 values(menu1_seq.nextval, 4, '피자', 'img/menu/피자.jpg');
@@ -74,9 +74,11 @@ insert into menu1 values(menu1_seq.nextval, 5, '똠양꿍', 'img/menu/똠양꿍.jfif')
 
 insert into menu1 values(menu1_seq.nextval, 6, '떡볶이', 'img/menu/떡볶이.jpg');
 insert into menu1 values(menu1_seq.nextval, 6, '라멘', 'img/menu/라멘.jfif');
-insert into menu1 values(menu1_seq.nextval, 6, '반반치킨', 'img/menu/반반치킨.jfif');
+insert into menu1 values(menu1_seq.nextval, 6, '반반치킨', 'img/menu/반반치킨.png');
 insert into menu1 values(menu1_seq.nextval, 6, '스파게티', 'img/menu/스파게티.jfif');
 insert into menu1 values(menu1_seq.nextval, 6, '타코', 'img/menu/타코.jfif');
+insert into menu1 values(menu1_seq.nextval, 6, '샌드위치', 'img/menu/샌드위치.jfif');
+insert into menu1 values(menu1_seq.nextval, 6, '토스트', 'img/menu/토스트.jpg');
 -- 분식 데이터
 
 insert into menu1 values(menu1_seq.nextval, 7, '딸기스무디', 'img/menu/딸기스무디.jfif');
@@ -94,11 +96,11 @@ insert into menu1 values(menu1_seq.nextval, 7, '카페모카', 'img/menu/카페모카.jf
 insert into menu1 values(menu1_seq.nextval, 7, '팥빙수', 'img/menu/팥빙수.jfif');
 insert into menu1 values(menu1_seq.nextval, 7, '플레인요거트스무디', 'img/menu/플레인요거트스무디.jfif');
 insert into menu1 values(menu1_seq.nextval, 7, '흑당밀크티', 'img/menu/흑당밀크티.jpg');
-insert into menu1 values(menu1_seq.nextval, 7, '샌드위치', 'img/menu/샌드위치.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, '토스트', 'img/menu/토스트.jpg');
 -- 커피 & 디저트 데이터
 
 insert into menu1 values(999, 999, '기본이미지', 'img/icon/고민하는얼굴.png');
+
+update menu1 set m_img = 'img/menu/샐러드.jpg' where m_no = 43;
 
 select * from menu1;
 

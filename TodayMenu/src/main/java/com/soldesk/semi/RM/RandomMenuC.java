@@ -17,6 +17,7 @@ public class RandomMenuC extends HttpServlet {
 			randomDAO.randomMenuBasic(request);
 		} else {
 			randomDAO.randomMenu(request);			
+			randomDAO.randomDessert(request);
 		}
 		AccountDAO.loginCheck(request);
 		request.setAttribute("contentPage", "rm/randomMenu.jsp");
