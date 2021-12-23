@@ -79,58 +79,66 @@ $(document).ready(function(){
 		<tr>
 			<td id="footerBackground">
 				<!-- footer -->
-				<table border="0" id="footer">
+				<table border="1" id="footer">
 					<tr>
 						<td>
 							<table border="0" id="footerDetail">
 								<tr>
-									<td>설명 ~~~~~~~~~~~~</td>
+									<td>솔데스크 세미 프로젝트 : 웹사이트 제작</td>
 								</tr>
 								<tr>
-									<td>설명 ~~~~~~~~~~~~</td>
+									<td>프로젝트 기간 : 21.12.14 ~ 21.01.07</td>
 								</tr>
 								<tr>
-									<td>설명 ~~~~~~~~~~~~</td>
+									<td><a href="https://github.com/Soldesk-Team-Project">GitHub</a></td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table border="1" class="team">
+								<tr>
+									<td class="teamImg"><img alt="준석" src="img/icon/팀원사진.png"></td>
+									<td class="teamDetail">
+										팀원 <br>
+										오준석 <p>
+										화이팅
+									</td>
 								</tr>
 							</table>
 						</td>
 						<td>
 							<table class="team">
 								<tr>
-									<td class="teamImg">팀원 1</td>
-								</tr>
-								<tr>
-									<td class="teamDetail">팀원 1</td>
-								</tr>
-							</table>
-						</td>
-						<td>
-							<table class="team">
-								<tr>
-									<td class="teamImg">팀원 2</td>
-								</tr>
-								<tr>
-									<td class="teamDetail">팀원 2</td>
+									<td class="teamImg"><img alt="지호" src="img/icon/팀원사진.png"></td>
+									<td class="teamDetail">
+										팀원 <br>
+										윤지호 <p>
+										화이팅
+									</td>
 								</tr>
 							</table>
 						</td>
 						<td>
 							<table class="team">
 								<tr>
-									<td class="teamImg">팀원 3</td>
-								</tr>
-								<tr>
-									<td class="teamDetail">팀원 3</td>
+									<td class="teamImg"><img alt="유진" src="img/icon/팀원사진.png"></td>
+									<td class="teamDetail">
+										팀원 <br>
+										정유진 <p>
+										화이팅
+									</td>
 								</tr>
 							</table>
 						</td>
 						<td>
 							<table class="team">
 								<tr>
-									<td class="teamImg">팀원 4</td>
-								</tr>
-								<tr>
-									<td class="teamDetail">팀원 4</td>
+									<td class="teamImg"><img alt="동재" src="img/icon/팀원사진.png"></td>
+									<td class="teamDetail">
+										팀원 <br>
+										여동재 <p>
+										화이팅
+									</td>
 								</tr>
 							</table>
 						</td>

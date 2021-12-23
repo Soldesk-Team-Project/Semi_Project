@@ -49,8 +49,11 @@ a:hover { color: gray; }
 #content .contents .contentsDetail { height: 20%; }
 /* content */
 
-#footer { height: 100px; width:80%; margin:0 auto; }
-#footer td { text-align: center; }
+#footer { height: 100px; width:90%; margin:0 auto; text-align: center; }
+#footer td { width: 300px; }
+#footer #footerDetail { text-align : left; }
+#footer .team .teamImg img { width: 100px; height: 100px; }
+#footer .team .teamDetail { width: 200px; padding-top: 10px; color: white; }
 #footerBackground { background:  #f29b76; text-align: center; }
 /* footer */
 /* //layout */
