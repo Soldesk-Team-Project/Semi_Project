@@ -13,7 +13,7 @@ Remain r = (Remain) request.getAttribute("rr");
 <body>
 	<table border="1" id="Cal_divResultTable">
 		<tr style="background: Deepskyblue; color: black; font-size: 25pt;">
-			<td><h4>더치폐이 계산기</h4></td>
+			<td><h4>더치 페이 계산기</h4></td>
 		</tr>
 		<tr>
 			<td>더치 페이 금액 : <%=r.getR()%> 원
