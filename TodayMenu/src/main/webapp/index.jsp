@@ -47,7 +47,7 @@ $(document).ready(function(){
 				<table border="0" id="header">
 					<tr>
 						<td id="headerLogo"><a href="HomeController"><img
-								alt="Logo" src="img/icon/logo.png" width="20%"></a></td>
+								alt="Logo" src="img/icon/header.png" width="20%"></a></td>
 					</tr>
 				</table> <!-- //header -->
 			</td>
@@ -63,7 +63,7 @@ $(document).ready(function(){
 						<a href="RandomMenuC">랜덤식당</a>
 					</div>
 					<div class="navMenus">
-						<a href="#">추천기사</a>
+						<a href="ArticleController">추천기사</a>
 					</div>
 					<div class="navMenus">
 						<a href="CalculatorController">계산기</a>
