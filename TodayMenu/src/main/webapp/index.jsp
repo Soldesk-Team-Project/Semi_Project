@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/login.css">
 <link rel="stylesheet" href="css/accountInfo.css">
 <link rel="stylesheet" href="css/randomMenu.css">
+<link rel="stylesheet" href="css/calculator.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script type="text/javascript" src="js/account.js"></script>
 <script type="text/javascript" src="js/randomMenu.js"></script>
@@ -65,7 +66,7 @@ $(document).ready(function(){
 						<a href="#">추천기사</a>
 					</div>
 					<div class="navMenus">
-						<a href="#">계산기</a>
+						<a href="CalculatorController">계산기</a>
 					</div>
 					<hr style="border: dashed 1px gray;">
 				</div> <!-- //nav -->
