@@ -485,15 +485,19 @@ public class AccountDAO {
 
 			rs = pstmt.executeQuery();
 
+			Account find = null;
+			
 			if (rs.next()) {
 
-				Account find = new Account();
+				find = new Account();
 				find.setId(rs.getString("a_id"));
 				find.setPw(rs.getString("a_pw"));
 				find.setName(rs.getString("a_name"));
 				find.setAddr(rs.getString("a_addr"));
 				find.setPhone(rs.getString("a_phone"));
 				find.setBirth(rs.getString("a_birth"));
+				find.setSpend(rs.getString("a_spend"));
+				find.setPay(rs.getString("a_pay"));
 				find.setQestion(rs.getString("a_qestion"));
 				find.setAnswer(rs.getString("a_answer"));
 
@@ -545,6 +549,8 @@ public class AccountDAO {
 				find.setAddr(rs.getString("a_addr"));
 				find.setPhone(rs.getString("a_phone"));
 				find.setBirth(rs.getString("a_birth"));
+				find.setSpend(rs.getString("a_spend"));
+				find.setPay(rs.getString("a_pay"));
 				find.setQestion(rs.getString("a_qestion"));
 				find.setAnswer(rs.getString("a_answer"));
 
