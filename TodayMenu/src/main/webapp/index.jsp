@@ -47,7 +47,7 @@ $(document).ready(function(){
 				<table border="0" id="header">
 					<tr>
 						<td id="headerLogo"><a href="HomeController"><img
-								alt="Logo" src="img/icon/header.png" width="20%"></a></td>
+								alt="Logo" src="img/icon/header.png" width="100%"></a></td>
 					</tr>
 				</table> <!-- //header -->
 			</td>
