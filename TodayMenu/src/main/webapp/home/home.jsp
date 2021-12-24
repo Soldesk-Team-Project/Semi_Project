@@ -40,26 +40,94 @@
 			<td>
 				<!-- content(article) -->
 				<table border="1" id="content">
-					<c:forEach begin="1" end="2">
-						<tr>
-							<!-- //content1 -->
-							<c:forEach begin="1" end="3">
-								<td class="contentsArray">
-									<table border="1" class="contents">
-										<tr>
-											<td class="contentsImg">content img</td>
-										</tr>
-										<tr>
-											<td class="contentsTitle">content title</td>
-										</tr>
-										<tr>
-											<td class="contentsDetail">content detail</td>
-										</tr>
-									</table>
-								</td>
-							</c:forEach>
-						</tr>
-					</c:forEach>
+					<tr>
+						<!-- //content1 -->
+						<td class="contentsArray">
+							<table border="1" class="contents">
+								<tr>
+									<td class="contentsImg">content img</td>
+								</tr>
+								<tr>
+									<td class="contentsTitle">content title</td>
+								</tr>
+								<tr>
+									<td class="contentsDetail">content detail</td>
+								</tr>
+							</table>
+						</td>
+						<!-- //content2 -->
+						<td class="contentsArray">
+							<table border="1" class="contents">
+								<tr>
+									<td class="contentsImg">content img</td>
+								</tr>
+								<tr>
+									<td class="contentsTitle">content title</td>
+								</tr>
+								<tr>
+									<td class="contentsDetail">content detail</td>
+								</tr>
+							</table>
+						</td>
+						<!-- //content3 -->
+						<td class="contentsArray">
+							<table border="1" class="contents">
+								<tr>
+									<td class="contentsImg">content img</td>
+								</tr>
+								<tr>
+									<td class="contentsTitle">content title</td>
+								</tr>
+								<tr>
+									<td class="contentsDetail">content detail</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<!-- //content4 -->
+						<td class="contentsArray">
+							<table border="1" class="contents">
+								<tr>
+									<td class="contentsImg">content img</td>
+								</tr>
+								<tr>
+									<td class="contentsTitle">content title</td>
+								</tr>
+								<tr>
+									<td class="contentsDetail">content detail</td>
+								</tr>
+							</table>
+						</td>
+						<!-- //content5 -->
+						<td class="contentsArray">
+							<table border="1" class="contents">
+								<tr>
+									<td class="contentsImg">content img</td>
+								</tr>
+								<tr>
+									<td class="contentsTitle">content title</td>
+								</tr>
+								<tr>
+									<td class="contentsDetail">content detail</td>
+								</tr>
+							</table>
+						</td>
+						<!-- //content6 -->
+						<td class="contentsArray">
+							<table border="1" class="contents">
+								<tr>
+									<td class="contentsImg">content img</td>
+								</tr>
+								<tr>
+									<td class="contentsTitle">content title</td>
+								</tr>
+								<tr>
+									<td class="contentsDetail">content detail</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
 				</table> <!-- //content -->
 			</td>
 		</tr>
