@@ -29,7 +29,29 @@
 							<td class="rmDetailRight">디저트</td>
 						</tr>
 						<tr>
-							<td class="rmDetailLeft">식당 추천</td>
+							<td class="rmDetailLeft">
+								<table border="1">
+									<tr style="height: 70%;">
+										<td class="rmRestaurantImg">
+											<img alt="추천결과" src="">
+										</td>
+										<td class="rmRestaurantImg">
+											<img alt="추천결과" src="">
+										</td>
+										<td class="rmRestaurantImg">
+											<img alt="추천결과" src="">
+										</td>
+									</tr>
+									<tr style="height: 30%;">
+										<td class="rmRestaurantDetail">
+										</td>
+										<td class="rmRestaurantDetail">
+										</td>
+										<td class="rmRestaurantDetail">
+										</td>
+									</tr>
+								</table>
+							</td>
 							<td class="rmDetailRight">
 								<img alt="추천결과" src="${dessert.img }" style="width: 100%; height: 100%;">
 							</td>
