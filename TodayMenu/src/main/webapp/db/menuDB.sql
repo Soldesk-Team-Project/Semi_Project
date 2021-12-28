@@ -35,6 +35,7 @@ insert into menu1 values(menu1_seq.nextval, 1, 'Àå±¹¹ä', 'img/menu/Àå±¹¹ä.jpg');
 insert into menu1 values(menu1_seq.nextval, 1, 'Âò´ß', 'img/menu/Âò´ß.jpg');
 insert into menu1 values(menu1_seq.nextval, 1, 'È¸', 'img/menu/È¸.jpg');
 insert into menu1 values(menu1_seq.nextval, 1, 'È¸µ¤¹ä', 'img/menu/È¸µ¤¹ä.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, '³«°ö»õ', 'img/menu/³«°ö»õ.jfif');
 -- ÇÑ½Ä µ¥ÀÌÅÍ
 
 insert into menu1 values(menu1_seq.nextval, 2, 'ººÀ½¹ä', 'img/menu/ººÀ½¹ä.jfif');

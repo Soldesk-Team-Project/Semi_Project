@@ -22,7 +22,7 @@ public class randomDAO {
 		try {
 			
 			Random rNo = new Random(); 
-			int rNo1 = rNo.nextInt(62) + 1;
+			int rNo1 = rNo.nextInt(63) + 1;
 			
 			String rNo2 = Integer.toString(rNo1); 
 			
@@ -108,8 +108,8 @@ public class randomDAO {
 		
 		try {
 			
-			int min = 63;
-			int max = 77;
+			int min = 64;
+			int max = 78;
 			
 			Random rNo = new Random(); 
 			int rNo1 = min + rNo.nextInt((max - min) + 1);
