@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 import javax.servlet.http.HttpServletRequest;
@@ -31,6 +32,8 @@ public class randomDAO {
 			pstmt = con.prepareStatement(sql);
 			
 			pstmt.setString(1, rNo2);
+			
+			request.setAttribute("randomValue", rNo2);
 			
 			rs = pstmt.executeQuery();
 			
@@ -116,7 +119,6 @@ public class randomDAO {
 			int rNo1 = min + rNo.nextInt((max - min) + 1);
 			String rNo2 = Integer.toString(rNo1); 
 			System.out.println(rNo2);
-			request.setAttribute("randomValue", rNo2);
 			
 			con = DBManager.connect();
 			pstmt = con.prepareStatement(sql);
@@ -171,6 +173,8 @@ public class randomDAO {
 			while (rs.next()) {
 				r.add(new Restaurant(rs.getString("m_name"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
 			}
+			
+			Collections.shuffle(r);
 			
 			request.setAttribute("rest", r);
 			

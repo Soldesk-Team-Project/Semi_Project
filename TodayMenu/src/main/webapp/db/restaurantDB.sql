@@ -86,6 +86,11 @@ insert into RESTAURANT1 values(restaurant1_seq.nextval, '투썸플레이스', '서울 종
 insert into RESTAURANT1 values(restaurant1_seq.nextval, '할리스', '서울 종로구 종로10길 21', 'img/restaurant/할리스.jfif');
 -- 카페
 
+insert into RESTAURANT1 values(restaurant1_seq.nextval, '스시소라', '서울 종로구 종로 19 서울 종로구 종로19', 'img/restaurant/스시소라.jfif');
+insert into RESTAURANT1 values(restaurant1_seq.nextval, '폴루이트', '서울 종로구 우정국로2길 41', 'img/restaurant/폴루이트.jfif');
+insert into RESTAURANT1 values(restaurant1_seq.nextval, '반쥴', '서울 종로구 삼일대로17길 23 3층', 'img/restaurant/반쥴.jfif');
+-- 데이터 추가
+
 select * from restaurant1;
 
 drop sequence restaurant1_seq;

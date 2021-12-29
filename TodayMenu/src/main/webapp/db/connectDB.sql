@@ -564,6 +564,36 @@ insert into con values(con_seq.nextval, 64, 77);
 insert into con values(con_seq.nextval, 64, 78);
 -- 할리스
 
+insert into con values(con_seq.nextval, 65, 28);
+insert into con values(con_seq.nextval, 65, 41);
+-- 스시소라
+
+insert into con values(con_seq.nextval, 66, 65);
+insert into con values(con_seq.nextval, 66, 66);
+insert into con values(con_seq.nextval, 66, 68);
+insert into con values(con_seq.nextval, 66, 69);
+insert into con values(con_seq.nextval, 66, 70);
+insert into con values(con_seq.nextval, 66, 71);
+insert into con values(con_seq.nextval, 66, 72);
+insert into con values(con_seq.nextval, 66, 73);
+insert into con values(con_seq.nextval, 66, 74);
+insert into con values(con_seq.nextval, 66, 75);
+insert into con values(con_seq.nextval, 66, 76);
+insert into con values(con_seq.nextval, 66, 77);
+insert into con values(con_seq.nextval, 66, 78);
+-- 폴루이트
+
+insert into con values(con_seq.nextval, 67, 65);
+insert into con values(con_seq.nextval, 67, 66);
+insert into con values(con_seq.nextval, 67, 68);
+insert into con values(con_seq.nextval, 67, 69);
+insert into con values(con_seq.nextval, 67, 73);
+insert into con values(con_seq.nextval, 67, 74);
+insert into con values(con_seq.nextval, 67, 75);
+-- 반쥴
+
+select * from con;
+
 select m_name, r_name, r_place, r_img from con
 join menu1 on con.c_menu = menu1.m_no
 join restaurant1 on con.c_restaurant = RESTAURANT1.r_no
