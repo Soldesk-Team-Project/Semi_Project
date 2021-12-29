@@ -57,10 +57,10 @@ $(document).ready(function(){
 				<!-- nav -->
 				<div id="nav">
 					<div class="navMenus">
-						<a href="#">전체식당</a>
+						<a href="AllRestaurantController">전체식당</a>
 					</div>
 					<div class="navMenus">
-						<a href="RandomMenuC">랜덤식당</a>
+						<a href="RandomMenuC">랜덤메뉴</a>
 					</div>
 					<div class="navMenus">
 						<a href="ArticleController">추천기사</a>
@@ -98,7 +98,7 @@ $(document).ready(function(){
 						<td>
 							<table class="team">
 								<tr>
-									<td class="teamImg"><img alt="준석" src="img/icon/팀원사진.png"></td>
+									<td class="teamImg"><img alt="준석" src="img/icon/짱구.png"></td>
 									<td class="teamDetail">
 										팀장 <br>
 										오준석 <p>
@@ -110,7 +110,7 @@ $(document).ready(function(){
 						<td>
 							<table class="team">
 								<tr>
-									<td class="teamImg"><img alt="지호" src="img/icon/팀원사진.png"></td>
+									<td class="teamImg"><img alt="지호" src="img/icon/철수.png"></td>
 									<td class="teamDetail">
 										팀원 <br>
 										윤지호 <p>
@@ -122,7 +122,7 @@ $(document).ready(function(){
 						<td>
 							<table class="team">
 								<tr>
-									<td class="teamImg"><img alt="유진" src="img/icon/팀원사진.png"></td>
+									<td class="teamImg"><img alt="유진" src="img/icon/유리.png"></td>
 									<td class="teamDetail">
 										팀원 <br>
 										정유진 <p>
@@ -134,7 +134,7 @@ $(document).ready(function(){
 						<td>
 							<table class="team">
 								<tr>
-									<td class="teamImg"><img alt="동재" src="img/icon/팀원사진.png"></td>
+									<td class="teamImg"><img alt="동재" src="img/icon/맹구.jfif"></td>
 									<td class="teamDetail">
 										팀원 <br>
 										여동재 <p>
