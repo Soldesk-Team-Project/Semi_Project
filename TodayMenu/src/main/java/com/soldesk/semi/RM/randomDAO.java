@@ -3,6 +3,7 @@ package com.soldesk.semi.RM;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.Random;
 
 import javax.servlet.http.HttpServletRequest;
@@ -115,6 +116,7 @@ public class randomDAO {
 			int rNo1 = min + rNo.nextInt((max - min) + 1);
 			String rNo2 = Integer.toString(rNo1); 
 			System.out.println(rNo2);
+			request.setAttribute("randomValue", rNo2);
 			
 			con = DBManager.connect();
 			pstmt = con.prepareStatement(sql);
@@ -144,6 +146,40 @@ public class randomDAO {
 		} finally {
 			DBManager.close(con, pstmt, rs);
 		}
+	}
+
+	public static void randomRestaurant(HttpServletRequest request) {
+
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String sql = "select m_name, r_name, r_place, r_img from con join menu1 on con.c_menu = menu1.m_no join restaurant1 on con.c_restaurant = RESTAURANT1.r_no where menu1.m_no = ?";
+		String rNo = (String)request.getAttribute("randomValue");
+		
+		try {
+
+			con = DBManager.connect();
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setString(1, rNo);
+			
+			rs = pstmt.executeQuery();
+			
+			ArrayList<Restaurant> r = new ArrayList<Restaurant>();
+			
+			while (rs.next()) {
+				r.add(new Restaurant(rs.getString("m_name"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
+			}
+			
+			request.setAttribute("rest", r);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(con, pstmt, rs);
+		}
+		
 	}
 
 }

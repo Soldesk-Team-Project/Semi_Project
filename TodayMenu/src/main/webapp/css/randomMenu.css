@@ -8,6 +8,7 @@
 #randomMenuTable #randomMenuDetail { height: 20%; }
 #randomMenuTable #randomMenuDetail table { height: 100%; width: 100%; }
 #randomMenuTable #randomMenuDetail table .rmDetailLeft { width: 60%; }
+#randomMenuTable #randomMenuDetail table .rmDetailLeft img { width: 100px; }
 #randomMenuTable #randomMenuDetail table .rmDetailRight { width: 40%; }
 
 

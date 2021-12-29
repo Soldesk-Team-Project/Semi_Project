@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,23 +33,19 @@
 							<td class="rmDetailLeft">
 								<table border="1">
 									<tr style="height: 70%;">
-										<td class="rmRestaurantImg">
-											<img alt="추천결과" src="">
-										</td>
-										<td class="rmRestaurantImg">
-											<img alt="추천결과" src="">
-										</td>
-										<td class="rmRestaurantImg">
-											<img alt="추천결과" src="">
-										</td>
+										<c:forEach var="i" items="${rest }">
+											<td class="rmRestaurantImg">
+												<img alt="추천결과" src="${i.img }">
+											</td>
+										</c:forEach>
 									</tr>
 									<tr style="height: 30%;">
-										<td class="rmRestaurantDetail">
-										</td>
-										<td class="rmRestaurantDetail">
-										</td>
-										<td class="rmRestaurantDetail">
-										</td>
+										<c:forEach var="i" items="${rest }">
+											<td class="rmRestaurantDetail">
+												${i.name } <p>
+												${i.place }
+											</td>
+										</c:forEach>
 									</tr>
 								</table>
 							</td>
