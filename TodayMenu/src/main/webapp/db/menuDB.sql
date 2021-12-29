@@ -101,8 +101,6 @@ insert into menu1 values(menu1_seq.nextval, 7, 'Èæ´ç¹ÐÅ©Æ¼', 'img/menu/Èæ´ç¹ÐÅ©Æ
 
 insert into menu1 values(999, 999, '±âº»ÀÌ¹ÌÁö', 'img/icon/°í¹ÎÇÏ´Â¾ó±¼.png');
 
-update menu1 set m_img = 'img/menu/»ø·¯µå.jpg' where m_no = 43;
-
 select * from menu1;
 
 drop sequence menu1_seq;
