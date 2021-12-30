@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+
+/*font*/
+@font-face {
+	src: url('../font/MaruBuri-Bold.otf');
+	font-family: 'MaruburiBold';
+}
+
+@font-face {
+	src: url('../font/MaruBuri-Regular.otf');
+	font-family: 'Maruburi';
+}
+
+body {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#articleContentTable {
+	width: 80%;
+	height: 2500px;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 100px;
+}
+
+#articleMainTitle {
+	height: 100px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#articleMainTitle .deco {
+	width: 250px;
+	float: center;
+}
+
+#articleMainTitle #articleMainTitleName {
+	text-align: center;
+	font-size: 30pt;
+	color: b;
+	vertical-align: bottom;
+	font-family: 'MaruburiBold';
+	margin-left: 10px;
+}
+
+#articleMainTitle #articleMainTitle2 {
+	text-align: center;
+	font-size: 15pt;
+	color: gray;
+	font-family: 'Maruburi';
+}
+
+#articleContent{height:100%;}
+
+#articleContent #articleContents #articleContents1 {
+	height: 100%; 
+	text-align : center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: 'Maruburi';
+}
