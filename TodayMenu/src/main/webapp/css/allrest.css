@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+#allRestaurantTable { width: 75%; margin: 30px auto; }
+#allRestaurantTable #searchRestaurantInput { width: 100%; text-align: right; }
+
+#allRestaurantTable #allRestaurantImg { width: 16.666%; }
+#allRestaurantTable #allRestaurantImg img { height: 200px; width: 200px; }
+#allRestaurantTable #allRestaurantDetail { width: 16.666%; }

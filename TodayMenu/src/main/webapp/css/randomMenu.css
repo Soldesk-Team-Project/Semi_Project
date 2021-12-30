@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-#randomMenuTable { height: 1300px; width: 60%; margin: 0 auto; }
+#randomMenuTable { height: 1300px; width: 60%; margin: 30px auto; }
 #randomMenuTable #randomMenuButton { height: 10%; }
 
-#randomMenuTable #randomMenuImg img { height: 30%;}
+#randomMenuTable #randomMenuImg img { height: 30%; }
 
 #randomMenuTable #randomMenuDetail { height: 30%; width: 33.333%; }
 #randomMenuTable #randomMenuDetail table { height: 100%; width: 100%; }

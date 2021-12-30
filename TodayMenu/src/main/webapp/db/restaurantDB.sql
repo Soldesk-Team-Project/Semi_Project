@@ -4,9 +4,7 @@ create table restaurant1 (
 	r_place varchar2(100 char)not null,
 	r_img varchar2(200 char)not null
 );
-
 create sequence restaurant1_seq start with 1 increment by 1;
-
 
 insert into RESTAURANT1 values(restaurant1_seq.nextval, '한솥', '서울 종로구 종로12길 10', 'img/restaurant/한솥.jfif');
 insert into RESTAURANT1 values(restaurant1_seq.nextval, '수운', '서울 종로구 우정국로 26 센트로폴리스 2층', 'img/restaurant/수운.jfif');
@@ -92,6 +90,8 @@ insert into RESTAURANT1 values(restaurant1_seq.nextval, '반쥴', '서울 종로구 삼�
 -- 데이터 추가
 
 select * from restaurant1;
+
+select * from restaurant1 where r_name like '%개미%';
 
 drop sequence restaurant1_seq;
 drop table restaurant1 cascade constraint purge;

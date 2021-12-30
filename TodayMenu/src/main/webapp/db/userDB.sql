@@ -15,5 +15,5 @@ insert into account1 values ('js', '1004', 'USER', to_date('1997-10-21', 'YYYY-M
 
 select * from account1;
 
-delete account1 where a_id='ID';
+delete account1 where a_id='';
 drop table account1 cascade constraint purge;

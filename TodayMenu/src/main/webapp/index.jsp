@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="css/accountInfo.css">
 <link rel="stylesheet" href="css/randomMenu.css">
 <link rel="stylesheet" href="css/calculator.css">
+<link rel="stylesheet" href="css/allrest.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script type="text/javascript" src="js/account.js"></script>
 <script type="text/javascript" src="js/randomMenu.js"></script>

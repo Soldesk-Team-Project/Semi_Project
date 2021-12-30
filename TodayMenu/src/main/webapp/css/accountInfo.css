@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#myPageTable { height:1000px; width: 50%; text-align: center; margin: 0 auto; background: white; }
+#myPageTable { height:1000px; width: 50%; text-align: center; margin: 30px auto; background: white; }
 #myPageTable .content1Table { height: 650px; width: 100%; font-size: 16pt; border-collapse: collapse; }
 #myPageTable .content1Table .myPageContentTitle { height: 10%; text-align: left; font-size: 11pt; background: wihte; padding-left: 10px; font-weight: bold; }
 #myPageTable .content1Table #viewAccount { height: 100%; width: 100%; font-size: 16pt; }
