@@ -103,6 +103,158 @@
 							</td>
 						</c:forEach>
 					</tr>
+					<tr>
+						<c:forEach var="i" begin="24" end="29" items="${rests }">
+							<td>
+								<table border="1" width="100%">
+									<tr>
+										<td id="allRestaurantImg">
+											<img alt="" src="${i.img }">
+										</td>
+									</tr>
+									<tr>
+										<td id="allRestaurantDetail">
+											${i.name } <br>
+											${i.place }
+										</td>
+									</tr>
+								</table>
+							</td>
+						</c:forEach>
+					</tr>
+					<tr>
+						<c:forEach var="i" begin="30" end="35" items="${rests }">
+							<td>
+								<table border="1" width="100%">
+									<tr>
+										<td id="allRestaurantImg">
+											<img alt="" src="${i.img }">
+										</td>
+									</tr>
+									<tr>
+										<td id="allRestaurantDetail">
+											${i.name } <br>
+											${i.place }
+										</td>
+									</tr>
+								</table>
+							</td>
+						</c:forEach>
+					</tr>
+					<tr>
+						<c:forEach var="i" begin="36" end="41" items="${rests }">
+							<td>
+								<table border="1" width="100%">
+									<tr>
+										<td id="allRestaurantImg">
+											<img alt="" src="${i.img }">
+										</td>
+									</tr>
+									<tr>
+										<td id="allRestaurantDetail">
+											${i.name } <br>
+											${i.place }
+										</td>
+									</tr>
+								</table>
+							</td>
+						</c:forEach>
+					</tr>
+					<tr>
+						<c:forEach var="i" begin="42" end="47" items="${rests }">
+							<td>
+								<table border="1" width="100%">
+									<tr>
+										<td id="allRestaurantImg">
+											<img alt="" src="${i.img }">
+										</td>
+									</tr>
+									<tr>
+										<td id="allRestaurantDetail">
+											${i.name } <br>
+											${i.place }
+										</td>
+									</tr>
+								</table>
+							</td>
+						</c:forEach>
+					</tr>
+					<tr>
+						<c:forEach var="i" begin="48" end="53" items="${rests }">
+							<td>
+								<table border="1" width="100%">
+									<tr>
+										<td id="allRestaurantImg">
+											<img alt="" src="${i.img }">
+										</td>
+									</tr>
+									<tr>
+										<td id="allRestaurantDetail">
+											${i.name } <br>
+											${i.place }
+										</td>
+									</tr>
+								</table>
+							</td>
+						</c:forEach>
+					</tr>
+					<tr>
+						<c:forEach var="i" begin="54" end="59" items="${rests }">
+							<td>
+								<table border="1" width="100%">
+									<tr>
+										<td id="allRestaurantImg">
+											<img alt="" src="${i.img }">
+										</td>
+									</tr>
+									<tr>
+										<td id="allRestaurantDetail">
+											${i.name } <br>
+											${i.place }
+										</td>
+									</tr>
+								</table>
+							</td>
+						</c:forEach>
+					</tr>
+					<tr>
+						<c:forEach var="i" begin="60" end="65" items="${rests }">
+							<td>
+								<table border="1" width="100%">
+									<tr>
+										<td id="allRestaurantImg">
+											<img alt="" src="${i.img }">
+										</td>
+									</tr>
+									<tr>
+										<td id="allRestaurantDetail">
+											${i.name } <br>
+											${i.place }
+										</td>
+									</tr>
+								</table>
+							</td>
+						</c:forEach>
+					</tr>
+					<tr>
+						<c:forEach var="i" begin="66" end="71" items="${rests }">
+							<td>
+								<table border="1" width="100%">
+									<tr>
+										<td id="allRestaurantImg">
+											<img alt="" src="${i.img }">
+										</td>
+									</tr>
+									<tr>
+										<td id="allRestaurantDetail">
+											${i.name } <br>
+											${i.place }
+										</td>
+									</tr>
+								</table>
+							</td>
+						</c:forEach>
+					</tr>
 				</table> 
 			</td>
 		</tr>
