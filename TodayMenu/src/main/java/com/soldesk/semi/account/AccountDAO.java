@@ -15,36 +15,6 @@ import com.soldesk.semi.hc.DBManager;
 
 public class AccountDAO {
 
-	public static void deleteAccount(HttpServletRequest request) {
-
-		Connection con = null;
-		PreparedStatement pstmt = null;
-
-		String sql = "delete account1 where a_id=?";
-
-		try {
-
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(sql);
-
-			String id = (String) request.getSession().getAttribute("id");
-			pstmt.setString(1, id);
-
-			if (pstmt.executeUpdate() == 1) {
-				System.out.println("Å»Åð ¼º°ø!");
-				request.setAttribute("r", "Å»Åð ¼º°ø!");
-			} else {
-				System.out.println("Å»Åð ½ÇÆÐ!");
-				request.setAttribute("r", "Å»Åð ½ÇÆÐ!");
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-			request.setAttribute("r", "DB ¼­¹ö ¿À·ù");
-		} finally {
-			DBManager.close(con, pstmt, null);
-		}
-	}
-
 	public static void updateSpend(HttpServletRequest request) {
 
 		Connection con = null;
@@ -248,11 +218,11 @@ public class AccountDAO {
 
 	}
 
-	public static void deletAccount(HttpServletRequest request) {
+	public static void deleteAccount(HttpServletRequest request) {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;
-		String sql = "delet ACCOUNT1 where a_id=?";
+		String sql = "delete ACCOUNT1 where a_id=?";
 
 		try {
 			con = DBManager.connect();

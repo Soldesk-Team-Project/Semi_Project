@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="1" id="allRestaurantTable">
+	<table border="1" id="allRestaurantTable" width="500px">
 		<tr>
 			<td>
 				<form action="SearchRestaurantC">
@@ -25,9 +25,9 @@
 		</tr>
 		<tr>
 			<td>
-				<table border="1" width="100%">
+				<table border="1">
 					<tr>
-					 	<c:forEach var="i" begin="0" end="5" items="${rests }">
+					 	<c:forEach var="i" items="${rests }">
 							<td>
 								<table border="1" width="100%">
 									<tr>
