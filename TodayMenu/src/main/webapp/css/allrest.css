@@ -4,8 +4,9 @@
 #allRestaurantTable #searchRestaurantInput { width: 100%; text-align: right; }
 
 #allRestaurantTable .searchTd { width: 70%; }
-#allRestaurantTable .searchButtonTd { width: 5%; }
-#allRestaurantTable .searchButtonTd button { width: 100%; }
+#allRestaurantTable .searchTd button:hover { cursor: pointer; }
+#allRestaurantTable .searchButtonTd { width: 5%; text-align: center; }
+#allRestaurantTable .searchButtonTd a:hover { color: blue; }
 
 #allRestaurantTable .allRestaurantDetail { margin: 10px 15px; width: 12.5%; height: 250px; display: inline-block; }
 #allRestaurantTable .allRestaurantDetail a:hover { color: green; }
