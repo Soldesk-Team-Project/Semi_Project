@@ -594,10 +594,18 @@ insert into con values(con_seq.nextval, 67, 75);
 
 select * from con;
 
+delete con where c_no = 481;
+
 select m_name, r_name, r_place, r_img from con
 join menu1 on con.c_menu = menu1.m_no
 join restaurant1 on con.c_restaurant = RESTAURANT1.r_no
 where menu1.m_no = 45; 
+
+select distinct(r_name), r_no, r_place, r_img from con
+join menu1 on con.c_menu = menu1.m_no
+join restaurant1 on con.c_restaurant = restaurant1.r_no
+where menu1.m_category = 1
+order by r_no;
 
 drop sequence con_seq;
 drop table con cascade constraint purge;

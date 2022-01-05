@@ -26,7 +26,7 @@ public class allDAO {
 		// page : 현재 페이지 번호
 		request.setAttribute("curPageNo", page);
 
-		int cnt = 20;	// 한 페이지당 보여줄 개수
+		int cnt = 18;	// 한 페이지당 보여줄 개수
 		// size = 배열 length
 		int total = rests.size();	// 전체 데이터 개수
 		
@@ -117,6 +117,42 @@ public class allDAO {
 			DBManager.close(con, pstmt, rs);
 		}
 			
+		
+	}
+
+	public void getTypeMenu(int what, HttpServletRequest request) {
+
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		System.out.println(what);
+		
+		String sql = "select distinct(r_name), r_no, r_place, r_img from con join menu1 on con.c_menu = menu1.m_no join restaurant1 on con.c_restaurant = restaurant1.r_no where menu1.m_category = ? order by r_name desc";
+		
+		try {	
+		
+			con = DBManager.connect();
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, what);
+			
+			rs = pstmt.executeQuery();
+			
+			rests = new ArrayList<AllRestaurant>();
+			
+			while (rs.next()) {
+				System.out.println(rs.getInt("r_no"));
+				System.out.println(rs.getString("r_name"));
+				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
+			}
+			
+			request.setAttribute("rests", rests);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(con, pstmt, rs);
+		}
 		
 	}
 	

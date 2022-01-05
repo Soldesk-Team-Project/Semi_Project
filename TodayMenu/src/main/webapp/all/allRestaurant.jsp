@@ -15,22 +15,25 @@
 					<table border="1" id="searchRestaurantInput">
 						<tr>
 							<td class="searchButtonTd">
-								<button type="button" onclick="">한식</button>
+								<a href="allRestaurantWhat?what=1">한식</a>
 							</td>
 							<td class="searchButtonTd">
-								<button type="button" onclick="">중식</button>
+								<a href="allRestaurantWhat?what=2">중식</a>
 							</td>
 							<td class="searchButtonTd">
-								<button type="button" onclick="">일식</button>
+								<a href="allRestaurantWhat?what=3">일식</a>
 							</td>
 							<td class="searchButtonTd">
-								<button type="button" onclick="">양식</button>
+								<a href="allRestaurantWhat?what=4">양식</a>
 							</td>
 							<td class="searchButtonTd">
-								<button type="button" onclick="">아시안</button>
+								<a href="allRestaurantWhat?what=5">아시안</a>
 							</td>
 							<td class="searchButtonTd">
-								<button type="button" onclick="">디저트</button>
+								<a href="allRestaurantWhat?what=6">분식</a>
+							</td>
+							<td class="searchButtonTd">
+								<a href="allRestaurantWhat?what=7">디저트</a>
 							</td>
 							<td class="searchTd">
 								<input name="search">
