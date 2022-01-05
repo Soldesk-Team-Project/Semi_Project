@@ -3,5 +3,11 @@
 #allRestaurantTable { width: 80%; margin: 30px auto; }
 #allRestaurantTable #searchRestaurantInput { width: 100%; text-align: right; }
 
+#allRestaurantTable .searchTd { width: 70%; }
+#allRestaurantTable .searchButtonTd { width: 5%; }
+#allRestaurantTable .searchButtonTd button { width: 100%; }
+
 #allRestaurantTable .allRestaurantDetail { margin: 10px 15px; width: 20%; height: 250px; display: inline-block; }
 #allRestaurantTable .allRestaurantDetail img { width: 150px; height: 150px; }
+
+ 

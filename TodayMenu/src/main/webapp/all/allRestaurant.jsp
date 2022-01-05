@@ -14,7 +14,25 @@
 				<form action="SearchRestaurantC">
 					<table border="1" id="searchRestaurantInput">
 						<tr>
-							<td>
+							<td class="searchButtonTd">
+								<button type="button" onclick="">한식</button>
+							</td>
+							<td class="searchButtonTd">
+								<button type="button" onclick="">중식</button>
+							</td>
+							<td class="searchButtonTd">
+								<button type="button" onclick="">일식</button>
+							</td>
+							<td class="searchButtonTd">
+								<button type="button" onclick="">양식</button>
+							</td>
+							<td class="searchButtonTd">
+								<button type="button" onclick="">아시안</button>
+							</td>
+							<td class="searchButtonTd">
+								<button type="button" onclick="">디저트</button>
+							</td>
+							<td class="searchTd">
 								<input name="search">
 								<button><img alt="" src="img/icon/돋보기.png" width="20px"></button>
 							</td>
@@ -26,7 +44,7 @@
 		<tr>
 			<td colspan="5">
 				<c:forEach var="i" items="${rests }">
-					<div class="allRestaurantDetail"><img src="${i.img }"><br><span>${i.name } <br> ${i.place }</span></div>
+					<div class="allRestaurantDetail"><a href="#"><img src="${i.img }"><br><span>${i.name } <br> ${i.place }</span></a></div>
 				</c:forEach> 
 			</td>
 		</tr>
