@@ -8,7 +8,7 @@
 #allRestaurantTable .searchButtonTd { width: 5%; text-align: center; }
 #allRestaurantTable .searchButtonTd a:hover { color: blue; }
 
-#allRestaurantTable .allRestaurantDetail { margin: 10px 15px; width: 12.5%; height: 250px; display: inline-block; }
+#allRestaurantTable .allRestaurantDetail { position: relative; margin: 10px 15px; width: 12.5%; height: 250px; display: inline-block; }
 #allRestaurantTable .allRestaurantDetail a:hover { color: green; }
 #allRestaurantTable .allRestaurantDetail img { width: 100%; height: 130px; }
 #allRestaurantTable .allRestaurantDetail span { display: inline-block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 100%; }

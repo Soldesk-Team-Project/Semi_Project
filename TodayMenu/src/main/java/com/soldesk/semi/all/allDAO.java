@@ -155,5 +155,38 @@ public class allDAO {
 		}
 		
 	}
+
+	public void getRestaurant(HttpServletRequest request) {
+
+		int no = Integer.parseInt(request.getParameter("no"));
+		
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String sql = "select * from restaurant1 where r_no=? order by r_name desc";
+		
+		try {	
+			con = DBManager.connect();
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, no);
+			
+			rs = pstmt.executeQuery();
+			
+			rests = new ArrayList<AllRestaurant>();
+			
+			if (rs.next()) {
+				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
+			}
+			
+			request.setAttribute("rests", rests);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(con, pstmt, rs);
+		}
+		
+	}
 	
 }
