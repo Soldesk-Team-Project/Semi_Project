@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-#allRestaurantTable { width: 75%; margin: 30px auto; }
+#allRestaurantTable { width: 80%; margin: 30px auto; }
 #allRestaurantTable #searchRestaurantInput { width: 100%; text-align: right; }
 
-#allRestaurantTable #allRestaurantImg { width: 16.666%; }
-#allRestaurantTable #allRestaurantImg img { height: 200px; width: 200px; }
-#allRestaurantTable #allRestaurantDetail { width: 16.666%; }
+#allRestaurantTable .allRestaurantDetail { margin: 10px 15px; width: 20%; height: 250px; display: inline-block; }
+#allRestaurantTable .allRestaurantDetail img { width: 150px; height: 150px; }

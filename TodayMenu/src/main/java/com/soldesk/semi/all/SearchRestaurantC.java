@@ -15,9 +15,11 @@ public class SearchRestaurantC extends HttpServlet {
 	
 		// 일부 식당 조회
 		if (!request.getParameterNames().hasMoreElements()) {
-			allDAO.getAllRestaurant(request);
+			allDAO.getAdao().getAllRestaurant(request);
+			allDAO.getAdao().paging(1, request);
 		} else {
-			allDAO.searchRestaurant(request);
+			allDAO.getAdao().searchRestaurant(request);
+			allDAO.getAdao().paging(1, request);
 		}
 		
 		AccountDAO.loginCheck(request);
