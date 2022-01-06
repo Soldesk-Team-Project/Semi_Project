@@ -3,13 +3,19 @@
 #randomMenuTable { height: 1300px; width: 60%; margin: 30px auto; }
 #randomMenuTable #randomMenuButton { height: 10%; }
 
-#randomMenuTable #randomMenuImg img { height: 30%; }
+#randomMenuTable #randomMenuImg { position: relative; width: 60%; }
+#randomMenuTable #randomMenuImg td { height: 60%; }
+#randomMenuTable #randomMenuImg td img { width: 100%; display: block; height: 100%; }
+#randomMenuTable #randomMenuImg td em { visibility: hidden; position: absolute; top: 0; left: 0; line-height: 2000%; width:100%; height: 100%; background: rgba(0, 0, 0, 0.6); color: white; font-size: 25pt; }
+#randomMenuTable #randomMenuImg:hover td em { visibility: visible; }
 
-#randomMenuTable #randomMenuDetail { height: 30%; width: 33.333%; }
+
+#randomMenuTable #randomMenuDetail { height: 30%; }
 #randomMenuTable #randomMenuDetail table { height: 100%; width: 100%; }
-#randomMenuTable #randomMenuDetail table .rmDetailLeft { width: 60%; }
-#randomMenuTable #randomMenuDetail table .rmDetailLeft img { height: 300px; width: 100%; }
+#randomMenuTable #randomMenuDetail table .rmDetailLeft .rmRestaurantImg { width: 33.333%; }
+#randomMenuTable #randomMenuDetail table .rmDetailLeft img { height: 200px; width: 100%; }
 #randomMenuTable #randomMenuDetail table .rmDetailRight { width: 40%; }
+#randomMenuTable #randomMenuDetail table .rmDetailRight img { height: 300px; }
 
 
 .page { width: 60%; height: 10%; display: flex; justify-content: center; margin: 0 auto; }
