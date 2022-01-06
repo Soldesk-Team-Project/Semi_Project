@@ -38,14 +38,13 @@
 			<td>
 				<table border="1" id="contentTitle">
 					<tr>
-						<td colspan="2"><img class="deco" src="img/icon/deco2.png"></td>
+						<td><img class="deco" src="img/icon/deco2.png"></td>
 					</tr>
 					<tr>
-						<td id="story" colspan="2">&nbsp;&nbsp; 맛집 스토리</td>
+						<td id="story">&nbsp;&nbsp; 맛집 스토리</td>
 					</tr>
 					<tr>
 						<td><img class="deco" src="img/icon/deco2.png"></td>
-						<td id="plus"><a href="ArticleController">+ 더보기</a></td>
 					</tr>
 				</table>
 			</td>
@@ -86,17 +85,16 @@
 										<table class="imageTable">
 											<tr>
 												<td class="contentsImg"><a href="AC2"><img alt="02"
-														src="img/indexImg/02.jpg"></a></td>
+														src="img/indexImg/06.jpg"></a></td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 								<tr>
-									<td class="contentsTitle"><a href="AC2">어게인 리프레쉬 리뷰</a></td>
+									<td class="contentsTitle"><a href="AC2">혼커하기 좋은 카페</a></td>
 								</tr>
 								<tr>
-									<td class="contentsDetail"><a href="AC2">건강을 담은 색다른
-											점심을 즐기고 싶다면</a></td>
+									<td class="contentsDetail"><a href="AC2">점심 식사 후 혼커하기 좋은 카페 추천</a></td>
 								</tr>
 							</table>
 						</td>
@@ -107,18 +105,18 @@
 									<td>
 										<table class="imageTable">
 											<tr>
-												<td class="contentsImg"><a href="AC3"><img alt=""
+												<td class="contentsImg"><a href="AC6"><img alt=""
 														src="img/indexImg/03.jpg"></a></td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 								<tr>
-									<td class="contentsTitle"><a href="AC3">스시, 카이센동이 먹고
+									<td class="contentsTitle"><a href="AC6">스시, 카이센동이 먹고
 											싶을 땐</a></td>
 								</tr>
 								<tr>
-									<td class="contentsDetail"><a href="AC3">바다를 담은 일식 맛집</a></td>
+									<td class="contentsDetail"><a href="AC6">바다를 담은 일식 맛집</a></td>
 								</tr>
 							</table>
 						</td>
@@ -131,18 +129,18 @@
 									<td>
 										<table class="imageTable">
 											<tr>
-												<td class="contentsImg"><a href="AC4"><img alt=""
+												<td class="contentsImg"><a href="AC5"><img alt=""
 														src="img/indexImg/04.jpg"></a></td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 								<tr>
-									<td class="contentsTitle"><a href="AC4">직장인 웨이팅 종로 맛집
+									<td class="contentsTitle"><a href="AC5">직장인 웨이팅 종로 맛집
 											'미도인'</a></td>
 								</tr>
 								<tr>
-									<td class="contentsDetail"><a href="AC3">가정식 스테이크 전문점
+									<td class="contentsDetail"><a href="AC5">가정식 스테이크 전문점
 											미도인을 방문하다</a></td>
 								</tr>
 							</table>
@@ -154,18 +152,18 @@
 									<td>
 										<table class="imageTable">
 											<tr>
-												<td class="contentsImg"><a href="AC5"><img alt=""
-														src="img/indexImg/05.jpg"></a></td>
+												<td class="contentsImg"><a href="AC4">
+												<img alt="" src="img/indexImg/05.jpg"></a></td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 								<tr>
-									<td class="contentsTitle"><a href="AC5">에디터의 종각역 점심 메뉴
+									<td class="contentsTitle"><a href="AC4">에디터의 종각역 점심 메뉴
 											기록</a></td>
 								</tr>
 								<tr>
-									<td class="contentsDetail"><a href="AC5">에디터의 리얼한 한 달
+									<td class="contentsDetail"><a href="AC4">에디터의 리얼한 한 달
 											간의 종각역 점심 메뉴 전격 공개</a></td>
 								</tr>
 							</table>
@@ -177,18 +175,17 @@
 									<td>
 										<table class="imageTable">
 											<tr>
-												<td class="contentsImg"><a href="AC6"><img alt=""
-														src="img/indexImg/06.jpg"></a></td>
+												<td class="contentsImg"><a href="AC3"><img alt=""
+														src="img/indexImg/02.jpg"></a></td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 								<tr>
-									<td class="contentsTitle"><a href="AC6">혼커하기 좋은 카페</a></td>
+									<td class="contentsTitle"><a href="AC3">어게인 리프레쉬 리뷰</a></td>
 								</tr>
 								<tr>
-									<td class="contentsDetail"><a href="AC6">점심식사 후 혼커하기
-											좋은 카페 추천</a></td>
+									<td class="contentsDetail"><a href="AC">건강을 담은 색다른 점심을 즐기고 싶다면</a></td>
 								</tr>
 							</table>
 						</td>
