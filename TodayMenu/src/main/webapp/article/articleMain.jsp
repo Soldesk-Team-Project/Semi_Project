@@ -23,6 +23,7 @@
 					<tr>
 						<td><img class="deco" src="img/icon/deco.png"></td>
 					</tr>
+
 				</table>
 			</td>
 		</tr>
@@ -32,6 +33,7 @@
 				<table border="1" id="article">
 					<!-- //content1 -->
 					<tr>
+
 						<td>
 							<table border="1" id="article1">
 								<tr>
@@ -95,6 +97,7 @@
 								</tr>
 							</table>
 				</table> <!-- //content -->
+
 			</td>
 		</tr>
 	</table>

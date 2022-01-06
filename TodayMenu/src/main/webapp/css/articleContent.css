@@ -40,7 +40,7 @@ body {
 #articleMainTitle #articleMainTitleName {
 	text-align: center;
 	font-size: 30pt;
-	color: b;
+	color: black;
 	vertical-align: bottom;
 	font-family: 'MaruburiBold';
 	margin-left: 10px;
@@ -53,13 +53,46 @@ body {
 	font-family: 'Maruburi';
 }
 
-#articleContent{height:100%;}
-
-#articleContent #articleContents #articleContents1 {
-	height: 100%; 
-	text-align : center;
+.articleContent .restaurantTitle {
+	color: #730505; 
+	font-family : 'MaruburiBold';
+	font-size: 25pt;
+	text-align: center;
+	font-style: bold;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'MaruburiBold';
+}
+
+.image img {
+	width: 50%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.infoTable {
 	font-family: 'Maruburi';
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.infoLeft {
+	color: #730505;
+	font-family: 'MaruburiBold';
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.blogTable {
+	font-family: 'Maruburi';
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 14pt;
 }
