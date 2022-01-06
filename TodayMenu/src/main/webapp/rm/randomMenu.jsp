@@ -25,7 +25,7 @@
 			</tr>
 			<tr id="randomMenuDetail">
 				<td>
-					<table border="1">
+					<table border="1" id="randomMenuDetail">
 						<tr>
 							<td class="rmDetailLeft">식당 추천</td>
 							<td class="rmDetailRight">디저트</td>
