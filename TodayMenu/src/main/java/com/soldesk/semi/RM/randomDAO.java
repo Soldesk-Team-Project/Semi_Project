@@ -156,7 +156,7 @@ public class randomDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		
-		String sql = "select m_name, r_name, r_place, r_img from con join menu1 on con.c_menu = menu1.m_no join restaurant1 on con.c_restaurant = RESTAURANT1.r_no where menu1.m_no = ?";
+		String sql = "select m_name, r_no, r_name, r_place, r_img from con join menu1 on con.c_menu = menu1.m_no join restaurant1 on con.c_restaurant = RESTAURANT1.r_no where menu1.m_no = ?";
 		String rNo = (String)request.getAttribute("randomValue");
 		
 		try {
