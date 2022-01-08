@@ -171,7 +171,7 @@ public class randomDAO {
 			ArrayList<Restaurant> r = new ArrayList<Restaurant>();
 			
 			while (rs.next()) {
-				r.add(new Restaurant(rs.getString("m_name"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
+				r.add(new Restaurant(rs.getString("m_name"), rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
 			}
 			
 			Collections.shuffle(r);

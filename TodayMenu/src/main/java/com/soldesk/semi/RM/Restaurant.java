@@ -3,18 +3,28 @@ package com.soldesk.semi.RM;
 public class Restaurant {
 
 	private String m_name;
+	private int no; 
 	private String name;
 	private String place;
 	private String img;
 	
 	public Restaurant() {}
 
-	public Restaurant(String m_name, String name, String place, String img) {
+	public Restaurant(String m_name, int no, String name, String place, String img) {
 		super();
 		this.m_name = m_name;
+		this.no = no;
 		this.name = name;
 		this.place = place;
 		this.img = img;
+	}
+	
+	public int getNo() {
+		return no;
+	}
+
+	public void setNo(int no) {
+		this.no = no;
 	}
 
 	public String getM_name() {

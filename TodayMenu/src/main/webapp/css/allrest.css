@@ -13,6 +13,11 @@
 #allRestaurantTable .allRestaurantDetail img { width: 100%; height: 130px; }
 #allRestaurantTable .allRestaurantDetail span { display: inline-block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 100%; }
 
-
-
- 
+#restaurantInfoTable { width: 70%; margin: 15px auto; }
+#restaurantInfoTable #map { width: 60%; }
+#restaurantInfoTable #map img { width: 100%; height: 100%; }
+#restaurantInfoTable #detail { width: 40%; }
+#restaurantInfoTable #detail table { width: 100%; }
+#restaurantInfoTable #detail table #map img { width: 100%; height: 70%; }
+#restaurantInfoTable #detail table #restaurantInfo { width: 70%; }
+#restaurantInfoTable #detail table #back { width: 30%; }

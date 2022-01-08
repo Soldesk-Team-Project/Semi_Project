@@ -33,20 +33,20 @@
 						<tr>
 							<td class="rmDetailLeft">
 								<table border="1">
-									<tr style="height: 70%;">
-										<c:forEach end="2" var="i" items="${rest }">
-											<td class="rmRestaurantImg">
-												<img alt="추천결과" src="${i.img }">
-											</td>
-										</c:forEach>
-									</tr>
-									<tr style="height: 30%;">
-										<c:forEach end="2" var="i" items="${rest }">
-											<td class="rmRestaurantDetail">
-												<a href="#">[${i.name }]</a>
-											</td>
-										</c:forEach>
-									</tr>
+										<tr style="height: 70%;">
+											<c:forEach end="2" var="i" items="${rest }">
+												<td class="rmRestaurantImg">
+													<img alt="추천결과" src="${i.img }">
+												</td>
+											</c:forEach>
+										</tr>
+										<tr style="height: 30%;">
+											<c:forEach end="2" var="i" items="${rest }">
+												<td class="rmRestaurantDetail">
+													<a href="RestaurantInfo?no=${i.no }">[${i.name }]</a>
+												</td>
+											</c:forEach>
+										</tr>
 								</table>
 							</td>
 							<td class="rmDetailRight">

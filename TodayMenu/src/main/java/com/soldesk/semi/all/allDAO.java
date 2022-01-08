@@ -164,7 +164,7 @@ public class allDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		
-		String sql = "select * from restaurant1 where r_no=? order by r_name desc";
+		String sql = "select * from restaurant1 where r_no=?";
 		
 		try {	
 			con = DBManager.connect();
@@ -173,10 +173,13 @@ public class allDAO {
 			
 			rs = pstmt.executeQuery();
 			
-			rests = new ArrayList<AllRestaurant>();
+			AllRestaurant rests = new AllRestaurant();
 			
 			if (rs.next()) {
-				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
+				rests.setNo(rs.getInt("r_no"));
+				rests.setName(rs.getString("r_name"));
+				rests.setPlace(rs.getString("r_place"));
+				rests.setImg(rs.getString("r_img"));
 			}
 			
 			request.setAttribute("rests", rests);
