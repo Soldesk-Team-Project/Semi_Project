@@ -36,9 +36,7 @@ a:hover { color: gray; }
 #nav .navMenus { height: 65px; margin: 0 5%; font-size: 20pt; }
 #nav .navMenus a { color: black; font-family: 'MaruburiBold'; }
 #nav .navMenus a { font-family: 'MaruburiBold'; }
-.navMenus {position: relative;
-text-decoration: none;
- }
+.navMenus {position: relative; text-decoration: none; }
 .navMenus::before{
   content: "";
   position: absolute;
