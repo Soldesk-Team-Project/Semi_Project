@@ -15,7 +15,7 @@ public class DBManager {
 	public static Connection connect() throws SQLException {
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		// 실제 사용하는 곳에선 con 에서 받아 쓸거기 떄문에 return 을 해준다.
-		return DriverManager.getConnection(url, "c##ojs", "ojs");
+		return DriverManager.getConnection(url, "jh", "jh");
 	}
 
 	// 닫을게 많은데 한번에 닫기

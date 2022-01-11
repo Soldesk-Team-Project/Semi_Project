@@ -31,6 +31,7 @@ var chart = new google.visualization.PieChart(document.getElementById('piechart_
 	chart.draw(data, options);
 }
 </script>
+
 <title>Insert title here</title>
 </head>
 <body>
@@ -76,7 +77,8 @@ var chart = new google.visualization.PieChart(document.getElementById('piechart_
 									<tr>
 										<td colspan="2" id="editAccount" >
 											<button class="editAccountButton" type="button" onclick="location.href='UpdateAccountC'">수정하기</button>
-											<button class="editAccountButton" type="button" onclick="deleteAccount(${sessionScope.accountInfo.id})">탈퇴하기</button>
+											<button class="editAccountButton" type="button" onclick="deleteAccount('${sessionScope.accountInfo.id}')">탈퇴하기</button>
+		
 										</td>
 									</tr>
 								</table>

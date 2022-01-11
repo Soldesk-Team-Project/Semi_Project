@@ -15,36 +15,6 @@ import com.soldesk.semi.hc.DBManager;
 
 public class AccountDAO {
 
-	public static void deleteAccount(HttpServletRequest request) {
-
-		Connection con = null;
-		PreparedStatement pstmt = null;
-
-		String sql = "delete account1 where a_id=?";
-
-		try {
-
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(sql);
-
-			String id = (String) request.getSession().getAttribute("id");
-			pstmt.setString(1, id);
-
-			if (pstmt.executeUpdate() == 1) {
-				System.out.println("탈퇴 성공!");
-				request.setAttribute("r", "탈퇴 성공!");
-			} else {
-				System.out.println("탈퇴 실패!");
-				request.setAttribute("r", "탈퇴 실패!");
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-			request.setAttribute("r", "DB 서버 오류");
-		} finally {
-			DBManager.close(con, pstmt, null);
-		}
-	}
-
 	public static void updateSpend(HttpServletRequest request) {
 
 		Connection con = null;
@@ -132,7 +102,7 @@ public class AccountDAO {
 
 		String userId = request.getParameter("id");
 		String userPw = request.getParameter("pw");
-		DateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd");
+		
 
 		String idd = (String) request.getAttribute("idd");
 		String pww = (String) request.getAttribute("pww");
@@ -252,7 +222,9 @@ public class AccountDAO {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;
-		String sql = "delet ACCOUNT1 where a_id=?";
+		System.out.println(request.getParameter("id"));
+		String sql = "delete account1 where a_id=?";
+		System.out.println(sql);
 
 		try {
 			con = DBManager.connect();
@@ -461,7 +433,8 @@ public class AccountDAO {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		String sql = "select * from ACCOUNT1 where a_name=? and a_birth=? and a_qestion=? and a_answer=?";
-
+System.out.println(sql);
+System.out.println("테스트");
 		ResultSet rs = null;
 		try {
 			request.setCharacterEncoding("UTF-8");
@@ -505,6 +478,7 @@ public class AccountDAO {
 				System.out.println("찾기 성공");
 			} else {
 				System.out.println("찾기 실패");
+				request.setAttribute("test", "조회 실패");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -558,6 +532,7 @@ public class AccountDAO {
 				System.out.println("찾기 성공");
 			} else {
 				System.out.println("찾기 실패");
+				request.setAttribute("test", "조회 실패");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -566,4 +541,43 @@ public class AccountDAO {
 		}
 
 	}
+	
+	public static void duplicateIdCheck(HttpServletRequest request)
+    {
+		//미완성
+        Connection con = null;
+        PreparedStatement pstmt = null;
+      ResultSet rs = null;
+        String sql = "SELECT ID FROM account1 WHERE ID=?";
+  
+        
+        try {
+             
+        	request.setCharacterEncoding("UTF-8");
+			con = DBManager.connect();
+			pstmt = con.prepareStatement(sql);
+
+			String id = request.getParameter("id");
+	
+
+			System.out.println(id);
+
+			pstmt.setString(1, id);
+			
+           rs = pstmt.executeQuery();
+            
+            if(rs.next()) { 
+ //           	request.setAttribute("find", find);
+            	
+          }
+ 
+            
+        } catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(con, pstmt, rs);
+		}
+        
+    } 
+
 }
