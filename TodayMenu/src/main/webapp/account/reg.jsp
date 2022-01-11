@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
 </head>
 <body>
 	<form action="RegAccountC" onsubmit="return validCheck2()" name="myForm" method="post">
@@ -48,10 +49,8 @@
 
 			<tr>
 				<td class="regTd1">휴대폰 번호</td>
-
 				<td class="regTd2"><input name="phone"  id="phone" placeholder="숫자 11자리">
 				</td>
-
 			</tr>
 			<tr>
 				<td class="regTd1">질문</td>
@@ -68,7 +67,6 @@
 				<input name="answer" id="answer">
 			</td>
 			</tr>
-
 			<tr>
 				<td colspan="2"><button id="regBtn">가입!</button></td>
 			</tr>

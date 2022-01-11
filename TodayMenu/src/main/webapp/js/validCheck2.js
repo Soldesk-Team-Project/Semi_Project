@@ -4,7 +4,7 @@ function validCheck() { // 체크하는중
 	let pw2 = document.getElementById("pw2").value;
 	let name = document.getElementById("name").value;
 	let phone = document.getElementById("phone").value;
-		let answer = document.getElementById("phone").value;
+	let answer = document.getElementById("phone").value;
         alert(id + pw + pw2 + name + phone + answer)
         return false;
 
@@ -24,6 +24,7 @@ function validCheck2() {
             return false;
         } else if (!checkAnswer(answer)) {
             return false;
+        } 
         return true;
 
     }
@@ -51,7 +52,27 @@ function checkId(id) {
         }
         return true; //확인이 완료되었을 때
     }
+function idCheck(){
+	let id = document.getElementById("id").value;
+//되나잘몰겟
+ alert("뜨나" + id);
+ 		// if(idDuplication.value != "idCheck")
+       //         alert("아이디 중복체크를 해주세요.");
 
+location.href='CheckAccountC?id=' + id;
+                return false;
+            }
+
+function openIdChk(){
+        
+            window.name = "parentForm";
+            window.open("member/IdCheckForm.jsp",
+                    "chkForm", "width=500, height=300, resizable = no, scrollbars = no");    
+        }
+
+ function inputIdChk(){
+            document.userInfo.idDuplication.value ="idUncheck";
+        }
 function checkPw(id, pw, pw2) {
         //비밀번호가 입력되었는지 확인하기
         if (!checkExistData(pw.value, "비밀번호를"))
@@ -115,5 +136,19 @@ function checkPhone(phone) {
             return false;
         }
         return true; //확인이 완료되었을 때
-		}
+}
+function checkAnswer(answer) {
+	         
+        if (!checkExistData(answer.value, "답변을"))
+            return false;
+ 
+        let answerRegExp = /^[가-힣]{1,10}$/; 
+        if (!answerRegExp.test(answer.value)) {
+            alert("답변은 한글 10자 미만으로 입력해야합니다! 공백X");
+           answer.value = "";
+          answer.focus();
+            return false;
+
+        }
+        return true; //확인이 완료되었을 때
 }

@@ -93,5 +93,9 @@ insert into RESTAURANT1 values(restaurant1_seq.nextval, '반쥴', '서울 종로구 삼�
 
 select * from restaurant1;
 
+delete RESTAURANT1 where r_no = 81;
+
+select * from restaurant1 where r_name like '%개미%';
+
 drop sequence restaurant1_seq;
 drop table restaurant1 cascade constraint purge;

@@ -7,99 +7,99 @@ create table menu1 (
 
 create sequence menu1_seq start with 1 increment by 1; 
 
-insert into menu1 values(menu1_seq.nextval, 1, '¼øµÎºÎÂî°³', 'img/menu/¼øµÎºÎÂî°³.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, 'µÇºñÁöÂî°³', 'img/menu/µÇºñÁöÂî°³.jpg');
-insert into menu1 values(menu1_seq.nextval, 1, '°¥ºñÅÁ', 'img/menu/°¥ºñÅÁ.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, '°íÃßÀåºÒ°í±â¹é¹İ', 'img/menu/°íÃßÀåºÒ°í±â¹é¹İ.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, '°õÅÁ', 'img/menu/°õÅÁ.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, '°ö°³Àå', 'img/menu/°ö°³Àå.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, '±èÄ¡ººÀ½¹ä', 'img/menu/±èÄ¡ººÀ½¹ä.jpg');
-insert into menu1 values(menu1_seq.nextval, 1, '±èÄ¡Àü', 'img/menu/±èÄ¡Àü.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, '³«ÁöººÀ½', 'img/menu/³«ÁöººÀ½.jpg');
-insert into menu1 values(menu1_seq.nextval, 1, '³Ã¸é', 'img/menu/³Ã¸é.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, 'µ¿Ä¡¹Ì±¹¼ö', 'img/menu/µ¿Ä¡¹Ì±¹¼ö.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, 'µÅÁö±¹¹ä', 'img/menu/µÅÁö±¹¹ä.jpg');
-insert into menu1 values(menu1_seq.nextval, 1, 'µÅÁö°í±â', 'img/menu/µÅÁö°í±â.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, 'µÎºÎ±èÄ¡', 'img/menu/µÎºÎ±èÄ¡.jpg');
-insert into menu1 values(menu1_seq.nextval, 1, '¸¸µÎÀü°ñ', 'img/menu/¸¸µÎÀü°ñ.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, '¹°È¸', 'img/menu/¹°È¸.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, 'ºñºö¹ä', 'img/menu/ºñºö¹ä.jpg');
-insert into menu1 values(menu1_seq.nextval, 1, 'ººÀ½¹ä', 'img/menu/ººÀ½¹ä.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, 'ºÎ´ëÂî°³', 'img/menu/ºÎ´ëÂî°³.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, '»ï°èÅÁ', 'img/menu/»ï°èÅÁ.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, '¼Ò°í±â', 'img/menu/¼Ò°í±â.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, '¼öÀ°Á¤½Ä', 'img/menu/¼öÀ°Á¤½Ä.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, '¿Â¸é', 'img/menu/¿Â¸é.jpg');
-insert into menu1 values(menu1_seq.nextval, 1, '¿ìÀ°¸é', 'img/menu/¿ìÀ°¸é.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, 'Àå±¹¹ä', 'img/menu/Àå±¹¹ä.jpg');
-insert into menu1 values(menu1_seq.nextval, 1, 'Âò´ß', 'img/menu/Âò´ß.jpg');
-insert into menu1 values(menu1_seq.nextval, 1, 'È¸', 'img/menu/È¸.jpg');
-insert into menu1 values(menu1_seq.nextval, 1, 'È¸µ¤¹ä', 'img/menu/È¸µ¤¹ä.jfif');
-insert into menu1 values(menu1_seq.nextval, 1, '³«°ö»õ', 'img/menu/³«°ö»õ.jfif');
--- ÇÑ½Ä µ¥ÀÌÅÍ
+insert into menu1 values(menu1_seq.nextval, 1, 'ìˆœë‘ë¶€ì°Œê°œ', 'img/menu/ìˆœë‘ë¶€ì°Œê°œ.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ë˜ë¹„ì§€ì°Œê°œ', 'img/menu/ë˜ë¹„ì§€ì°Œê°œ.jpg');
+insert into menu1 values(menu1_seq.nextval, 1, 'ê°ˆë¹„íƒ•', 'img/menu/ê°ˆë¹„íƒ•.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ê³ ì¶”ì¥ë¶ˆê³ ê¸°ë°±ë°˜', 'img/menu/ê³ ì¶”ì¥ë¶ˆê³ ê¸°ë°±ë°˜.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ê³°íƒ•', 'img/menu/ê³°íƒ•.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ê³±ê°œì¥', 'img/menu/ê³±ê°œì¥.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ê¹€ì¹˜ë³¶ìŒë°¥', 'img/menu/ê¹€ì¹˜ë³¶ìŒë°¥.jpg');
+insert into menu1 values(menu1_seq.nextval, 1, 'ê¹€ì¹˜ì „', 'img/menu/ê¹€ì¹˜ì „.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ë‚™ì§€ë³¶ìŒ', 'img/menu/ë‚™ì§€ë³¶ìŒ.jpg');
+insert into menu1 values(menu1_seq.nextval, 1, 'ëƒ‰ë©´', 'img/menu/ëƒ‰ë©´.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ë™ì¹˜ë¯¸êµ­ìˆ˜', 'img/menu/ë™ì¹˜ë¯¸êµ­ìˆ˜.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ë¼ì§€êµ­ë°¥', 'img/menu/ë¼ì§€êµ­ë°¥.jpg');
+insert into menu1 values(menu1_seq.nextval, 1, 'ë¼ì§€ê³ ê¸°', 'img/menu/ë¼ì§€ê³ ê¸°.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ë‘ë¶€ê¹€ì¹˜', 'img/menu/ë‘ë¶€ê¹€ì¹˜.jpg');
+insert into menu1 values(menu1_seq.nextval, 1, 'ë§Œë‘ì „ê³¨', 'img/menu/ë§Œë‘ì „ê³¨.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ë¬¼íšŒ', 'img/menu/ë¬¼íšŒ.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ë¹„ë¹”ë°¥', 'img/menu/ë¹„ë¹”ë°¥.jpg');
+insert into menu1 values(menu1_seq.nextval, 1, 'ë³¶ìŒë°¥', 'img/menu/ë³¶ìŒë°¥.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ë¶€ëŒ€ì°Œê°œ', 'img/menu/ë¶€ëŒ€ì°Œê°œ.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ì‚¼ê³„íƒ•', 'img/menu/ì‚¼ê³„íƒ•.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ì†Œê³ ê¸°', 'img/menu/ì†Œê³ ê¸°.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ìˆ˜ìœ¡ì •ì‹', 'img/menu/ìˆ˜ìœ¡ì •ì‹.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ì˜¨ë©´', 'img/menu/ì˜¨ë©´.jpg');
+insert into menu1 values(menu1_seq.nextval, 1, 'ìš°ìœ¡ë©´', 'img/menu/ìš°ìœ¡ë©´.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ì¥êµ­ë°¥', 'img/menu/ì¥êµ­ë°¥.jpg');
+insert into menu1 values(menu1_seq.nextval, 1, 'ì°œë‹­', 'img/menu/ì°œë‹­.jpg');
+insert into menu1 values(menu1_seq.nextval, 1, 'íšŒ', 'img/menu/íšŒ.jpg');
+insert into menu1 values(menu1_seq.nextval, 1, 'íšŒë®ë°¥', 'img/menu/íšŒë®ë°¥.jfif');
+insert into menu1 values(menu1_seq.nextval, 1, 'ë‚™ê³±ìƒˆ', 'img/menu/ë‚™ê³±ìƒˆ.jfif');
+-- í•œì‹ ë°ì´í„°
 
-insert into menu1 values(menu1_seq.nextval, 2, 'ººÀ½¹ä', 'img/menu/ººÀ½¹ä.jfif');
-insert into menu1 values(menu1_seq.nextval, 2, '¸¶¶óÅÁ', 'img/menu/¸¶¶óÅÁ.jfif');
-insert into menu1 values(menu1_seq.nextval, 2, '¸¶ÆÄµÎºÎ', 'img/menu/¸¶ÆÄµÎºÎ.jfif');
-insert into menu1 values(menu1_seq.nextval, 2, 'Â¥Àå¸é', 'img/menu/Â¥Àå¸é.jpg');
-insert into menu1 values(menu1_seq.nextval, 2, 'Â«»Í', 'img/menu/Â«»Í.jpg');
--- Áß½Ä µ¥ÀÌÅÍ
+insert into menu1 values(menu1_seq.nextval, 2, 'ë³¶ìŒë°¥', 'img/menu/ë³¶ìŒë°¥.jfif');
+insert into menu1 values(menu1_seq.nextval, 2, 'ë§ˆë¼íƒ•', 'img/menu/ë§ˆë¼íƒ•.jfif');
+insert into menu1 values(menu1_seq.nextval, 2, 'ë§ˆíŒŒë‘ë¶€', 'img/menu/ë§ˆíŒŒë‘ë¶€.jfif');
+insert into menu1 values(menu1_seq.nextval, 2, 'ì§œì¥ë©´', 'img/menu/ì§œì¥ë©´.jpg');
+insert into menu1 values(menu1_seq.nextval, 2, 'ì§¬ë½•', 'img/menu/ì§¬ë½•.jpg');
+-- ì¤‘ì‹ ë°ì´í„°
 
-insert into menu1 values(menu1_seq.nextval, 3, '¶ó¸à', 'img/menu/¶ó¸à.jfif');
-insert into menu1 values(menu1_seq.nextval, 3, '»çÄÉµ¿', 'img/menu/»çÄÉµ¿.jfif');
-insert into menu1 values(menu1_seq.nextval, 3, '¿¡ºñÅÙµ¿', 'img/menu/¿¡ºñÅÙµ¿.jfif');
-insert into menu1 values(menu1_seq.nextval, 3, '¿ì³ª±âµ¿', 'img/menu/¿ì³ª±âµ¿.jpg');
-insert into menu1 values(menu1_seq.nextval, 3, 'ÀÏ½Äµ·°¡½º', 'img/menu/ÀÏ½Äµ·°¡½º.jfif');
-insert into menu1 values(menu1_seq.nextval, 3, 'Â÷½´µ¿', 'img/menu/Â÷½´µ¿.jfif');
-insert into menu1 values(menu1_seq.nextval, 3, 'ÃÊ¹ä', 'img/menu/ÃÊ¹ä.jfif');
-insert into menu1 values(menu1_seq.nextval, 3, 'Ä«Ã÷µ¿', 'img/menu/Ä«Ã÷µ¿.jfif');
-insert into menu1 values(menu1_seq.nextval, 3, '¸Ş¹Ğ¼Ò¹Ù', 'img/menu/¸Ş¹Ğ¼Ò¹Ù.jpg');
--- ÀÏ½Ä µ¥ÀÌÅÍ
+insert into menu1 values(menu1_seq.nextval, 3, 'ë¼ë©˜', 'img/menu/ë¼ë©˜.jfif');
+insert into menu1 values(menu1_seq.nextval, 3, 'ì‚¬ì¼€ë™', 'img/menu/ì‚¬ì¼€ë™.jfif');
+insert into menu1 values(menu1_seq.nextval, 3, 'ì—ë¹„í…ë™', 'img/menu/ì—ë¹„í…ë™.jfif');
+insert into menu1 values(menu1_seq.nextval, 3, 'ìš°ë‚˜ê¸°ë™', 'img/menu/ìš°ë‚˜ê¸°ë™.jpg');
+insert into menu1 values(menu1_seq.nextval, 3, 'ì¼ì‹ëˆê°€ìŠ¤', 'img/menu/ì¼ì‹ëˆê°€ìŠ¤.jfif');
+insert into menu1 values(menu1_seq.nextval, 3, 'ì°¨ìŠˆë™', 'img/menu/ì°¨ìŠˆë™.jfif');
+insert into menu1 values(menu1_seq.nextval, 3, 'ì´ˆë°¥', 'img/menu/ì´ˆë°¥.jfif');
+insert into menu1 values(menu1_seq.nextval, 3, 'ì¹´ì¸ ë™', 'img/menu/ì¹´ì¸ ë™.jfif');
+insert into menu1 values(menu1_seq.nextval, 3, 'ë©”ë°€ì†Œë°”', 'img/menu/ë©”ë°€ì†Œë°”.jpg');
+-- ì¼ì‹ ë°ì´í„°
 
-insert into menu1 values(menu1_seq.nextval, 4, '»ø·¯µå', 'img/menu/»ø·¯µå.jpg');
-insert into menu1 values(menu1_seq.nextval, 4, '½ºÆÄ°ÔÆ¼', 'img/menu/½ºÆÄ°ÔÆ¼.jfif');
-insert into menu1 values(menu1_seq.nextval, 4, 'ÆÄ½ºÅ¸', 'img/menu/ÆÄ½ºÅ¸.jpg');
-insert into menu1 values(menu1_seq.nextval, 4, 'ÇÇÀÚ', 'img/menu/ÇÇÀÚ.jpg');
-insert into menu1 values(menu1_seq.nextval, 4, 'ÇÔ¹Ú½ºÅ×ÀÌÅ©', 'img/menu/ÇÔ¹Ú½ºÅ×ÀÌÅ©.jpg');
-insert into menu1 values(menu1_seq.nextval, 4, 'ÇÜ¹ö°Å', 'img/menu/ÇÜ¹ö°Å.jfif');
--- ¾ç½Ä µ¥ÀÌÅÍ
+insert into menu1 values(menu1_seq.nextval, 4, 'ìƒëŸ¬ë“œ', 'img/menu/ìƒëŸ¬ë“œ.jpg');
+insert into menu1 values(menu1_seq.nextval, 4, 'ìŠ¤íŒŒê²Œí‹°', 'img/menu/ìŠ¤íŒŒê²Œí‹°.jfif');
+insert into menu1 values(menu1_seq.nextval, 4, 'íŒŒìŠ¤íƒ€', 'img/menu/íŒŒìŠ¤íƒ€.jpg');
+insert into menu1 values(menu1_seq.nextval, 4, 'í”¼ì', 'img/menu/í”¼ì.jpg');
+insert into menu1 values(menu1_seq.nextval, 4, 'í•¨ë°•ìŠ¤í…Œì´í¬', 'img/menu/í•¨ë°•ìŠ¤í…Œì´í¬.jpg');
+insert into menu1 values(menu1_seq.nextval, 4, 'í–„ë²„ê±°', 'img/menu/í–„ë²„ê±°.jfif');
+-- ì–‘ì‹ ë°ì´í„°
 
-insert into menu1 values(menu1_seq.nextval, 5, '±×¸°Ä¿¸®', 'img/menu/±×¸°Ä¿¸®.jfif');
-insert into menu1 values(menu1_seq.nextval, 5, '½Ò±¹¼ö', 'img/menu/½Ò±¹¼ö.jpg');
-insert into menu1 values(menu1_seq.nextval, 5, '½ô´ã', 'img/menu/½ô´ã.jfif');
-insert into menu1 values(menu1_seq.nextval, 5, 'Ä«¿ÀÆÌ', 'img/menu/Ä«¿ÀÆÌ.jpg');
-insert into menu1 values(menu1_seq.nextval, 5, 'ÆÌÅ¸ÀÌ', 'img/menu/ÆÌÅ¸ÀÌ.jfif');
-insert into menu1 values(menu1_seq.nextval, 5, 'ÇªÆÌÆşÄ¿¸®', 'img/menu/ÇªÆÌÆşÄ¿¸®.jfif');
-insert into menu1 values(menu1_seq.nextval, 5, 'Œc¾ç²á', 'img/menu/Œc¾ç²á.jfif');
--- ¾Æ½Ã¾È µ¥ÀÌÅÍ
+insert into menu1 values(menu1_seq.nextval, 5, 'ê·¸ë¦°ì»¤ë¦¬', 'img/menu/ê·¸ë¦°ì»¤ë¦¬.jfif');
+insert into menu1 values(menu1_seq.nextval, 5, 'ìŒ€êµ­ìˆ˜', 'img/menu/ìŒ€êµ­ìˆ˜.jpg');
+insert into menu1 values(menu1_seq.nextval, 5, 'ì¨ë‹´', 'img/menu/ì¨ë‹´.jfif');
+insert into menu1 values(menu1_seq.nextval, 5, 'ì¹´ì˜¤íŒŸ', 'img/menu/ì¹´ì˜¤íŒŸ.jpg');
+insert into menu1 values(menu1_seq.nextval, 5, 'íŒŸíƒ€ì´', 'img/menu/íŒŸíƒ€ì´.jfif');
+insert into menu1 values(menu1_seq.nextval, 5, 'í‘¸íŒŸíì»¤ë¦¬', 'img/menu/í‘¸íŒŸíì»¤ë¦¬.jfif');
+insert into menu1 values(menu1_seq.nextval, 5, 'ÂŒcì–‘ê¿', 'img/menu/ÂŒcì–‘ê¿.jfif');
+-- ì•„ì‹œì•ˆ ë°ì´í„°
 
-insert into menu1 values(menu1_seq.nextval, 6, '¶±ººÀÌ', 'img/menu/¶±ººÀÌ.jpg');
-insert into menu1 values(menu1_seq.nextval, 6, '¶ó¸à', 'img/menu/¶ó¸à.jfif');
-insert into menu1 values(menu1_seq.nextval, 6, '¹İ¹İÄ¡Å²', 'img/menu/¹İ¹İÄ¡Å².png');
-insert into menu1 values(menu1_seq.nextval, 6, '½ºÆÄ°ÔÆ¼', 'img/menu/½ºÆÄ°ÔÆ¼.jfif');
-insert into menu1 values(menu1_seq.nextval, 6, 'Å¸ÄÚ', 'img/menu/Å¸ÄÚ.jfif');
-insert into menu1 values(menu1_seq.nextval, 6, '»÷µåÀ§Ä¡', 'img/menu/»÷µåÀ§Ä¡.jfif');
-insert into menu1 values(menu1_seq.nextval, 6, 'Åä½ºÆ®', 'img/menu/Åä½ºÆ®.jpg');
--- ºĞ½Ä µ¥ÀÌÅÍ
+insert into menu1 values(menu1_seq.nextval, 6, 'ë–¡ë³¶ì´', 'img/menu/ë–¡ë³¶ì´.jpg');
+insert into menu1 values(menu1_seq.nextval, 6, 'ë¼ë©˜', 'img/menu/ë¼ë©˜.jfif');
+insert into menu1 values(menu1_seq.nextval, 6, 'ë°˜ë°˜ì¹˜í‚¨', 'img/menu/ë°˜ë°˜ì¹˜í‚¨.png');
+insert into menu1 values(menu1_seq.nextval, 6, 'ìŠ¤íŒŒê²Œí‹°', 'img/menu/ìŠ¤íŒŒê²Œí‹°.jfif');
+insert into menu1 values(menu1_seq.nextval, 6, 'íƒ€ì½”', 'img/menu/íƒ€ì½”.jfif');
+insert into menu1 values(menu1_seq.nextval, 6, 'ìƒŒë“œìœ„ì¹˜', 'img/menu/ìƒŒë“œìœ„ì¹˜.jfif');
+insert into menu1 values(menu1_seq.nextval, 6, 'í† ìŠ¤íŠ¸', 'img/menu/í† ìŠ¤íŠ¸.jpg');
+-- ë¶„ì‹ ë°ì´í„°
 
-insert into menu1 values(menu1_seq.nextval, 7, 'µş±â½º¹«µğ', 'img/menu/µş±â½º¹«µğ.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, '¹Ù´Ò¶ó¶ó¶¼', 'img/menu/¹Ù´Ò¶ó¶ó¶¼.jpg');
-insert into menu1 values(menu1_seq.nextval, 7, '¹Ù´Ò¶óÇÁ¶óÆä', 'img/menu/¹Ù´Ò¶óÇÁ¶óÆä.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, 'ºí·ç·¹¸ó¿¡ÀÌµå', 'img/menu/ºí·ç·¹¸ó¿¡ÀÌµå.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, '¾Æ¸Ş¸®Ä«³ë', 'img/menu/¾Æ¸Ş¸®Ä«³ë.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, '¾ÆÀÌ½ºÅ©¸²', 'img/menu/¾ÆÀÌ½ºÅ©¸².jpg');
-insert into menu1 values(menu1_seq.nextval, 7, '¿À°î¶ó¶¼', 'img/menu/¿À°î¶ó¶¼.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, '¿ÍÇÃ', 'img/menu/¿ÍÇÃ.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, 'ÃÊÄÚ¶ó¶¼', 'img/menu/ÃÊÄÚ¶ó¶¼.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, 'Ä«¶ó¸á¸¶³¢¾Æ¶Ç', 'img/menu/Ä«¶ó¸á¸¶³¢¾Æ¶Ç.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, 'Ä«Æä¶ó¶¼', 'img/menu/Ä«Æä¶ó¶¼.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, 'Ä«Æä¸ğÄ«', 'img/menu/Ä«Æä¸ğÄ«.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, 'ÆÏºù¼ö', 'img/menu/ÆÏºù¼ö.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, 'ÇÃ·¹ÀÎ¿ä°ÅÆ®½º¹«µğ', 'img/menu/ÇÃ·¹ÀÎ¿ä°ÅÆ®½º¹«µğ.jfif');
-insert into menu1 values(menu1_seq.nextval, 7, 'Èæ´ç¹ĞÅ©Æ¼', 'img/menu/Èæ´ç¹ĞÅ©Æ¼.jpg');
--- Ä¿ÇÇ & µğÀúÆ® µ¥ÀÌÅÍ
+insert into menu1 values(menu1_seq.nextval, 7, 'ë”¸ê¸°ìŠ¤ë¬´ë””', 'img/menu/ë”¸ê¸°ìŠ¤ë¬´ë””.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, 'ë°”ë‹ë¼ë¼ë–¼', 'img/menu/ë°”ë‹ë¼ë¼ë–¼.jpg');
+insert into menu1 values(menu1_seq.nextval, 7, 'ë°”ë‹ë¼í”„ë¼í˜', 'img/menu/ë°”ë‹ë¼í”„ë¼í˜.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, 'ë¸”ë£¨ë ˆëª¬ì—ì´ë“œ', 'img/menu/ë¸”ë£¨ë ˆëª¬ì—ì´ë“œ.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, 'ì•„ë©”ë¦¬ì¹´ë…¸', 'img/menu/ì•„ë©”ë¦¬ì¹´ë…¸.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, 'ì•„ì´ìŠ¤í¬ë¦¼', 'img/menu/ì•„ì´ìŠ¤í¬ë¦¼.jpg');
+insert into menu1 values(menu1_seq.nextval, 7, 'ì˜¤ê³¡ë¼ë–¼', 'img/menu/ì˜¤ê³¡ë¼ë–¼.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, 'ì™€í”Œ', 'img/menu/ì™€í”Œ.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, 'ì´ˆì½”ë¼ë–¼', 'img/menu/ì´ˆì½”ë¼ë–¼.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, 'ì¹´ë¼ë©œë§ˆë¼ì•„ë˜', 'img/menu/ì¹´ë¼ë©œë§ˆë¼ì•„ë˜.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, 'ì¹´í˜ë¼ë–¼', 'img/menu/ì¹´í˜ë¼ë–¼.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, 'ì¹´í˜ëª¨ì¹´', 'img/menu/ì¹´í˜ëª¨ì¹´.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, 'íŒ¥ë¹™ìˆ˜', 'img/menu/íŒ¥ë¹™ìˆ˜.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, 'í”Œë ˆì¸ìš”ê±°íŠ¸ìŠ¤ë¬´ë””', 'img/menu/í”Œë ˆì¸ìš”ê±°íŠ¸ìŠ¤ë¬´ë””.jfif');
+insert into menu1 values(menu1_seq.nextval, 7, 'í‘ë‹¹ë°€í¬í‹°', 'img/menu/í‘ë‹¹ë°€í¬í‹°.jpg');
+-- ì»¤í”¼ & ë””ì €íŠ¸ ë°ì´í„°
 
-insert into menu1 values(999, 999, '¹öÆ°À» ´­·¯ÁÖ¼¼¿ä', 'img/icon/°í¹ÎÇÏ´Â¾ó±¼.png');
+insert into menu1 values(999, 999, 'ë²„íŠ¼ì„ ëˆŒëŸ¬ì£¼ì„¸ìš”', 'img/icon/ê³ ë¯¼í•˜ëŠ”ì–¼êµ´.png');
 
 select * from menu1;
 
