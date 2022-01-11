@@ -6,15 +6,19 @@ public class AllRestaurant {
 	private String name;
 	private String place;
 	private String img;
+	private double lat;
+	private double lng;
 	
 	public AllRestaurant() {}
-
-	public AllRestaurant(int no, String name, String place, String img) {
+	
+	public AllRestaurant(int no, String name, String place, String img, double lat, double lng) {
 		super();
 		this.no = no;
 		this.name = name;
 		this.place = place;
 		this.img = img;
+		this.lat = lat;
+		this.lng = lng;
 	}
 
 	public int getNo() {
@@ -48,5 +52,23 @@ public class AllRestaurant {
 	public void setImg(String img) {
 		this.img = img;
 	}
+
+	public double getLat() {
+		return lat;
+	}
+
+	public void setLat(double lat) {
+		this.lat = lat;
+	}
+
+	public double getLng() {
+		return lng;
+	}
+
+	public void setLng(double lng) {
+		this.lng = lng;
+	}
+
+
 	
 }

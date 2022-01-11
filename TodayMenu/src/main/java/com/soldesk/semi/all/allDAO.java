@@ -68,7 +68,7 @@ public class allDAO {
 			rests = new ArrayList<AllRestaurant>();
 			
 			while (rs.next()) {
-				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
+				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img"), rs.getDouble("r_lat"), rs.getDouble("r_lng")));
 			
 			}
 			
@@ -106,7 +106,7 @@ public class allDAO {
 			while (rs.next()) {
 				System.out.println(rs.getInt("r_no"));
 				System.out.println(rs.getString("r_name"));
-				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
+				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img"), rs.getDouble("r_lat"), rs.getDouble("r_lng")));
 			}
 			
 			request.setAttribute("rests", rests);
@@ -143,7 +143,7 @@ public class allDAO {
 			while (rs.next()) {
 				System.out.println(rs.getInt("r_no"));
 				System.out.println(rs.getString("r_name"));
-				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
+				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img"), rs.getDouble("r_lat"), rs.getDouble("r_lng")));
 			}
 			
 			request.setAttribute("rests", rests);
@@ -180,6 +180,8 @@ public class allDAO {
 				rests.setName(rs.getString("r_name"));
 				rests.setPlace(rs.getString("r_place"));
 				rests.setImg(rs.getString("r_img"));
+				rests.setLat(rs.getDouble("r_lat"));
+				rests.setLng(rs.getDouble("r_lng"));
 			}
 			
 			request.setAttribute("rests", rests);
