@@ -41,8 +41,8 @@ function validCheck2() {
 function checkId(id) {
         //Id가 입력되었는지 확인하기
         if (!checkExistData(id.value, "아이디를"))
-            return false
-	
+            return false;
+ 
         let idRegExp = /^[a-z0-9]{4,12}$/; //아이디 유효성 검사
         if (!idRegExp.test(id.value)) {
             alert("아이디는 영문 소문자와 숫자 4~12자리로 입력해야합니다!");
@@ -52,7 +52,6 @@ function checkId(id) {
         }
         return true; //확인이 완료되었을 때
     }
-
 function idCheck(){
 	let id = document.getElementById("id").value;
 //되나잘몰겟
@@ -74,9 +73,6 @@ function openIdChk(){
  function inputIdChk(){
             document.userInfo.idDuplication.value ="idUncheck";
         }
-
-
-
 function checkPw(id, pw, pw2) {
         //비밀번호가 입력되었는지 확인하기
         if (!checkExistData(pw.value, "비밀번호를"))
@@ -140,7 +136,6 @@ function checkPhone(phone) {
             return false;
         }
         return true; //확인이 완료되었을 때
-
 }
 function checkAnswer(answer) {
 	         

@@ -11,10 +11,8 @@ create table account1(
 	a_answer varchar2(100 char) not null
 );
 
-insert into account1 values ('js', '1004', 'USER', to_date('1997-10-21', 'YYYY-MM-DD'), '�뱸��', '010-XXXX-XXXX', '0 0 0 0 ', '0', '��� �ּ�?', '�뱸');
+insert into account1 values ('js', '1004', 'USER', to_date('1997-10-21', 'YYYY-MM-DD'), '´ë±¸½Ã', '010-XXXX-XXXX', '0 0 0 0 ', '0', '»ì´ø ÁÖ¼Ò?', '´ë±¸');
 
 select * from account1;
-
-delete account1 where a_id='test2';
 
 drop table account1 cascade constraint purge;

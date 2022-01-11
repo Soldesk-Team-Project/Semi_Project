@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 public class DeleteAccountC extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		AccountDAO.deletAccount(request);
+		AccountDAO.deleteAccount(request);
 		AccountDAO.logOut(request);
 		AccountDAO.loginCheck(request); 
 		

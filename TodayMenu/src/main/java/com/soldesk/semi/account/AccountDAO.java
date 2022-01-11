@@ -218,7 +218,7 @@ public class AccountDAO {
 
 	}
 
-	public static void deletAccount(HttpServletRequest request) {
+	public static void deleteAccount(HttpServletRequest request) {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;

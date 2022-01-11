@@ -1,10 +1,7 @@
 @charset "UTF-8";
 
-#CaMainTable { height: 300px; width: 60%; margin: 0 auto; }
+#CalMainTable { height: 200px; width: 60%; margin: 15px auto; }
+#CalMainTable tr td#divC { width:50%; }
+#CalMainTable tr td#divC span { background: url("img/icon/엔빵.jpg"); }
+#CalMainTable tr td#oneC { width:50%; }
 
-
-#Cal_divTable { height: 300px; width: 60%; margin: 0 auto; }
-#Cal_divResultTable { height: 300px; width: 60%; margin: 0 auto; }
-
-
-#Cal_oneTable { height: 300px; width: 60%; margin: 0 auto; }

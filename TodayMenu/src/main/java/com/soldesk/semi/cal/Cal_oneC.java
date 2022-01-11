@@ -21,10 +21,9 @@ public class Cal_oneC extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		CalculatorDAO.one(request);
 		
 		AccountDAO.loginCheck(request);
-		request.setAttribute("contentPage", "cal/cal_oneResult.jsp");
+		request.setAttribute("contentPage", "cal/WinWheel.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	
 	}

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+a:link{color:black;}
+a:visited{color:black; text-decoration: none;}
+
+
+#articleTable { height: 1600px; width: 90%; margin: 0 auto; padding-top: 40px; padding-bottom: 100px;}
+
+#articleHead { height: 100px; width: 100%; margin: 0 auto; }
+#articleHead .deco{width: 250px; float: center;}
+#articleHead #articleHeadName { text-align: center; font-size: 30pt; color:b; vertical-align: bottom;  font-family: 'MaruburiBold'; margin-left: 10px;}
+#articleHead #articleHeadContent{text-align: center; font-size: 15pt; color:gray; font-family: 'Maruburi';}
+
+#article { height: 1500px; width: 100%; margin: 0 auto; padding-top: 20px;}
+#article #article1 { height: 33.3%; width: 100%; }
+#article #article2 { height: 33.3%; width: 100%; }
+#article #article3 { height: 33.3%; width: 100%; }
+
+
+.articleImg img {width:95%; border-radius: 10px;}
+.articleImg img:hover{filter:brightness(120%);}
+.articleTitle { height: 15%; width:50%; font-family: 'MaruburiBold'; color:black; font-size: 18pt;}
+.articleTitle:hover{text-decoration: underline;}
+.articleDetail { height: 25%; width:50%; font-family: 'Maruburi'; color:black;}
+.articleDetail:hover{text-decoration: underline;}
+/* content */

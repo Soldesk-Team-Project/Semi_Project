@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script type="text/javascript" src="js/account.js"></script>
 <script type="text/javascript">
 google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(drawChart);
@@ -23,7 +24,7 @@ var options = {
   height: 400,
   fontSize: 15, 
   legend : 'none',
-  backgroundColor: '#ffccbc',
+  backgroundColor: 'white',
   is3D: true
 };
 
@@ -35,11 +36,11 @@ var chart = new google.visualization.PieChart(document.getElementById('piechart_
 <title>Insert title here</title>
 </head>
 <body>
-	<table id="myPageTable" border="0">
+	<table id="myPageTable" border="1">
 		<tr>
 			<td>
 				<form action="">
-					<table border="0" class="content1Table">
+					<table border="1" class="content1Table">
 						<tr>
 							<td class="myPageContentTitle">회원정보</td>
 						</tr>
@@ -78,7 +79,6 @@ var chart = new google.visualization.PieChart(document.getElementById('piechart_
 										<td colspan="2" id="editAccount" >
 											<button class="editAccountButton" type="button" onclick="location.href='UpdateAccountC'">수정하기</button>
 											<button class="editAccountButton" type="button" onclick="deleteAccount('${sessionScope.accountInfo.id}')">탈퇴하기</button>
-		
 										</td>
 									</tr>
 								</table>
@@ -96,13 +96,13 @@ var chart = new google.visualization.PieChart(document.getElementById('piechart_
 								<tr style="height: 30%;">
 									<td colspan="2">
 										<form action="AccountBookC" method="post">
-											<table border="0" style="width: 100%;">
+											<table border="1" style="width: 100%;">
 												<tr>
 													<td class="accountBookInputLeft">사용 금액</td>
 													<td class="accountBookInputRight"><input name="pay"></td>
 												</tr>
 												<tr>
-													<td class="accountBookInputLeft"">사용처</td>
+													<td class="accountBookInputLeft">사용처</td>
 													<td class="accountBookInputRight"><select name="where">
 														<option value="1"> 식비
 														<option value="2"> 카페/디저트
@@ -123,7 +123,7 @@ var chart = new google.visualization.PieChart(document.getElementById('piechart_
 								<tr style="height: 50%;">
 									<td style="width: 40%; text-align: center;"><div id="piechart_3d" style="height: 100%;"></div></td>
 									<td style="width: 60%; ">
-										<table border="0" style="width:100%;">
+										<table border="1" style="width:100%;">
 											<tr>
 												<td style="font-size: 13pt; ">${sessionScope.accountInfo.name }님의 가계부입니다.</td>
 											</tr>
