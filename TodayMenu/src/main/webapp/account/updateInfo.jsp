@@ -5,25 +5,29 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
 </head>
 <body>
-	<form action="UpdateAccountC" method="post" >
+	<form action="UpdateAccountC" onsubmit="return validCheck4()" method="post" >
 		<table id="regTable" border="1">
 			<tr>
 				<td colspan="2" id="title">회원 수정</td>
 			</tr>
 			<tr>
 				<td class="regTd1">이름</td>
-				<td class="regTd2"><input name="name"
+				<td class="regTd2"><input name="name" id="name"
 					value="${sessionScope.accountInfo.name}"></td>
 			</tr>
 			<tr>
 				<td class="regTd1">ID</td>
-				<td class="regTd2">${sessionScope.accountInfo.id}</td>
+				<td class="regTd2">${sessionScope.accountInfo.id}
+				<input name="id" id="id"
+					value="${sessionScope.accountInfo.id}" type="hidden">
+				</td>
 			</tr>
 			<tr>
 				<td class="regTd1">PW</td>
-				<td class="regTd2"><input name="pw2"> <input name="pw"
+				<td class="regTd2"><input name="pw2" id="pw2"> <input name="pw"
 					value="${sessionScope.accountInfo.pw}" type="hidden"></td>
 			</tr>
 
@@ -33,7 +37,7 @@
 			</tr>
 			<tr>
 				<td class="regTd1">주소</td>
-				<td class="regTd2"><select name="addr">
+				<td class="regTd2"><select name="addr" id="addr">
 						<option value="seoul">서울</option>
 						<option value="kyeonggi">경기</option>
 						<option value="busan">부산</option>
@@ -43,7 +47,7 @@
 			<tr>
 				<td class="regTd1">휴대폰 번호</td>
 
-				<td class="regTd2"><input name="phone"
+				<td class="regTd2"><input name="phone" id="phone"
 					value="${sessionScope.accountInfo.phone}"></td>
 
 			</tr>
