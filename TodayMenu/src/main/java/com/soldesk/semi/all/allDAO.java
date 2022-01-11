@@ -23,31 +23,31 @@ public class allDAO {
 
 	public void paging(int page, HttpServletRequest request) {
 		
-		// page : ÇöÀç ÆäÀÌÁö ¹øÈ£
+		// page : í˜„ì¬ í˜ì´ì§€ ë²ˆí˜¸
 		request.setAttribute("curPageNo", page);
 
-		int cnt = 18;	// ÇÑ ÆäÀÌÁö´ç º¸¿©ÁÙ °³¼ö
-		// size = ¹è¿­ length
-		int total = rests.size();	// ÀüÃ¼ µ¥ÀÌÅÍ °³¼ö
+		int cnt = 18;	// í•œ í˜ì´ì§€ë‹¹ ë³´ì—¬ì¤„ ê°œìˆ˜
+		// size = ë°°ì—´ length
+		int total = rests.size();	// ì „ì²´ ë°ì´í„° ê°œìˆ˜
 		
-		// ÃÑ ÆäÀÌÁö ¼ö °è»ê
+		// ì´ í˜ì´ì§€ ìˆ˜ ê³„ì‚°
 		int pageCount = (int)Math.ceil((double)total / cnt);
 		request.setAttribute("pageCount", pageCount);
 		
-		// ÆäÀÌÁöÀÇ ½ÃÀÛ µ¥ÀÌÅÍ ¹øÈ£ °è»ê
+		// í˜ì´ì§€ì˜ ì‹œì‘ ë°ì´í„° ë²ˆí˜¸ ê³„ì‚°
 		int start = total - (cnt * (page - 1));
 		
-		// ÆäÀÌÁöÀÇ ³¡ µ¥ÀÌÅÍ ¹øÈ£ °è»ê
+		// í˜ì´ì§€ì˜ ë ë°ì´í„° ë²ˆí˜¸ ê³„ì‚°
 		int end = (page == pageCount) ? -1 : start - (cnt + 1);
 		
 		ArrayList<AllRestaurant> items = new ArrayList<AllRestaurant>();
 		for (int i = start-1; i > end; i--) {
-			// movies¸¦ ÀÎµ¦½º¹øÈ£¿¡ ¸ÂÃç¼­ °¡Áö°í ¿Â´Ù
-				// movies = ¸ğµç µ¥ÀÌÅÍ°¡ µé¾îÀÖ´Â ¹è¿­
+			// moviesë¥¼ ì¸ë±ìŠ¤ë²ˆí˜¸ì— ë§ì¶°ì„œ ê°€ì§€ê³  ì˜¨ë‹¤
+				// movies = ëª¨ë“  ë°ì´í„°ê°€ ë“¤ì–´ìˆëŠ” ë°°ì—´
 			items.add(rests.get(i));
 		}
 		
-		// ÆäÀÌÁö ¹øÈ£¿¡ ¸Â´Â µ¥ÀÌÅÍ·®À» º¸³»ÁØ´Ù.
+		// í˜ì´ì§€ ë²ˆí˜¸ì— ë§ëŠ” ë°ì´í„°ëŸ‰ì„ ë³´ë‚´ì¤€ë‹¤.
 		request.setAttribute("rests", items);
 		
 	}
@@ -68,7 +68,8 @@ public class allDAO {
 			rests = new ArrayList<AllRestaurant>();
 			
 			while (rs.next()) {
-				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
+				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img"), rs.getDouble("r_lat"), rs.getDouble("r_lng")));
+
 			
 			}
 			
@@ -106,7 +107,7 @@ public class allDAO {
 			while (rs.next()) {
 				System.out.println(rs.getInt("r_no"));
 				System.out.println(rs.getString("r_name"));
-				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
+				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img"), rs.getDouble("r_lat"), rs.getDouble("r_lng")));
 			}
 			
 			request.setAttribute("rests", rests);
@@ -143,7 +144,7 @@ public class allDAO {
 			while (rs.next()) {
 				System.out.println(rs.getInt("r_no"));
 				System.out.println(rs.getString("r_name"));
-				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img")));
+				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img"), rs.getDouble("r_lat"), rs.getDouble("r_lng")));
 			}
 			
 			request.setAttribute("rests", rests);
@@ -180,6 +181,8 @@ public class allDAO {
 				rests.setName(rs.getString("r_name"));
 				rests.setPlace(rs.getString("r_place"));
 				rests.setImg(rs.getString("r_img"));
+				rests.setLat(rs.getDouble("r_lat"));
+				rests.setLng(rs.getDouble("r_lng"));
 			}
 			
 			request.setAttribute("rests", rests);

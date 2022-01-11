@@ -25,20 +25,20 @@ public class AccountDAO {
 		try {
 			String id = (String) request.getSession().getAttribute("id");
 
-			// ¼Òºñ±İ¾×
+			// ì†Œë¹„ê¸ˆì•¡
 			int pay = Integer.parseInt(request.getParameter("pay"));
 
-			// ÁöÃâ Á¾·ù (1. ½Äºñ / 2. Ä«Æä / 3. ¼îÇÎ / 4. ¹Ì¿ë)
+			// ì§€ì¶œ ì¢…ë¥˜ (1. ì‹ë¹„ / 2. ì¹´í˜ / 3. ì‡¼í•‘ / 4. ë¯¸ìš©)
 			String where = request.getParameter("where");
 			System.out.println(where);
 
-			// ÁöÃâ Á¾·ù¸¦ À§ÇØ ¹è¿­·Î Ã³¸®
+			// ì§€ì¶œ ì¢…ë¥˜ë¥¼ ìœ„í•´ ë°°ì—´ë¡œ ì²˜ë¦¬
 			String spend = request.getParameter("spend");
-			// ¹è¿­ ³ÖÀ» ºó ±øÅë
+			// ë°°ì—´ ë„£ì„ ë¹ˆ ê¹¡í†µ
 			String[] spend2 = spend.split(" ");
 			int[] spend3 = Arrays.asList(spend2).stream().mapToInt(Integer::parseInt).toArray();
 
-			// Á¾·ù¿¡ µû¶ó ¼Òºñ±İ¾× ÇÒ´ç
+			// ì¢…ë¥˜ì— ë”°ë¼ ì†Œë¹„ê¸ˆì•¡ í• ë‹¹
 			if (where.equals("1")) {
 				spend3[0] += pay;
 			} else if (where.equals("2")) {
@@ -49,30 +49,30 @@ public class AccountDAO {
 				spend3[3] += pay;
 			}
 
-			// °ªÀ» ³Ö°í Ãâ·ÂÀ» À§ÇØ ¹®ÀÚ¿­·Î º¯È¯
+			// ê°’ì„ ë„£ê³  ì¶œë ¥ì„ ìœ„í•´ ë¬¸ìì—´ë¡œ ë³€í™˜
 			spend = Arrays.toString(spend3).replaceAll("[^0-9 ]", "");
 			System.out.println(spend);
 
-			// º¯È¯ µÈ °ª ¾÷µ¥ÀÌÆ® ÇÏ±â
+			// ë³€í™˜ ëœ ê°’ ì—…ë°ì´íŠ¸ í•˜ê¸°
 			con = DBManager.connect();
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, spend);
 			pstmt.setString(2, id);
 
-			// ÀÚ¹Ù½ºÅ©¸³Æ®¿¡¼­ »ç¿ëÇÒ ¹è¿­ º¸³»±â
+			// ìë°”ìŠ¤í¬ë¦½íŠ¸ì—ì„œ ì‚¬ìš©í•  ë°°ì—´ ë³´ë‚´ê¸°
 			request.setAttribute("spend", spend);
 
-			// µî·Ï µÇ´ÂÁö È®ÀÎÇÏ±â
+			// ë“±ë¡ ë˜ëŠ”ì§€ í™•ì¸í•˜ê¸°
 			if (pstmt.executeUpdate() == 1) {
-				System.out.println("µî·Ï ¼º°ø!");
-				request.setAttribute("r", "µî·Ï ¼º°ø!");
+				System.out.println("ë“±ë¡ ì„±ê³µ!");
+				request.setAttribute("r", "ë“±ë¡ ì„±ê³µ!");
 			} else {
-				System.out.println("µî·Ï ½ÇÆĞ!");
-				request.setAttribute("r", "µî·Ï ½ÇÆĞ!");
+				System.out.println("ë“±ë¡ ì‹¤íŒ¨!");
+				request.setAttribute("r", "ë“±ë¡ ì‹¤íŒ¨!");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			request.setAttribute("r", "DB ¼­¹ö ¿À·ù");
+			request.setAttribute("r", "DB ì„œë²„ ì˜¤ë¥˜");
 		} finally {
 			DBManager.close(con, pstmt, null);
 		}
@@ -83,7 +83,7 @@ public class AccountDAO {
 		HttpSession hs = request.getSession();
 		hs.setAttribute("accountInfo", null);
 
-		request.setAttribute("r", "·Î±×¾Æ¿ô ¼º°ø!");
+		request.setAttribute("r", "ë¡œê·¸ì•„ì›ƒ ì„±ê³µ!");
 	}
 
 	public static void loginCheck(HttpServletRequest request) {
@@ -102,7 +102,7 @@ public class AccountDAO {
 
 		String userId = request.getParameter("id");
 		String userPw = request.getParameter("pw");
-		DateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd");
+		
 
 		String idd = (String) request.getAttribute("idd");
 		String pww = (String) request.getAttribute("pww");
@@ -148,12 +148,12 @@ public class AccountDAO {
 					hs.setAttribute("accountInfo", a);
 					hs.setMaxInactiveInterval(60000 * 50000);
 
-					request.setAttribute("r", "·Î±×ÀÎ ¼º°ø!");
+					request.setAttribute("r", "ë¡œê·¸ì¸ ì„±ê³µ!");
 				} else {
-					request.setAttribute("r", "ºñ¹Ğ¹øÈ£ ¿À·ùÀÔ´Ï´Ù.");
+					request.setAttribute("r", "ë¹„ë°€ë²ˆí˜¸ ì˜¤ë¥˜ì…ë‹ˆë‹¤.");
 				}
 			} else {
-				request.setAttribute("r", "Á¸ÀçÇÏÁö ¾ÊÀº È¸¿øÀÔ´Ï´Ù.");
+				request.setAttribute("r", "ì¡´ì¬í•˜ì§€ ì•Šì€ íšŒì›ì…ë‹ˆë‹¤.");
 			}
 
 		} catch (Exception e) {
@@ -187,7 +187,7 @@ public class AccountDAO {
 			String answer = request.getParameter("answer");
 
 			/*
-			 * System.out.println(id); // °³¹ßÀÚ È®ÀÎ¿ë System.out.println(pw);
+			 * System.out.println(id); // ê°œë°œì í™•ì¸ìš© System.out.println(pw);
 			 * System.out.println(name); System.out.println(birth);
 			 * System.out.println(addr); System.out.println(phone);
 			 * System.out.println(qestion); System.out.println(answer);
@@ -205,13 +205,13 @@ public class AccountDAO {
 			pstmt.setString(10, answer);
 
 			if (pstmt.executeUpdate() == 1) {
-				System.out.println("°¡ÀÔ ¼º°ø!");
+				System.out.println("ê°€ì… ì„±ê³µ!");
 			} else {
-				System.out.println("°¡ÀÔ ½ÇÆĞ");
+				System.out.println("ê°€ì… ì‹¤íŒ¨");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("DB ¼­¹ö ¹®Á¦");
+			System.out.println("DB ì„œë²„ ë¬¸ì œ");
 		} finally {
 			DBManager.close(con, pstmt, null);
 		}
@@ -222,7 +222,10 @@ public class AccountDAO {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;
-		String sql = "delete ACCOUNT1 where a_id=?";
+
+		System.out.println(request.getParameter("id"));
+		String sql = "delete account1 where a_id=?";
+		System.out.println(sql);
 
 		try {
 			con = DBManager.connect();
@@ -231,7 +234,7 @@ public class AccountDAO {
 			pstmt.setString(1, id);
 
 			if (pstmt.executeUpdate() == 1) {
-				System.out.println("·Î±×¾Æ¿ô ¼º°ø");
+				System.out.println("ë¡œê·¸ì•„ì›ƒ ì„±ê³µ");
 			}
 		}
 
@@ -284,9 +287,9 @@ public class AccountDAO {
 			request.setAttribute("idd", request.getParameter("id"));
 			request.setAttribute("pww", pw2);
 			if (pstmt.executeUpdate() == 1) {
-				System.out.println("¼öÁ¤ ¼º°ø");
+				System.out.println("ìˆ˜ì • ì„±ê³µ");
 			} else {
-				System.out.println("¼öÁ¤ ½ÇÆĞ");
+				System.out.println("ìˆ˜ì • ì‹¤íŒ¨");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -307,7 +310,7 @@ public class AccountDAO {
 		System.out.println(money);
 		System.out.println(where);
 
-		// °ª ³ÖÀ» Á¤º¸ °¡Á®¿À±â
+		// ê°’ ë„£ì„ ì •ë³´ ê°€ì ¸ì˜¤ê¸°
 		String spend = a.getSpend();
 		String pay = a.getPay();
 
@@ -330,7 +333,7 @@ public class AccountDAO {
 			spend3[3] += money;
 		}
 
-		// °ª ´ëÀÔÇÏ±â
+		// ê°’ ëŒ€ì…í•˜ê¸°
 		for (int i = 0; i < spend3.length; i++) {
 			pay2 += spend3[i];
 		}
@@ -342,7 +345,7 @@ public class AccountDAO {
 		a.setSpend(spend);
 		System.out.println(spend);
 
-		// DB¿¡ ´ëÀÔ½ÃÅ°±â
+		// DBì— ëŒ€ì…ì‹œí‚¤ê¸°
 		Connection con = null;
 		PreparedStatement pstmt = null;
 
@@ -358,9 +361,9 @@ public class AccountDAO {
 			pstmt.setString(3, a.getId());
 
 			if (pstmt.executeUpdate() == 1) {
-				System.out.println("¼öÁ¤ ¼º°ø!");
+				System.out.println("ìˆ˜ì • ì„±ê³µ!");
 			} else {
-				System.out.println("¼öÁ¤ ½ÇÆĞ!");
+				System.out.println("ìˆ˜ì • ì‹¤íŒ¨!");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -415,9 +418,9 @@ public class AccountDAO {
 			request.setAttribute("beauty", 0);
 
 			if (pstmt.executeUpdate() == 1) {
-				System.out.println("¼öÁ¤ ¼º°ø!");
+				System.out.println("ìˆ˜ì • ì„±ê³µ!");
 			} else {
-				System.out.println("¼öÁ¤ ½ÇÆĞ!");
+				System.out.println("ìˆ˜ì • ì‹¤íŒ¨!");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -431,7 +434,8 @@ public class AccountDAO {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		String sql = "select * from ACCOUNT1 where a_name=? and a_birth=? and a_qestion=? and a_answer=?";
-
+System.out.println(sql);
+System.out.println("í…ŒìŠ¤íŠ¸");
 		ResultSet rs = null;
 		try {
 			request.setCharacterEncoding("UTF-8");
@@ -472,9 +476,10 @@ public class AccountDAO {
 				find.setAnswer(rs.getString("a_answer"));
 
 				request.setAttribute("find", find);
-				System.out.println("Ã£±â ¼º°ø");
+				System.out.println("ì°¾ê¸° ì„±ê³µ");
 			} else {
-				System.out.println("Ã£±â ½ÇÆĞ");
+				System.out.println("ì°¾ê¸° ì‹¤íŒ¨");
+				request.setAttribute("test", "ì¡°íšŒ ì‹¤íŒ¨");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -525,9 +530,10 @@ public class AccountDAO {
 				find.setAnswer(rs.getString("a_answer"));
 
 				request.setAttribute("find", find);
-				System.out.println("Ã£±â ¼º°ø");
+				System.out.println("ì°¾ê¸° ì„±ê³µ");
 			} else {
-				System.out.println("Ã£±â ½ÇÆĞ");
+				System.out.println("ì°¾ê¸° ì‹¤íŒ¨");
+				request.setAttribute("test", "ì¡°íšŒ ì‹¤íŒ¨");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -536,4 +542,43 @@ public class AccountDAO {
 		}
 
 	}
+	
+	public static void duplicateIdCheck(HttpServletRequest request)
+    {
+		//ë¯¸ì™„ì„±
+        Connection con = null;
+        PreparedStatement pstmt = null;
+      ResultSet rs = null;
+        String sql = "SELECT ID FROM account1 WHERE ID=?";
+  
+        
+        try {
+             
+        	request.setCharacterEncoding("UTF-8");
+			con = DBManager.connect();
+			pstmt = con.prepareStatement(sql);
+
+			String id = request.getParameter("id");
+	
+
+			System.out.println(id);
+
+			pstmt.setString(1, id);
+			
+           rs = pstmt.executeQuery();
+            
+            if(rs.next()) { 
+ //           	request.setAttribute("find", find);
+            	
+          }
+ 
+            
+        } catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(con, pstmt, rs);
+		}
+        
+    } 
+
 }

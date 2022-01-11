@@ -7,22 +7,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/RegAccountC")
-public class RegAccountC extends HttpServlet {
+@WebServlet("/CheckAccountC")
+public class CheckAccountC extends HttpServlet {
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		
+		AccountDAO.duplicateIdCheck(request);
 		AccountDAO.loginCheck(request);	
 		request.setAttribute("contentPage","account/reg.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
-		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
-		AccountDAO.reg(request);
-		AccountDAO.loginCheck(request);	
-		request.setAttribute("contentPage", "home/home.jsp");
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+		
 	}
 
 }

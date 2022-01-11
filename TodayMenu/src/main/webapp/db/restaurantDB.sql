@@ -2,98 +2,100 @@ create table restaurant1 (
 	r_no number(20) primary key,
 	r_name varchar2(100 char)not null,
 	r_place varchar2(100 char)not null,
-	r_img varchar2(200 char)not null
+	r_img varchar2(200 char)not null,
+	r_lat number(30,25) not null,
+	r_lng number(30,25) not null
 );
 create sequence restaurant1_seq start with 1 increment by 1;
 
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ÇÑ¼Ü', '¼­¿ï Á¾·Î±¸ Á¾·Î12±æ 10', 'img/restaurant/ÇÑ¼Ü.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¼ö¿î', '¼­¿ï Á¾·Î±¸ ¿ìÁ¤±¹·Î 26 ¼¾Æ®·ÎÆú¸®½º 2Ãş', 'img/restaurant/¼ö¿î.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¾ö¿ë¹éµÅÁö±¹¹ä', '¼­¿ï Á¾·Î±¸ ÀÎ»çµ¿3±æ 20', 'img/restaurant/¾ö¿ë¹éµÅÁö±¹¹ä.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¸·³»È¸Áı', '¼­¿ï Á¾·Î±¸ ¿ìÁ¤±¹·Î 4-1', 'img/restaurant/¸·³»È¸Áı.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¼÷´ŞµÅÁö', '¼­¿ï Á¾·Î±¸ Á¾·Î8±æ 15', 'img/restaurant/¼÷´ŞµÅÁö.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ÇÑ¿ì°ø¹æ', '¼­¿ï Á¾·Î±¸ Á¾·Î8±æ 15', 'img/restaurant/ÇÑ¿ì°ø¹æ.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '»ï¼÷ÀÌ¶ó¸é', '¼­¿ï Á¾·Î±¸ Á¾·Î11±æ 30', 'img/restaurant/»ï¼÷ÀÌ¶ó¸é.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'Àï¹İÁı', '¼­¿ï Á¾·Î±¸ Á¾·Î8±æ 17 1Ãş', 'img/restaurant/Àï¹İÁı.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¿ìÁ¤³«Áö', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î17±æ 46 2Ãş', 'img/restaurant/¿ìÁ¤³«Áö.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¸ÀÂùµé', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î17±æ 35', 'img/restaurant/¸ÀÂùµé.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¹«±³µ¿³«Áö', '¼­¿ï Á¾·Î±¸ Ã»°èÃµ·Î 77-1', 'img/restaurant/¹«±³µ¿³«Áö.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'È²¼Ò°íÁı', '¼­¿ï Á¾·Î±¸ Ã»°èÃµ·Î 75-2', 'img/restaurant/È²¼Ò°íÁı.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¿ÕºñÁı', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î15±æ 24', 'img/restaurant/¿ÕºñÁı.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'µÈÀå¿¹¼ú°ú¼ú', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î15±æ 20', 'img/restaurant/µÈÀå¿¹¼ú°ú¼ú.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¹«½î', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î17±æ 23', 'img/restaurant/¹«½î.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¹Ìµµ°¥ºñ', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î15±æ 25 1Ãş', 'img/restaurant/¹Ìµµ°¥ºñ.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¾ç¿¬È­·Î', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î17±æ 18', 'img/restaurant/¾ç¿¬È­·Î.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '°³¹ÌÁı', '¼­¿ï Á¾·Î±¸ Á¾·Î12±æ 23 2Ãş', 'img/restaurant/°³¹ÌÁı.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'Á¾·ÎÁ¤À°½Ä´ç', '¼­¿ï Á¾·Î±¸ Á¾·Î14±æ 20', 'img/restaurant/Á¾·ÎÁ¤À°½Ä´ç.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '²ÉÇÇ´Â»ê°ñ', '¼­¿ï Á¾·Î±¸ Á¾·Î11±æ 17', 'img/restaurant/²ÉÇÇ´Â»ê°ñ.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '°æº¹±Ã½Ä´ç', '¼­¿ï Á¾·Î±¸ Á¾·Î 65 1Ãş 112È£', 'img/restaurant/°æº¹±Ã½Ä´ç.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '±è°¡³×', '¼­¿ï Á¾·Î±¸ Á¾·Î 65', 'img/restaurant/±è°¡³×.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¸ÀÀÖ´Â±èÄ¡Âò', '¼­¿ï Á¾·Î±¸ ¿ìÁ¤±¹·Î2±æ 31', 'img/restaurant/¸ÀÀÖ´Â±èÄ¡Âò.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¿ÀÂ¡¾îÃ»Ãá', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î19±æ 15', 'img/restaurant/¿ÀÂ¡¾îÃ»Ãá.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'À¯°¡³×', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î19±æ 15 »ïÁøºôµù', 'img/restaurant/À¯°¡³×.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ÀåÇõ¹ÎÀÇºÎ´ëÂî°³', '¼­¿ï Á¾·Î±¸ Á¾·Î14±æ 26', 'img/restaurant/ÀåÇõ¹ÎÀÇºÎ´ëÂî°³.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¹Ì´ç¼øµÎºÎ', '¼­¿ï Á¾·Î±¸ Ã»°èÃµ·Î 97-12', 'img/restaurant/¹Ì´ç¼øµÎºÎ.jfif');
--- ÇÑ½Ä
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'í•œì†¥', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ12ê¸¸ 10', 'img/restaurant/í•œì†¥.jfif', 37.56984597865609, 126.98570002864828);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ìˆ˜ìš´', 'ì„œìš¸ ì¢…ë¡œêµ¬ ìš°ì •êµ­ë¡œ 26 ì„¼íŠ¸ë¡œí´ë¦¬ìŠ¤ 2ì¸µ', 'img/restaurant/ìˆ˜ìš´.jfif', 37.57176490175568, 126.98338270563723); 
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì—„ìš©ë°±ë¼ì§€êµ­ë°¥', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¸ì‚¬ë™3ê¸¸ 20', 'img/restaurant/ì—„ìš©ë°±ë¼ì§€êµ­ë°¥.jfif', 37.57209478978207, 126.98583441330759); 
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë§‰ë‚´íšŒì§‘', 'ì„œìš¸ ì¢…ë¡œêµ¬ ìš°ì •êµ­ë¡œ 4-1', 'img/restaurant/ë§‰ë‚´íšŒì§‘.jfif', 37.56934706852657, 126.98325034029666);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ìˆ™ë‹¬ë¼ì§€', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ8ê¸¸ 15', 'img/restaurant/ìˆ™ë‹¬ë¼ì§€.jfif', 37.569548464152234, 126.98411052680208);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'í•œìš°ê³µë°©', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ8ê¸¸ 15', 'img/restaurant/í•œìš°ê³µë°©.jfif', 37.569548464152234, 126.98411052680208);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì‚¼ìˆ™ì´ë¼ë©´', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ11ê¸¸ 30', 'img/restaurant/ì‚¼ìˆ™ì´ë¼ë©´.jfif', 37.57169522999274, 126.98556796913175);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ìŸë°˜ì§‘', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ8ê¸¸ 17 1ì¸µ', 'img/restaurant/ìŸë°˜ì§‘.jfif', 37.56942118764555, 126.98418859981311);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ìš°ì •ë‚™ì§€', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ17ê¸¸ 46 2ì¸µ', 'img/restaurant/ìš°ì •ë‚™ì§€.jfif', 37.56950937965551, 126.98490344029636);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë§›ì°¬ë“¤', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ17ê¸¸ 35', 'img/restaurant/ë§›ì°¬ë“¤.jfif', 37.56919273399323, 126.98550999981323);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë¬´êµë™ë‚™ì§€', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì²­ê³„ì²œë¡œ 77-1', 'img/restaurant/ë¬´êµë™ë‚™ì§€.jfif', 37.56872786621352, 126.98622125748349);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'í™©ì†Œê³ ì§‘', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì²­ê³„ì²œë¡œ 75-2', 'img/restaurant/í™©ì†Œê³ ì§‘.jfif', 37.568685346615574, 126.98611396913162);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì™•ë¹„ì§‘', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ15ê¸¸ 24', 'img/restaurant/ì™•ë¹„ì§‘.jfif', 37.569076965336734, 126.9861890556371);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ëœì¥ì˜ˆìˆ ê³¼ìˆ ', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ15ê¸¸ 20', 'img/restaurant/ëœì¥ì˜ˆìˆ ê³¼ìˆ .jfif', 37.56900933818564, 126.98647815748356);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë¬´ì˜', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ17ê¸¸ 23', 'img/restaurant/ë¬´ì˜.jfif', 37.56921576498806, 126.98616056913161);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë¯¸ë„ê°ˆë¹„', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ15ê¸¸ 25 1ì¸µ', 'img/restaurant/ë¯¸ë„ê°ˆë¹„.jfif', 37.56887605800013, 126.98606752680205);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì–‘ì—°í™”ë¡œ', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ17ê¸¸ 18', 'img/restaurant/ì–‘ì—°í™”ë¡œ.jfif', 37.56945099141252, 126.98647746913161);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ê°œë¯¸ì§‘', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ12ê¸¸ 23 2ì¸µ', 'img/restaurant/ê°œë¯¸ì§‘.jfif', 37.56910926915105, 126.98584415379088);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì¢…ë¡œì •ìœ¡ì‹ë‹¹', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ14ê¸¸ 20', 'img/restaurant/ì¢…ë¡œì •ìœ¡ì‹ë‹¹.jfif', 37.569273176477026, 126.98682109981307);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ê½ƒí”¼ëŠ”ì‚°ê³¨', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ11ê¸¸ 17', 'img/restaurant/ê½ƒí”¼ëŠ”ì‚°ê³¨.jfif', 37.571292085316365, 126.985526553791);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ê²½ë³µê¶ì‹ë‹¹', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 65 1ì¸µ 112í˜¸', 'img/restaurant/ê²½ë³µê¶ì‹ë‹¹.jfif', 37.5706145577517, 126.98474224214289);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ê¹€ê°€ë„¤', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 65', 'img/restaurant/ê¹€ê°€ë„¤.jfif', 37.572464663852266, 126.98285039981319);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë§›ìˆëŠ”ê¹€ì¹˜ì°œ', 'ì„œìš¸ ì¢…ë¡œêµ¬ ìš°ì •êµ­ë¡œ2ê¸¸ 31', 'img/restaurant/ë§›ìˆëŠ”ê¹€ì¹˜ì°œ.jfif', 37.56983487105906, 126.98484942680213);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì˜¤ì§•ì–´ì²­ì¶˜', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ19ê¸¸ 15', 'img/restaurant/ì˜¤ì§•ì–´ì²­ì¶˜.jfif', 37.56958936020994, 126.98666428262618);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ìœ ê°€ë„¤', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ19ê¸¸ 15 ì‚¼ì§„ë¹Œë”©', 'img/restaurant/ìœ ê°€ë„¤.jfif', 37.569631463943715, 126.98660232495568);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì¥í˜ë¯¼ì˜ë¶€ëŒ€ì°Œê°œ', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ14ê¸¸ 26', 'img/restaurant/ì¥í˜ë¯¼ì˜ë¶€ëŒ€ì°Œê°œ.jfif', 37.56910508085561, 126.98668052495574);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë¯¸ë‹¹ìˆœë‘ë¶€', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì²­ê³„ì²œë¡œ 97-12', 'img/restaurant/ë¯¸ë‹¹ìˆœë‘ë¶€.jfif', 37.56888268151575, 126.98820069981313);
+-- í•œì‹
 
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'Â«»ÍÁöÁ¸', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î15±æ 25 101È£', 'img/restaurant/Â«»ÍÁöÁ¸.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¿ìÀ°¸é°ü', '¼­¿ï Á¾·Î±¸ Ã»°èÃµ·Î 75-2', 'img/restaurant/¿ìÀ°¸é°ü.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '»ş¿À¹Ù¿À¿ìÀ°¸é', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î17±æ 15', 'img/restaurant/»ş¿À¹Ù¿À¿ìÀ°¸é.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¹Ì°¢', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î17±æ 16', 'img/restaurant/¹Ì°¢.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '»óÇØ', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î 382 ½Å¿µºôµù', 'img/restaurant/»óÇØ.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¸¸º¸¼º', '¼­¿ï Á¾·Î±¸ Á¾·Î12±æ 22', 'img/restaurant/¸¸º¸¼º.jfif');
--- Áß½Ä
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì§¬ë½•ì§€ì¡´', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ15ê¸¸ 25 101í˜¸', 'img/restaurant/ì§¬ë½•ì§€ì¡´.jfif', 37.5688675540994, 126.98604606913166);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ìš°ìœ¡ë©´ê´€', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì²­ê³„ì²œë¡œ 75-2', 'img/restaurant/ìš°ìœ¡ë©´ê´€.jfif', 37.56867684269306, 126.98598522310937);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ìƒ¤ì˜¤ë°”ì˜¤ìš°ìœ¡ë©´', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ17ê¸¸ 15', 'img/restaurant/ìƒ¤ì˜¤ë°”ì˜¤ìš°ìœ¡ë©´.jfif', 37.56927468423264, 126.98659004029655);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë¯¸ê°', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ17ê¸¸ 16', 'img/restaurant/ë¯¸ê°.jfif', 37.569406449072666, 126.98665955563725);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ìƒí•´', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ 382', 'img/restaurant/ìƒí•´.jfif', 37.56889618539938, 126.98793941146127);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë§Œë³´ì„±', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ12ê¸¸ 22', 'img/restaurant/ë§Œë³´ì„±.jfif', 37.56925940759322, 126.98561871515405);
+-- ì¤‘ì‹
 
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '½ÅÁÖÄíÄ«·¹', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î 390 1Ãş', 'img/restaurant/½ÅÁÖÄíÄ«·¹.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ÄÚÄÚÀÌÂî¹æ', '¼­¿ï Á¾·Î±¸ Á¾·Î 51 ÁöÇÏ2Ãş', 'img/restaurant/ÄÚÄÚÀÌÂî¹æ.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¹ÌµµÀÎ', '¼­¿ï Á¾·Î±¸ Á¾·Î 51 ÁöÇÏ2Ãş', 'img/restaurant/¹ÌµµÀÎ.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '½ÃÅ¸¸¶Ä¡', '¼­¿ï Á¾·Î±¸ Á¾·Î 51 ÁöÇÏ1Ãş', 'img/restaurant/½ÃÅ¸¸¶Ä¡.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¿À·ÎÁö¶ó¸à', '¼­¿ï Á¾·Î±¸ Á¾·Î14±æ 16 1Ãş', 'img/restaurant/¿À·ÎÁö¶ó¸à.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '°«µ§½º½Ã', '¼­¿ï Á¾·Î±¸ Á¾·Î12±æ 14', 'img/restaurant/°«µ§½º½Ã.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'Á¾·Îµ·ºÎ¸®', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î 385', 'img/restaurant/Á¾·Îµ·ºÎ¸®.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¹ÌÄ«µµ½º½Ã', '¼­¿ï Á¾·Î±¸ Á¾·Î 87-1 2Ãş', 'img/restaurant/¹ÌÄ«µµ½º½Ã.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ÇÏ¸¶´Ù', '¼­¿ï Á¾·Î±¸ Á¾·Î12±æ 23 Æ÷ÀÎÆ®23ºôµù', 'img/restaurant/ÇÏ¸¶´Ù.jfif');
--- ÀÏ½Ä
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì‹ ì£¼ì¿ ì¹´ë ˆ', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ 390 1ì¸µ', 'img/restaurant/ì‹ ì£¼ì¿ ì¹´ë ˆ.jfif', 37.56940594907372, 126.98789808262616);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì½”ì½”ì´ì°Œë°©', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 51 ì§€í•˜2ì¸µ', 'img/restaurant/ì½”ì½”ì´ì°Œë°©.jfif', 37.57091156810851, 126.98361951330776);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë¯¸ë„ì¸', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 51 ì§€í•˜2ì¸µ', 'img/restaurant/ë¯¸ë„ì¸.jfif', 37.57091156810851, 126.98361951330776);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì‹œíƒ€ë§ˆì¹˜', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 51 ì§€í•˜1ì¸µ', 'img/restaurant/ì‹œíƒ€ë§ˆì¹˜.jfif', 37.57091156810851, 126.98361951330776);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì˜¤ë¡œì§€ë¼ë©˜', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ14ê¸¸ 16 1ì¸µ', 'img/restaurant/ì˜¤ë¡œì§€ë¼ë©˜.jfif', 37.5694300374651, 126.98675691146138);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ê°“ë´ìŠ¤ì‹œ', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ12ê¸¸ 14', 'img/restaurant/ê°“ë´ìŠ¤ì‹œ.jfif', 37.56958866021161, 126.98552898262616);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì¢…ë¡œëˆë¶€ë¦¬', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ 385', 'img/restaurant/ì¢…ë¡œëˆë¶€ë¦¬.jfif', 37.56913228467164, 126.98749207282437);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë¯¸ì¹´ë„ìŠ¤ì‹œ', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 87-1 2ì¸µ', 'img/restaurant/ë¯¸ì¹´ë„ìŠ¤ì‹œ.jfif', 37.57063728003181, 126.98730045563728);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'í•˜ë§ˆë‹¤', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ12ê¸¸ 23 í¬ì¸íŠ¸23ë¹Œë”©', 'img/restaurant/í•˜ë§ˆë‹¤.jfif', 37.56913478076754, 126.98603727282426);
+-- ì¼ì‹
 
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ºü·¹¶ßÇÑ³²', '¼­¿ï Á¾·Î±¸ ¿ìÁ¤±¹·Î2±æ 8 1Ãş', 'img/restaurant/ºü·¹¶ßÇÑ³².jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¾Ö½¶¸®', '¼­¿ï Á¾·Î±¸ Á¾·Î 51 Á¾·ÎÅ¸¿ö ÁöÇÏ1Ãş', 'img/restaurant/¾Ö½¶¸®.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¹Ùºñ·¹µå', '¼­¿ï Á¾·Î±¸ Á¾·Î 51 Á¾·ÎÅ¸¿ö ÁöÇÏ1Ãş', 'img/restaurant/¹Ùºñ·¹µå.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '½´°¡½ºÄÃ', '¼­¿ï Á¾·Î±¸ ¿ìÁ¤±¹·Î2±æ 29 8~9Ãş', 'img/restaurant/½´°¡½ºÄÃ.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¸£ºê¿Í', '¼­¿ï Á¾·Î±¸ ¿ìÁ¤±¹·Î2±æ 42 4Ãş', 'img/restaurant/¸£ºê¿Í.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '´õÇÇÀÚÇÊ', '¼­¿ï Á¾·Î±¸ Á¾·Î10±æ 21 1Ãş', 'img/restaurant/´õÇÇÀÚÇÊ.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¾î°ÔÀÎ¸®ÇÁ·¹½¬', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î 383 2Ãş', 'img/restaurant/¾î°ÔÀÎ¸®ÇÁ·¹½¬.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ºñ½ºÆ®·Î¶ó²Ä¸¶', '¼­¿ï Á¾·Î±¸ Ã»°èÃµ·Î 85 ÁöÇÏ 1Ãş', 'img/restaurant/ºñ½ºÆ®·Î¶ó²Ä¸¶.jfif');
--- ¾ç½Ä
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë¹ ë ˆëœ¨í•œë‚¨', 'ì„œìš¸ ì¢…ë¡œêµ¬ ìš°ì •êµ­ë¡œ2ê¸¸ 8 1ì¸µ', 'img/restaurant/ë¹ ë ˆëœ¨í•œë‚¨.jfif', 37.56956596026593, 126.98347905563728);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì• ìŠë¦¬', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 51 ì¢…ë¡œíƒ€ì›Œ ì§€í•˜1ì¸µ', 'img/restaurant/ì• ìŠë¦¬.jfif', 37.57091156810851, 126.98361951330776);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë°”ë¹„ë ˆë“œ', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 51 ì¢…ë¡œíƒ€ì›Œ ì§€í•˜1ì¸µ', 'img/restaurant/ë°”ë¹„ë ˆë“œ.jfif', 37.57091156810851, 126.98361951330776);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ìŠˆê°€ìŠ¤ì»¬', 'ì„œìš¸ ì¢…ë¡œêµ¬ ìš°ì •êµ­ë¡œ2ê¸¸ 29 8~9ì¸µ', 'img/restaurant/ìŠˆê°€ìŠ¤ì»¬.jfif', 37.56985627862574, 126.98475711330748);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë¥´ë¸Œì™€', 'ì„œìš¸ ì¢…ë¡œêµ¬ ìš°ì •êµ­ë¡œ2ê¸¸ 42 4ì¸µ', 'img/restaurant/ë¥´ë¸Œì™€.jfif', 37.56968791365987, 126.98527633845003);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë”í”¼ìí•„', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ10ê¸¸ 21 1ì¸µ', 'img/restaurant/ë”í”¼ìí•„.jfif', 37.569146665161576, 126.98448798262609);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì–´ê²Œì¸ë¦¬í”„ë ˆì‰¬', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ 383 2ì¸µ', 'img/restaurant/ì–´ê²Œì¸ë¦¬í”„ë ˆì‰¬.jfif', 37.56905017320918, 126.98739285563727);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë¹„ìŠ¤íŠ¸ë¡œë¼ê¼¼ë§ˆ', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì²­ê³„ì²œë¡œ 85 ì§€í•˜ 1ì¸µ', 'img/restaurant/ë¹„ìŠ¤íŠ¸ë¡œë¼ê¼¼ë§ˆ.jfif', 37.56879306211925, 126.9871741556374);
+-- ì–‘ì‹
 
-insert into restaurant1 values(restaurant1_seq.nextval, '¸¾½ºÅÍÄ¡', '¼­¿ï Á¾·Î±¸ Á¾·Î 62-1 2Ãş', 'img/restaurant/¸¾½ºÅÍÄ¡.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '½áºê¿şÀÌ', '¼­¿ï Á¾·Î±¸ Á¾·Î 77 ÅëÀÏºôµù', 'img/restaurant/½áºê¿şÀÌ.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'KFC', '¼­¿ï Á¾·Î±¸ Á¾·Î 88', 'img/restaurant/KFC.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '±³ÃÌÄ¡Å²', '¼­¿ï Á¾·Î±¸ Á¾·Î12±æ 15 ÄÚ¾Æºôµù 1Ãş', 'img/restaurant/±³ÃÌÄ¡Å².jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¶Çº¸°ÚÁö', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î19±æ 6 2Ãş', 'img/restaurant/¶Çº¸°ÚÁö.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ÁÒ½º¶±ººÀÌ', '¼­¿ï Á¾·Î±¸ Á¾·Î10±æ 5 ½Å¿ìºôµù', 'img/restaurant/ÁÒ½º¶±ººÀÌ.jfif');
--- ºĞ½Ä
+insert into restaurant1 values(restaurant1_seq.nextval, 'ë§˜ìŠ¤í„°ì¹˜', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 62-1 2ì¸µ', 'img/restaurant/ë§˜ìŠ¤í„°ì¹˜.jfif', 37.569980117591186, 126.98440094214286);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì¨ë¸Œì›¨ì´', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 77 í†µì¼ë¹Œë”©', 'img/restaurant/ì¨ë¸Œì›¨ì´.jfif', 37.57037422088062, 126.98566114058171);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'KFC', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 88', 'img/restaurant/KFC.jfif', 37.57008975901014, 126.9871690979669);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'êµì´Œì¹˜í‚¨', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ12ê¸¸ 15 ì½”ì•„ë¹Œë”© 1ì¸µ', 'img/restaurant/êµì´Œì¹˜í‚¨.jfif', 37.569519914224045, 126.98602295563727);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë˜ë³´ê² ì§€', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ19ê¸¸ 6 2ì¸µ', 'img/restaurant/ë˜ë³´ê² ì§€.jfif', 37.56985378244722, 126.98718501146129);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì£ ìŠ¤ë–¡ë³¶ì´', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ10ê¸¸ 5 ì‹ ìš°ë¹Œë”©', 'img/restaurant/ì£ ìŠ¤ë–¡ë³¶ì´.jfif', 37.56993027610755, 126.98452426026078);
+-- ë¶„ì‹
 
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'Æ÷ºê¶ó´õ½º', '¼­¿ï Á¾·Î±¸ Á¾·Î 51', 'img/restaurant/Æ÷ºê¶ó´õ½º.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¿¡¸ÓÀÌ', '¼­¿ï Á¾·Î±¸ Á¾·Î12±æ 6-20', 'img/restaurant/¿¡¸ÓÀÌ.jfif');
--- ¾Æ½Ã¾È
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'í¬ë¸Œë¼ë”ìŠ¤', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 51', 'img/restaurant/í¬ë¸Œë¼ë”ìŠ¤.jfif', 37.57091156810851, 126.98361951330776);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì—ë¨¸ì´', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ12ê¸¸ 6-20', 'img/restaurant/ì—ë¨¸ì´.jfif', 37.569988863045964, 126.98456881146141);
+-- ì•„ì‹œì•ˆ
 
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '½ºÅ¸¹÷½º', '¼­¿ï Á¾·Î±¸ Á¾·Î 64', 'img/restaurant/½ºÅ¸¹÷½º.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'º£½ºÅ²¶óºó½º', '¼­¿ï Á¾·Î±¸ Á¾·Î12±æ 9', 'img/restaurant/º£½ºÅ²¶óºó½º.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '»ª´Ù¹æ', '¼­¿ï Á¾·Î±¸ Á¾·Î10±æ 21', 'img/restaurant/»ª´Ù¹æ.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¼³ºù', '¼­¿ï Á¾·Î±¸ Á¾·Î 74 ¿µ¾Èºôµù', 'img/restaurant/¼³ºù.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'Åõ½æÇÃ·¹ÀÌ½º', '¼­¿ï Á¾·Î±¸ Á¾·Î 72', 'img/restaurant/Åõ½æÇÃ·¹ÀÌ½º.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ÇÒ¸®½º', '¼­¿ï Á¾·Î±¸ Á¾·Î10±æ 21', 'img/restaurant/ÇÒ¸®½º.jfif');
--- Ä«Æä
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ìŠ¤íƒ€ë²…ìŠ¤', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 64', 'img/restaurant/ìŠ¤íƒ€ë²…ìŠ¤.jfif', 37.570147881540706, 126.98451736913171);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë² ìŠ¤í‚¨ë¼ë¹ˆìŠ¤', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ12ê¸¸ 9', 'img/restaurant/ë² ìŠ¤í‚¨ë¼ë¹ˆìŠ¤.jfif', 37.569795271167585, 126.98588979796689);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë¹½ë‹¤ë°©', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ10ê¸¸ 21', 'img/restaurant/ë¹½ë‹¤ë°©.jfif', 37.56916367289833, 126.9845738133076);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ì„¤ë¹™', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 74 ì˜ì•ˆë¹Œë”©', 'img/restaurant/ì„¤ë¹™.jfif', 37.570128777816684, 126.98568712864838);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'íˆ¬ì¸í”Œë ˆì´ìŠ¤', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 72', 'img/restaurant/íˆ¬ì¸í”Œë ˆì´ìŠ¤.jfif', 37.57006324772284, 126.98536416913174);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'í• ë¦¬ìŠ¤', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ10ê¸¸ 21', 'img/restaurant/í• ë¦¬ìŠ¤.jfif', 37.56913816129176, 126.98448798262609);
+-- ì¹´í˜
 
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '½º½Ã¼Ò¶ó', '¼­¿ï Á¾·Î±¸ Á¾·Î 19 ¼­¿ï Á¾·Î±¸ Á¾·Î19', 'img/restaurant/½º½Ã¼Ò¶ó.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, 'Æú·çÀÌÆ®', '¼­¿ï Á¾·Î±¸ ¿ìÁ¤±¹·Î2±æ 41', 'img/restaurant/Æú·çÀÌÆ®.jfif');
-insert into RESTAURANT1 values(restaurant1_seq.nextval, '¹İÁì', '¼­¿ï Á¾·Î±¸ »ïÀÏ´ë·Î17±æ 23 3Ãş', 'img/restaurant/¹İÁì.jfif');
--- µ¥ÀÌÅÍ Ãß°¡
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ìŠ¤ì‹œì†Œë¼', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì¢…ë¡œ 19', 'img/restaurant/ìŠ¤ì‹œì†Œë¼.jfif', 37.570990360530224, 126.97996168631883);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'í´ë£¨ì´íŠ¸', 'ì„œìš¸ ì¢…ë¡œêµ¬ ìš°ì •êµ­ë¡œ2ê¸¸ 41', 'img/restaurant/í´ë£¨ì´íŠ¸.jfif', 37.5697812483023, 126.98549221515395);
+insert into RESTAURANT1 values(restaurant1_seq.nextval, 'ë°˜ì¥´', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì‚¼ì¼ëŒ€ë¡œ17ê¸¸ 23 3ì¸µ', 'img/restaurant/ë°˜ì¥´.jfif', 37.56916474180184, 126.98619275563718);
+-- ë°ì´í„° ì¶”ê°€
 
 select * from restaurant1;
 
 delete RESTAURANT1 where r_no = 81;
 
-select * from restaurant1 where r_name like '%°³¹Ì%';
+select * from restaurant1 where r_name like '%ê°œë¯¸%';
 
 drop sequence restaurant1_seq;
 drop table restaurant1 cascade constraint purge;

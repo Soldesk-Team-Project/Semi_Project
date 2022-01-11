@@ -34,14 +34,9 @@ a:hover { color: gray; }
 #nav { height: 60px; width: 70%; margin: 0 auto; }
 #nav div { width: 15%; float: left; line-height: 80px; text-align: center; }
 #nav .navMenus { height: 65px; margin: 0 5%; font-size: 20pt; }
+#nav .navMenus a { color: black; font-family: 'MaruburiBold'; }
 #nav .navMenus a { font-family: 'MaruburiBold'; }
-
-.navMenus {position: relative;
-text-decoration: none;
- }
- 
- 
-
+.navMenus {position: relative; text-decoration: none; }
 .navMenus::before{
   content: "";
   position: absolute;
@@ -54,9 +49,7 @@ text-decoration: none;
   transform: scaleX(.3);
   opacity: 0;
   transition: all .3s
-  
 }
-
 .navMenus:hover::before{
   opacity: 1;
   background-color: #dee1f0;
@@ -64,10 +57,7 @@ text-decoration: none;
   transform: scaleX(1);
   transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
   transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
-  
 }
-
-
 /* nav */
 
 #slideTable { height: 260px; width:85%; margin:0 auto; padding-top: 30px;}

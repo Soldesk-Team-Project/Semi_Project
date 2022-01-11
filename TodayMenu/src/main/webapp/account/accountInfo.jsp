@@ -32,6 +32,7 @@ var chart = new google.visualization.PieChart(document.getElementById('piechart_
 	chart.draw(data, options);
 }
 </script>
+
 <title>Insert title here</title>
 </head>
 <body>
