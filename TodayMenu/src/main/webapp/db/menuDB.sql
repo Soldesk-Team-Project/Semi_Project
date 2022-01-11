@@ -45,6 +45,7 @@ insert into menu1 values(menu1_seq.nextval, 2, '짜장면', 'img/menu/짜장면.
 insert into menu1 values(menu1_seq.nextval, 2, '짬뽕', 'img/menu/짬뽕.jpg');
 -- 중식 데이터
 
+
 insert into menu1 values(menu1_seq.nextval, 3, '라멘', 'img/menu/라멘.jfif');
 insert into menu1 values(menu1_seq.nextval, 3, '사케동', 'img/menu/사케동.jfif');
 insert into menu1 values(menu1_seq.nextval, 3, '에비텐동', 'img/menu/에비텐동.jfif');
@@ -70,7 +71,7 @@ insert into menu1 values(menu1_seq.nextval, 5, '쏨담', 'img/menu/쏨담.jfif')
 insert into menu1 values(menu1_seq.nextval, 5, '카오팟', 'img/menu/카오팟.jpg');
 insert into menu1 values(menu1_seq.nextval, 5, '팟타이', 'img/menu/팟타이.jfif');
 insert into menu1 values(menu1_seq.nextval, 5, '푸팟퐁커리', 'img/menu/푸팟퐁커리.jfif');
-insert into menu1 values(menu1_seq.nextval, 5, 'c양꿍', 'img/menu/c양꿍.jfif');
+insert into menu1 values(menu1_seq.nextval, 5, '똠양꿍', 'img/menu/똠양꿍.jfif');
 -- 아시안 데이터
 
 insert into menu1 values(menu1_seq.nextval, 6, '떡볶이', 'img/menu/떡볶이.jpg');
