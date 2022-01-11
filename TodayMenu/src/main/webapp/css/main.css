@@ -88,6 +88,7 @@ a:hover { color: gray; }
 #footer { height: 100px; width:90%; margin:0 auto; text-align: center; color: white; }
 #footer td { width: 300px; }
 #footer #footerDetail { text-align : left; font-family: 'MaruburiBold';}
+#footer #footerDetail a { color: white; }
 #footer .team .teamImg img { width: 100px; height: 100px; }
 #footer .team .teamDetail { width: 200px; padding-top: 10px; color: white; }
 #footerBackground { background:  black; text-align: center; }
