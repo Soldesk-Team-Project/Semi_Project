@@ -11,6 +11,7 @@
 <body>
 	<table id="regTable">
 		<tr>
+
 			<c:choose>
 				<c:when test="${test eq '조회 실패'}">
 					<td class="regTd1">${test }</td>

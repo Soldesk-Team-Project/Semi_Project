@@ -222,7 +222,9 @@ public class AccountDAO {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;
-		String sql = "delete ACCOUNT1 where a_id=?";
+		System.out.println(request.getParameter("id"));
+		String sql = "delete account1 where a_id=?";
+		System.out.println(sql);
 
 		try {
 			con = DBManager.connect();

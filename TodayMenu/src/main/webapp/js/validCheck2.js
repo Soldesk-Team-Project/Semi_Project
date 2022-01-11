@@ -4,7 +4,8 @@ function validCheck() { // 체크하는중
 	let pw2 = document.getElementById("pw2").value;
 	let name = document.getElementById("name").value;
 	let phone = document.getElementById("phone").value;
-        alert(id + pw + pw2 + name + phone)
+		let answer = document.getElementById("phone").value;
+        alert(id + pw + pw2 + name + phone + answer)
         return false;
 
     }
@@ -21,7 +22,8 @@ function validCheck2() {
             return false;
         } else if (!checkPhone(phone)) {
             return false;
-        } 
+        } else if (!checkAnswer(answer)) {
+            return false;
         return true;
 
     }
