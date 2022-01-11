@@ -99,7 +99,7 @@ insert into menu1 values(menu1_seq.nextval, 7, 'ÇÃ·¹ÀÎ¿ä°ÅÆ®½º¹«µğ', 'img/menu/Ç
 insert into menu1 values(menu1_seq.nextval, 7, 'Èæ´ç¹ĞÅ©Æ¼', 'img/menu/Èæ´ç¹ĞÅ©Æ¼.jpg');
 -- Ä¿ÇÇ & µğÀúÆ® µ¥ÀÌÅÍ
 
-insert into menu1 values(999, 999, '±âº»ÀÌ¹ÌÁö', 'img/icon/°í¹ÎÇÏ´Â¾ó±¼.png');
+insert into menu1 values(999, 999, '¹öÆ°À» ´­·¯ÁÖ¼¼¿ä', 'img/icon/°í¹ÎÇÏ´Â¾ó±¼.png');
 
 select * from menu1;
 
