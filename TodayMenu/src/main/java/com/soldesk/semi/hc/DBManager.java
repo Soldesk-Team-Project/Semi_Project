@@ -6,22 +6,22 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-// DB°ü·Ã ÀÛ¾÷ÇÒ ¶§, ¸Å¹ø ¿¬°áÄÚµå¸¦ ¾´ ÀÌÈÄ ÀÛ¾÷À» ÇØ¿Ô´Ù.
+// DBê´€ë ¨ ì‘ì—…í•  ë•Œ, ë§¤ë²ˆ ì—°ê²°ì½”ë“œë¥¼ ì“´ ì´í›„ ì‘ì—…ì„ í•´ì™”ë‹¤.
 
-// ±×°É AOP(°üÁ¡ÁöÇâ)À¸·Î Á¤¸®ÇÏÀÚ
+// ê·¸ê±¸ AOP(ê´€ì ì§€í–¥)ìœ¼ë¡œ ì •ë¦¬í•˜ì
 public class DBManager {
 
-	// DB ÀÛ¾÷ ½Ã ¿¬°áÀ» À§ÇÑ ÀÛ¾÷
+	// DB ì‘ì—… ì‹œ ì—°ê²°ì„ ìœ„í•œ ì‘ì—…
 	public static Connection connect() throws SQLException {
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		// ½ÇÁ¦ »ç¿ëÇÏ´Â °÷¿¡¼± con ¿¡¼­ ¹Ş¾Æ ¾µ°Å±â ‹š¹®¿¡ return À» ÇØÁØ´Ù.
-		return DriverManager.getConnection(url, "jh", "jh");
+		// ì‹¤ì œ ì‚¬ìš©í•˜ëŠ” ê³³ì—ì„  con ì—ì„œ ë°›ì•„ ì“¸ê±°ê¸° Â‹Âšë¬¸ì— return ì„ í•´ì¤€ë‹¤.
+		return DriverManager.getConnection(url, "c##ojs", "ojs");
 	}
 
-	// ´İÀ»°Ô ¸¹Àºµ¥ ÇÑ¹ø¿¡ ´İ±â
+	// ë‹«ì„ê²Œ ë§ì€ë° í•œë²ˆì— ë‹«ê¸°
 	public static void close(Connection con, PreparedStatement pstmt, ResultSet rs) {
 		
-		// ´İ´Â °Ç ¿ª¼øÀ¸·Î ´İ¾ÆÁØ´Ù.
+		// ë‹«ëŠ” ê±´ ì—­ìˆœìœ¼ë¡œ ë‹«ì•„ì¤€ë‹¤.
 		try {
 			if(rs != null) {
 				rs.close();

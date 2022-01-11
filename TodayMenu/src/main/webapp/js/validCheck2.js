@@ -151,5 +151,4 @@ function checkAnswer(answer) {
 
         }
         return true; //확인이 완료되었을 때
-
 }

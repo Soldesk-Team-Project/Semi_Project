@@ -51,7 +51,6 @@
 				<td class="regTd1">휴대폰 번호</td>
 				<td class="regTd2"><input name="phone"  id="phone" placeholder="숫자 11자리">
 				</td>
-
 			</tr>
 			<tr>
 				<td class="regTd1">질문</td>
