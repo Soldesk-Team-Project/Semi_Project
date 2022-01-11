@@ -225,7 +225,7 @@ lightbox.options.albumLabel = "%1 / %2";
     <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cc111df2408b7d673f717b99e8525b0e82150307/blogs/style/postBtn.css?_version_=tistory-cc111df2408b7d673f717b99e8525b0e82150307"/>
         <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/tistory-cc111df2408b7d673f717b99e8525b0e82150307/blogs/style/component/tistory.css?_version_=tistory-cc111df2408b7d673f717b99e8525b0e82150307" />
         <script type="text/javascript" src="//developers.kakao.com/sdk/js/kakao.min.js"></script></head>
-    <s class="text-center">
+    <body class="text-center">
 
       <script type="text/javascript">
       let input0;
