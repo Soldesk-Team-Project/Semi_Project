@@ -14,6 +14,12 @@
     font-family: 'Maruburi'; 
 }
 
+@font-face{
+	src: url('../font/GodoB.otf');
+    font-family: 'GodoB'; 
+}
+
+
 /* reset */
 body { margin: 0; padding: 0; background: white;  font-family: 'Maruburi'; text-align: center; }
 a:link { color: white; text-decoration: none;}
@@ -34,9 +40,7 @@ a:hover { color: gray; }
 #nav { height: 60px; width: 70%; margin: 0 auto; }
 #nav div { width: 15%; float: left; line-height: 80px; text-align: center; }
 #nav .navMenus { height: 65px; margin: 0 5%; font-size: 20pt; }
-#nav .navMenus a { color: black; font-family: 'MaruburiBold'; }
-#nav .navMenus a { font-family: 'MaruburiBold'; }
-.navMenus {position: relative; text-decoration: none; }
+.navMenus {position: relative; text-decoration: none; font-family: 'MaruburiBold';}
 .navMenus::before{
   content: "";
   position: absolute;
@@ -83,7 +87,7 @@ a:hover { color: gray; }
 
 #footer { height: 100px; width:90%; margin:0 auto; text-align: center; color: white; }
 #footer td { width: 300px; }
-#footer #footerDetail { text-align : left; }
+#footer #footerDetail { text-align : left; font-family: 'MaruburiBold';}
 #footer .team .teamImg img { width: 100px; height: 100px; }
 #footer .team .teamDetail { width: 200px; padding-top: 10px; color: white; }
 #footerBackground { background:  black; text-align: center; }

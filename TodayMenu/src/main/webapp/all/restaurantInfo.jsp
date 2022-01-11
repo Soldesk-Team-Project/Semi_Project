@@ -296,10 +296,13 @@
 						<td id="restaurantImg" colspan="2"><img src="${rests.img }"></td>
 					</tr>
 					<tr>
-						<td id="restaurantInfo">${rests.name }<br> ${rests.place }
-						</td>
-						<td id="back"><span onclick="history.back()">돌아가기</span></td>
+					<td colspan="2"><img class="deco2" src="img/icon/deco4.png"> </td></tr>
+					<tr>
+						<td id="restaurantName" colspan="2">${rests.name }</td> </tr>
+						<tr ><td colspan="2"><img class="deco2" src="img/icon/deco4.png"> </td>
 					</tr>
+						<tr><td id="restaurantPlace">${rests.place }</td>
+						<td id="back"><span onclick="history.back()">돌아가기</span></td></tr>
 				</table>
 			</td>
 		</tr>

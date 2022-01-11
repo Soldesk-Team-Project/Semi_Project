@@ -9,15 +9,15 @@
 <body>
 	<form action="Cal_divC" name="div" method="post" onsubmit="return check();">
 		<table border="1" id="Cal_divTable">
-			<tr	style="background-color: deepskyblue; color: black; font-size: 25pt">
-				<td>더치폐이 계산기</td>
+			<tr>
+				<td id="Cal_divTitle"><img src="img/cal/cal.png"></td>
 			</tr>
 			<tr>
-				<td>금액 : <input type="text" name="cost"> 원
+				<td class="Cal_divPut">금액 : <input type="text" name="cost"> 원
 				</td>
 			</tr>
 			<tr>
-				<td>인원 : <input type="number" min="0" max="10" name="people"> 명
+				<td class="Cal_divPut">인원 : <input type="number" min="0" max="10" name="people"> 명
 				<br>
 					(최대 10명까지)
 				</td>

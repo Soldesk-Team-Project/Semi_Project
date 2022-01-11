@@ -8,11 +8,11 @@
 </head>
 <body>
 	<table border="1" id="Cal_divResultTable">
-		<tr style="background: Deepskyblue; color: black; font-size: 25pt;">
-			<td><h4>더치 페이 계산기</h4></td>
+		<tr>
+			<td id="Cal_divTitle"><img src="img/cal/divResult.png"></td>
 		</tr>
 		<tr>
-			<td>더치 페이 금액 : ${rr.r} 원
+			<td class="Cal_divPut">더치 페이 금액 : ${rr.r} 원
 			</td>
 		</tr>
 		<tr>

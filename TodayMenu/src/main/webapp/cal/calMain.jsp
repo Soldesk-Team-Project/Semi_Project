@@ -7,10 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border=1 id="CalMainTable">
+	<table border=1 id="CaMainTable">
 		<tr>
-			<td onclick="location.href='Cal_divC'" id="divC"><span>더치페이 계산기</span></td>
-			<td onclick="location.href='Cal_oneC'" id="oneC"><span>한명에게 몰빵!</span></td>
+			<td class="calImg"><a href="Cal_divC"><img
+					src="img/cal/dutch2.jpg"></a></td>
+			<td class="calImg"><a href="Cal_oneC"><img
+					src="img/cal/one.jpg"></a></td>
+		</tr>
+		<tr>
+			<td class="calTitle"><a href="Cal_divC">더치페이 계산기</a></td>
+			<td class="calTitle"><a href="Cal_oneC">한명에게 몰빵!</a></td>
+
 		</tr>
 	</table>
 </body>

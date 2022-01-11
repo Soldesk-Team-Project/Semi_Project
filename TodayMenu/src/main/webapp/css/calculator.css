@@ -1,7 +1,20 @@
 @charset "UTF-8";
 
-#CalMainTable { height: 200px; width: 60%; margin: 15px auto; }
-#CalMainTable tr td#divC { width:50%; }
-#CalMainTable tr td#divC span { background: url("img/icon/엔빵.jpg"); }
-#CalMainTable tr td#oneC { width:50%; }
+#CaMainTable { height: 400px; width: 60%; margin: 50px auto; margin-bottom: 100px;}
+
+
+#Cal_divTable { height: 600px; width: 60%; margin: 50px auto; }
+#Cal_divResultTable { height: 500px; width: 60%; margin: 50px auto; }
+
+
+#Cal_oneTable { height: 300px; width: 60%; margin: 0 auto; }
+
+.calImg{padding-bottom: 20px;}
+.calImg img{height:400px;}
+.calTitle{font-family: 'GodoB'; font-size: 25pt;}
+.calImg img:hover{filter:brightness(80%);}
+
+#Cal_divTitle {height:40%;}
+#Cal_divTitle img{width: 100%; padding: 0 auto;}
+.Cal_divPut{font-family: 'GodoB'; font-size: 20pt;}
 
