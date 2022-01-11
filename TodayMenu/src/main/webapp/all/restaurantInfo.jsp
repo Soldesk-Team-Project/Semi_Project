@@ -232,7 +232,7 @@
 <script>
       const CONFIGURATION = {
         "locations": [
-          {"title":"솔데스크","address1":"대한민국 서울특별시 종로구 관철동 13-13","coords":{"lat":37.56930610059174,"lng":126.98601196441803},"placeId":"ChIJa-EInuiifDURwxbeACFblfg"}
+          {"title":"현재위치","address1":"대한민국 서울특별시 종로구 관철동 13-13","coords":{"lat":37.56930610059174,"lng":126.98601196441803},"placeId":"ChIJa-EInuiifDURwxbeACFblfg"}
         ],
         "mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17},
         "mapsApiKey": "AIzaSyCLSSucUxvqeKk0rCXntnkThyrOFXB15BI"
