@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="Cal_divC" method="post">
+	<form action="Cal_divC" name="div" method="post" onsubmit="return check();">
 		<table border="1" id="Cal_divTable">
 			<tr	style="background-color: deepskyblue; color: black; font-size: 25pt">
 				<td>더치폐이 계산기</td>
@@ -17,7 +17,9 @@
 				</td>
 			</tr>
 			<tr>
-				<td>인원 : <input type="number" name="people"> 명
+				<td>인원 : <input type="number" min="0" max="10" name="people"> 명
+				<br>
+					(최대 10명까지)
 				</td>
 			</tr>
 			<tr>
