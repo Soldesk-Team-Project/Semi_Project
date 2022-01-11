@@ -293,8 +293,7 @@
 			<td id="detail">
 				<table border="1">
 					<tr>
-						<td id="restaurantImg" colspan="2"><img src="${rests.img }">
-							이미지</td>
+						<td id="restaurantImg" colspan="2"><img src="${rests.img }"></td>
 					</tr>
 					<tr>
 						<td id="restaurantInfo">${rests.name }<br> ${rests.place }
