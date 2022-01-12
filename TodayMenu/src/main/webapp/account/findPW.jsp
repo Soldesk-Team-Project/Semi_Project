@@ -9,9 +9,9 @@
 <body>
 	<form action="PW_FindAccountC" onsubmit="return check()" name="myForm"
 		method="post">
-		<table id="regTbl">
+		<table id="regTable">
 			<tr>
-				<td colspan="2" id="title">pw 찾기</td>
+				<td colspan="2" id="title">PW 찾기</td>
 			</tr>
 			<tr>
 				<td class="regTd1">ID</td>

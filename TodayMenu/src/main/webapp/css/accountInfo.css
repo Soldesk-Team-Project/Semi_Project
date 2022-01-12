@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 #myPageTable { width: 50%; text-align: center; margin: 15px auto; background: white; }
-#myPageTable .infoDeco { width: 20%; height: 20px; }
 #myPageTable .content1Table { height: 650px; width: 100%; font-size: 16pt; border-collapse: collapse; }
 #myPageTable .content1Table .myPageContentTitle { height: 50px; text-align: center; font-size: 12pt; padding-left: 10px; font-weight: bold; }
 #myPageTable .content1Table #viewAccount { height: 100%; width: 100%; font-size: 16pt; }

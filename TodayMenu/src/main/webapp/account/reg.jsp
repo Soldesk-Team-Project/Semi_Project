@@ -9,7 +9,7 @@
 </head>
 <body>
 	<form action="RegAccountC" onsubmit="return validCheck2()" name="myForm" method="post">
-		<table id="regTable" border="1">
+		<table id="regTable2" border="1">
 			<tr>
 				<td colspan="2" id="title">회원 가입</td>
 			</tr>

@@ -11,7 +11,7 @@
 		method="post">
 		<table id="regTable">
 			<tr>
-				<td colspan="2" id="title">id 찾기</td>
+				<td colspan="2" id="title">ID 찾기</td>
 			</tr>
 			<tr>
 				<td class="regTd1">이름</td>
