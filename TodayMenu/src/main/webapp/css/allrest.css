@@ -15,12 +15,12 @@
 #allRestaurantTable .allRestaurantDetail span { display: inline-block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 100%; font-size: 10pt; color: gray; }
 #allRestaurantTable .allRestaurantDetail span strong { font-size: 12pt; margin: 5px 0; color: black; }
 
-#restaurantInfoTable { width: 70%; margin: 50px auto; }
-#restaurantInfoTable #map { width: 60%; }
+#restaurantInfoTable { width: 80%; margin: 50px auto; }
+#restaurantInfoTable #map { width: 40%; }
 #restaurantInfoTable #map img { width: 100%; height: 100%; }
-#restaurantInfoTable #detail { width: 40%; }
+#restaurantInfoTable #detail { width: 60%; }
 #restaurantInfoTable #detail table { width: 100%; }
-#restaurantInfoTable #detail table #map img { width: 100%; height: 70%; }
+#restaurantInfoTable #detail table #restaurantImg img { width: 100%; height: 100%; max-width: 700%; max-height: 700px; }
 #restaurantInfoTable #detail table #restaurantInfo { width: 70%; }
 #restaurantInfoTable #detail table #back { width: 30%; }
 

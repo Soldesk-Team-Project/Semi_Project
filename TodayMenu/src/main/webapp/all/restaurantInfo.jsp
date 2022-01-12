@@ -285,7 +285,6 @@
 							</div>
 						</div>
 					</div>
-					<div id="map"></div>
 				</div> <script
 					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLSSucUxvqeKk0rCXntnkThyrOFXB15BI&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v4_cA"
 					async defer></script>
