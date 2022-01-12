@@ -21,7 +21,6 @@
 				<td class="regTd1">ID</td>
 				<td class="regTd2"><input  name="id" id="id" placeholder="영어 소문자 + 숫자">
 				 <input type="button" value="ID중복확인" onclick="idCheck()">
-				 <input type="hidden" name="idDuplication" value="idUncheck" >
 				</td>
 				
 			</tr>

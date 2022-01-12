@@ -545,13 +545,13 @@ System.out.println("테스트");
 	
 	public static void duplicateIdCheck(HttpServletRequest request)
     {
-		//미완성
+		
         Connection con = null;
         PreparedStatement pstmt = null;
-      ResultSet rs = null;
-        String sql = "SELECT ID FROM account1 WHERE ID=?";
-  
-        
+        ResultSet rs = null;
+        String sql = "SELECT a_ID FROM account1 WHERE a_id=?";
+        String isDuplicated = null;
+    
         try {
              
         	request.setCharacterEncoding("UTF-8");
@@ -566,13 +566,18 @@ System.out.println("테스트");
 			pstmt.setString(1, id);
 			
            rs = pstmt.executeQuery();
-            
+
             if(rs.next()) { 
- //           	request.setAttribute("find", find);
-            	
-          }
- 
-            
+ //    참일때       	
+            	  isDuplicated = "true" ;
+            	  request.setAttribute("test", isDuplicated);
+            }
+            else {
+            	//거짓일때
+            	  isDuplicated = "false" ;
+            	  request.setAttribute("test", isDuplicated);
+            }
+   
         } catch (Exception e) {
 			e.printStackTrace();
 		} finally {

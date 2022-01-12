@@ -27,8 +27,9 @@
 			</tr>
 			<tr>
 				<td class="regTd1">PW</td>
-				<td class="regTd2"><input name="pw2" id="pw2"> <input name="pw"
-					value="${sessionScope.accountInfo.pw}" type="hidden"></td>
+				<td class="regTd2"><input name="pw2" id="pw2"  value="${sessionScope.accountInfo.pw}">
+				<!--   <input name="pw" id="pw" value="${sessionScope.accountInfo.pw}" type="hidden"> -->  
+					</td>
 			</tr>
 
 			<tr>
@@ -63,7 +64,7 @@
 			<tr>
 				<td class="regTd1">답변</td>
 				<td class="regTd2">
-					<input name="answer">
+					<input name="answer" id="answer" value="${sessionScope.accountInfo.answer}">
 				</td>
 			</tr>
 			<tr>
