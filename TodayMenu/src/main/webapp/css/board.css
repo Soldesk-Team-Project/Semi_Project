@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+#boardMainTable { width: 60%; margin: 20px auto 0 auto; }
+#boardMainTable #boardMainTitleTr { background: #e3f2fd; font-weight: bold; font-size: 13pt; }
+#boardMainTable #boardContentTr .contentTd1 { width: 5%; }
+#boardMainTable #boardContentTr .contentTd2 { width: 72%; }
+#boardMainTable #boardContentTr .contentTd2:hover { cursor: pointer; text-decoration: underline; }
+#boardMainTable #boardContentTr .contentTd3 { width: 15%; }
+#boardMainTable #boardContentTr .contentTd4 { width: 8%; }
+
+#boardPagingTable { width: 30%; margin: 0 auto 40px auto; }
+
+#boardBtnTable { width: 60%; margin: -48px auto 20px auto; }
+#boardBtnTable td { text-align: right; }
+/* //Main */
+
+#boardDetailTable { width: 50%; height: 500px; margin: 20px auto 0 auto; }
+#boardDetailTable #boardDetailTr1 { height: 50px; }
+#boardDetailTable #boardDetailTr1 .boardDetailTd1 { width: 5%; background: #e3f2fd; }
+#boardDetailTable #boardDetailTr1 .boardDetailTd2 { width: 15%; }
+#boardDetailTable #boardDetailTr1 .boardDetailTd3 { width: 55%; font-weight: bold; font-size: 13pt; }
+#boardDetailTable #boardDetailTr1 .boardDetailTd4 { width: 20%; }
+
+#boardDetailTable #boardDetailTr2 { height: 100%; vertical-align: top; text-align: center; }
+
+#boardDetailButtonTable { width: 50%; margin: 0 auto 20px auto; }
+#boardDetailButtonTable td { text-align: right; }
+/* //Detail */
+
+#boardWriteTable { height: 500px; width: 50%; margin: 20px auto 0 auto; }
+#boardWriteTable #boardWriteTr1 { height: 10%; background-color: #e3f2fd; font-weight: bold; font-size: 13pt; }
+#boardWriteTable .boardWriteTdleft { background-color: #e3f2fd; font-weight: bold; font-size: 13pt; }
+#boardWriteTable .boardWriteTdRight { text-align: left; font-size: 13pt; }
+#boardWriteTable .boardWriteTdRight input { margin-left: 20px; width: 80%; }
+#boardWriteTable .boardWriteTdRight span { margin-left: 20px; }
+#boardWriteTable .boardWriteTdRight textarea { margin-left: 20px; width: 80%; height: 85%; }
+#boardWriteTable #boardWriteTr2 { height: 10%; }
+#boardWriteTable #boardWriteTr3 { height: 10%; }
+#boardWriteTable #boardWriteTr4 { height: 70%; }
+
+#boardWriteButtonTable { width: 50%; margin: 0 auto 20px auto; }
+#boardWriteButtonTable td { text-align: right; }
+
+.boardBtn { border: 1px solid black; padding: 7px 13px; background-color: #e1f5fe; font-family:'MaruburiBold'; font-size: 7pt; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; }
+.boardBtn:hover { background-color: #e8eaf6; color: white; cursor: pointer; }

@@ -203,7 +203,7 @@ public class BoardDAO {
 		// page : 현재 페이지 번호
 		request.setAttribute("curPageNo", page);
 
-		int cnt = 10;	// 한 페이지당 보여줄 개수
+		int cnt = 8;	// 한 페이지당 보여줄 개수
 		// size = 배열 length
 		int total = boards.size();	// 전체 데이터 개수
 		
@@ -223,7 +223,7 @@ public class BoardDAO {
 		}
 		
 		// 페이지 번호에 맞는 데이터량을 보내준다.
-		request.setAttribute("reviews", items);
+		request.setAttribute("boards", items);
 		
 	}
 

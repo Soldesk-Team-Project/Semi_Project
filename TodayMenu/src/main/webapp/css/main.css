@@ -85,7 +85,7 @@ a:hover { color: gray; }
 #content .contents .contentsDetail { height:30%; font-family: 'Maruburi'; padding-top: 20px; padding-bottom: 20px;}
 /* content */
 
-#footer { height: 100px; width:90%; margin:0 auto; text-align: center; color: white; }
+#footer { height: 100px; width:90%; margin: 0 auto; text-align: center; color: white; }
 #footer td { width: 300px; }
 #footer #footerDetail { text-align : left; font-family: 'MaruburiBold';}
 #footer #footerDetail a { color: white; }

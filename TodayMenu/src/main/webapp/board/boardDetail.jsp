@@ -10,31 +10,26 @@
 </head>
 <body>
 	<form action="BoardUpdateC">
-		<table border="1">
-			<tr>
-				<td>글 번호</td>
-				<td>${board.no }</td>
-			</tr>
-			<tr>
-				<td>글 제목</td>
-				<td>${board.title }</td>
-			</tr>
-			<tr>
-				<td>내용</td>
-				<td>${board.content }</td>
-			</tr>
-			<tr>
-				<td>등록일</td>
-				<td><fmt:formatDate value="${board.date }" type="both"
+		<table border="1" id="boardDetailTable">
+			<tr id="boardDetailTr1">
+				<td class="boardDetailTd1">${board.no }</td>
+				<td class="boardDetailTd2">${board.id }</td>
+				<td class="boardDetailTd3">${board.title }</td>
+				<td class="boardDetailTd4"><fmt:formatDate value="${board.date }" type="both"
 						dateStyle="short" timeStyle="short" /></td>
 			</tr>
+			<tr id="boardDetailTr2">
+				<td colspan="4">${board.content }</td>
+			</tr>
+		</table>
+		<table id="boardDetailButtonTable">
 			<tr>
 				<td colspan="2">
-					<button onclick="history.back()">목록으로</button> <c:if
-						test="${sessionScope.accountInfo.id != null }">
+					<c:if test="${sessionScope.accountInfo.id != null }">
 						<button class="boardBtn" name="no" value="${board.no }">수정</button>
-						<button type="button" onclick="deleteBoard(${board.no })">삭제</button>
+						<button class="boardBtn" type="button" onclick="deleteBoard(${board.no })">삭제</button>
 					</c:if>
+					<button class="boardBtn" type="button" onclick="history.back()">목록으로</button>
 				</td>
 			</tr>
 		</table>

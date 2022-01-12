@@ -52,7 +52,7 @@
 			</td>
 		</tr>
 		<c:choose>
-		<c:when test="${what == 0 }">
+		<c:when test="${what == null }">
 			<tr>
 				<td>
 					<c:choose>

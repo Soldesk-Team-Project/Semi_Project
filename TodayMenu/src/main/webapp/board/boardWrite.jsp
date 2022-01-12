@@ -8,18 +8,27 @@
 </head>
 <body>
 	<form method="post" action="WriteC">
-		<table class="writeTable">
-			<tr>
-				<td>게시판 글쓰기 양식</td>
+		<table id="boardWriteTable" border="1">
+			<tr id="boardWriteTr1">
+				<td colspan="2">게시글 등록</td>
 			</tr>
-			<tr>
-				<td><input type="text" placeholder="글 제목" name="title" maxlength="20"></td>
+			<tr id="boardWriteTr2">
+				<td class="boardWriteTdleft">제목</td>
+				<td class="boardWriteTdRight"><input type="text" placeholder="글 제목" name="title" maxlength="20"></td>
 			</tr>
-			<tr>
-				<td><textarea placeholder="글 내용" name="content" maxlength="200"></textarea></td>
+			<tr id="boardWriteTr3">
+				<td class="boardWriteTdleft">작성자</td>
+				<td class="boardWriteTdRight"><span>${sessionScope.accountInfo.id }</span></td>
 			</tr>
+			<tr id="boardWriteTr4">
+				<td class="boardWriteTdleft">내용</td>
+				<td class="boardWriteTdRight"><textarea placeholder="글 내용" name="content" maxlength="200"></textarea></td>
+			</tr>
+		</table>
+		<table id="boardWriteButtonTable">
 			<tr>
-				<td><button class="regBtn" name="id" value="${sessionScope.accountInfo.id }">등록하기</button></td>
+				<td><button class="boardBtn" name="id" value="${sessionScope.accountInfo.id }">등록하기</button>
+				<button class="boardBtn" type="button" onclick="history.back()">취소</button></td>
 			</tr>
 		</table>
 	</form>

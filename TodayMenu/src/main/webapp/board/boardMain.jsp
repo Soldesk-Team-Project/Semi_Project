@@ -8,74 +8,62 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table>
+	<table border="1" id="boardMainTable">
+		<tr id="boardMainTitleTr">
+			<td>번호</td>
+			<td colspan="2">제목</td>
+			<td>작성일</td>
+			<td>작성자</td>
+		</tr>
+		<c:forEach var="b" items="${boards }">
+			<tr id="boardContentTr">
+				<td class="contentTd1">${b.no }</td>
+				<td class="contentTd2" colspan="2" onclick="location.href='BoardDetailC?no=${b.no }'">${b.title }</td>
+				<td class="contentTd3">${b.date }</td>
+				<td class="contentTd4">${b.id }</td>
+			</tr>
+		</c:forEach>
+	</table>
+	<table id="boardPagingTable">
+		<tr>
+			<td><c:choose>
+					<c:when test="${curPageNo == 1 }">[맨앞]</c:when>
+					<c:otherwise>
+						<a href="BoardPageController?p=1">[맨앞]</a>
+					</c:otherwise>
+				</c:choose></td>
+			<td><c:choose>
+					<c:when test="${curPageNo == 1 }">&lt;</c:when>
+					<c:otherwise>
+						<a href="BoardPageController?p=${curPageNo - 1}">&lt;</a>
+					</c:otherwise>
+				</c:choose></td>
+			<td><c:forEach var="p" begin="1" end="${pageCount }">
+					<a href="BoardPageController?p=${p }">[${p }]</a>
+				</c:forEach></td>
+			<td><c:choose>
+					<c:when test="${curPageNo == pageCount }">&gt;</c:when>
+					<c:otherwise>
+						<a href="BoardPageController?p=${curPageNo + 1}">&gt;</a>
+					</c:otherwise>
+				</c:choose></td>
+			<td><c:choose>
+					<c:when test="${curPageNo == pageCount }">[맨뒤]</c:when>
+					<c:otherwise>
+						<a href="BoardPageController?p=${pageCount }">[맨뒤]</a>
+					</c:otherwise>
+				</c:choose></td>
+		</tr>
+	</table>
+	<table id="boardBtnTable" border="0">
 		<c:if test="${sessionScope.accountInfo.id != null }">
 			<tr>
-				<td>
+				<td colspan="5">
 					<button type="button" onclick="location.href='WriteC'"
-						class="regBtn">글쓰기</button>
+						class="boardBtn">글쓰기</button>
 				</td>
 			</tr>
 		</c:if>
-		<tr>
-			<td>
-				<table border="1" id="boardTable">
-					<tr>
-						<td>번호</td>
-						<td>제목</td>
-						<td>작성자</td>
-						<td>작성일</td>
-					</tr>
-					<c:forEach var="b" items="${boards }">
-						<tr>
-							<td>${b.no }</td>
-							<td onclick="location.href='BoardDetailC?no=${b.no }'">${b.title }</td>
-							<td>${b.id }</td>
-							<td>${b.date }</td>
-						</tr>
-					</c:forEach>
-				</table>
-			</td>
-		</tr>
-			<tr>
-				<td>
-					<c:choose>
-						<c:when test="${curPageNo == 1 }">[맨앞]</c:when>
-						<c:otherwise>
-							<a href="BoardPageController?p=1">[맨앞]</a>
-						</c:otherwise>
-					</c:choose>
-				</td>
-				<td>
-					<c:choose>
-						<c:when test="${curPageNo == 1 }">&lt;</c:when>
-						<c:otherwise>
-							<a href="BoardPageController?p=${curPageNo - 1}">&lt;</a>
-						</c:otherwise>
-					</c:choose>
-				</td>
-				<td>
-					<c:forEach var="p" begin="1" end="${pageCount }">
-						<a href="BoardPageController?p=${p }">[${p }]</a>
-					</c:forEach>
-				</td>
-				<td>
-					<c:choose>
-						<c:when test="${curPageNo == pageCount }">&gt;</c:when>
-						<c:otherwise>
-							<a href="BoardPageController?p=${curPageNo + 1}">&gt;</a>
-						</c:otherwise>
-					</c:choose>
-				</td>
-				<td>
-					<c:choose>
-						<c:when test="${curPageNo == pageCount }">[맨뒤]</c:when>
-						<c:otherwise>
-							<a href="BoardPageController?p=${pageCount }">[맨뒤]</a>
-						</c:otherwise>
-					</c:choose>
-				</td>
-			</tr>
 	</table>
 </body>
 </html>
