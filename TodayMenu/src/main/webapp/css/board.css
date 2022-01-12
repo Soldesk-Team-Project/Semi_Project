@@ -2,6 +2,7 @@
 
 #boardMainTable { width: 60%; margin: 20px auto 0 auto; }
 #boardMainTable #boardMainTitleTr { background: #e3f2fd; font-weight: bold; font-size: 13pt; }
+#boardMainTable #boardContentTr { height: 50px; }
 #boardMainTable #boardContentTr .contentTd1 { width: 5%; }
 #boardMainTable #boardContentTr .contentTd2 { width: 72%; }
 #boardMainTable #boardContentTr .contentTd2:hover { cursor: pointer; text-decoration: underline; }
