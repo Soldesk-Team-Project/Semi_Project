@@ -26,9 +26,10 @@
     text-decoration: none;
   	include: transition;}
   
-#regBtn:hover{
+.regBtn:hover{
    	 color: white;
       background-position: 99% 50%;
+      cursor: pointer;
   }
   
   

@@ -9,7 +9,7 @@
 </head>
 <body>
 	<form action="UpdateAccountC" onsubmit="return validCheck4()" method="post" >
-		<table id="regTable" border="1">
+		<table id="regTable2" border="1">
 			<tr>
 				<td colspan="2" id="title">회원 수정</td>
 			</tr>
@@ -69,8 +69,8 @@
 			</tr>
 			<tr>
 				<td colspan="2" id="updateAccountButton">
-					<button class="updateButton" value="${sessionScope.accountInfo.id}" name="id">수정저장</button>
-					<button class="updateButton" type="button" onclick="history.back()">취소</button>
+					<button class="regBtn" value="${sessionScope.accountInfo.id}" name="id">수정저장</button>
+					<button class="regBtn" type="button" onclick="history.back()">취소</button>
 				</td>
 			</tr>
 		</table>
