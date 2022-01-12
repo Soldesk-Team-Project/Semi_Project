@@ -127,7 +127,7 @@ public class allDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		
-		System.out.println(what);
+		System.out.println("here" + what);
 		
 		String sql = "select distinct(r_name), r_no, r_place, r_img from con join menu1 on con.c_menu = menu1.m_no join restaurant1 on con.c_restaurant = restaurant1.r_no where menu1.m_category = ? order by r_name desc";
 		
@@ -140,11 +140,20 @@ public class allDAO {
 			rs = pstmt.executeQuery();
 			
 			rests = new ArrayList<AllRestaurant>();
+			AllRestaurant ar = null;
 			
 			while (rs.next()) {
 				System.out.println(rs.getInt("r_no"));
 				System.out.println(rs.getString("r_name"));
-				rests.add(new AllRestaurant(rs.getInt("r_no"), rs.getString("r_name"), rs.getString("r_place"), rs.getString("r_img"), rs.getDouble("r_lat"), rs.getDouble("r_lng")));
+				ar = new AllRestaurant();
+				ar.setNo(rs.getInt("r_no"));
+				ar.setName(rs.getString("r_name"));
+				ar.setPlace(rs.getString("r_place"));
+				ar.setImg(rs.getString("r_img"));
+				ar.setLat(rs.getDouble("r_lat"));
+				ar.setLng(rs.getDouble("r_lng"));
+						
+				rests.add(ar);
 			}
 			
 			request.setAttribute("rests", rests);
