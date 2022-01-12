@@ -58,6 +58,9 @@ public class allDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		
+		int what = 0;
+		
+		
 		String sql = "select * from restaurant1 order by r_name desc";
 		
 		try {	
@@ -129,7 +132,7 @@ public class allDAO {
 		
 		System.out.println("here" + what);
 		
-		String sql = "select distinct(r_name), r_no, r_place, r_img from con join menu1 on con.c_menu = menu1.m_no join restaurant1 on con.c_restaurant = restaurant1.r_no where menu1.m_category = ? order by r_name desc";
+		String sql = "select distinct(r_name), r_no, r_place, r_img, r_lat, r_lng from con join menu1 on con.c_menu = menu1.m_no join restaurant1 on con.c_restaurant = restaurant1.r_no where menu1.m_category = ? order by r_name desc";
 		
 		try {	
 		
@@ -143,9 +146,8 @@ public class allDAO {
 			AllRestaurant ar = null;
 			
 			while (rs.next()) {
-				System.out.println(rs.getInt("r_no"));
-				System.out.println(rs.getString("r_name"));
 				ar = new AllRestaurant();
+				
 				ar.setNo(rs.getInt("r_no"));
 				ar.setName(rs.getString("r_name"));
 				ar.setPlace(rs.getString("r_place"));
@@ -156,6 +158,7 @@ public class allDAO {
 				rests.add(ar);
 			}
 			
+			request.setAttribute("what", what);
 			request.setAttribute("rests", rests);
 			
 		} catch (Exception e) {
