@@ -13,10 +13,8 @@
 <link rel="stylesheet" href="css/allrest.css">
 <link rel="stylesheet" href="css/articleMain.css">
 <link rel="stylesheet" href="css/articleContent.css">
-<link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/board.js"></script>
 <script type="text/javascript" src="js/account.js"></script>
 <script type="text/javascript" src="js/randomMenu.js"></script>
 <script type="text/javascript" src="js/validCheck2.js"></script>

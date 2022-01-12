@@ -9,27 +9,27 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.soldesk.semi.account.AccountDAO;
 
-@WebServlet("/WriteC")
-public class WriteC extends HttpServlet {
+@WebServlet("/BoardUpdateC")
+public class BoardUpdateC extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		// 보여주기
-		BoardDAO.getAllBoard(request);
+		BoardDAO.getBoard(request);		
 		
 		AccountDAO.loginCheck(request);
-		request.setAttribute("contentPage", "board/boardWrite.jsp");
+		request.setAttribute("contentPage", "board/updateBoard.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		// 등록
-		BoardDAO.writeBoard(request);
-		BoardDAO.getAllBoard(request);
+		BoardDAO.updateBoard(request);
+		BoardDAO.getBoard(request);
 		
 		AccountDAO.loginCheck(request);
-		request.setAttribute("contentPage", "board/boardMain.jsp");
+		request.setAttribute("contentPage", "board/boardDetail.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
+		
 	}
 
 }

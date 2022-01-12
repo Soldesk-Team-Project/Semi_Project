@@ -21,7 +21,7 @@
 					<c:forEach var="b" items="${boards }">
 						<tr>
 							<td>${b.no }</td>
-							<td>${b.title }</td>
+							<td onclick="location.href='BoardDetailC?no=${b.no }'">${b.title }</td>
 							<td>${b.id }</td>
 							<td>${b.date }</td>
 						</tr>
@@ -29,12 +29,14 @@
 				</table>
 			</td>
 		</tr>
-		<tr>
-			<td>
-				<button type="button" onclick="location.href='WriteC'"
-					class="regBtn">글쓰기</button>
-			</td>
-		</tr>
+		<c:if test="${sessionScope.accountInfo.id != null }">
+			<tr>
+				<td>
+					<button type="button" onclick="location.href='WriteC'"
+						class="regBtn">글쓰기</button>
+				</td>
+			</tr>
+		</c:if>
 	</table>
 </body>
 </html>
