@@ -14,7 +14,8 @@ public class WriteC extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		// 보여주기
-		BoardDAO.getAllBoard(request);
+		BoardDAO.getBdao().getAllBoard(request);
+		BoardDAO.getBdao().boardPaging(1, request);
 		
 		AccountDAO.loginCheck(request);
 		request.setAttribute("contentPage", "board/boardWrite.jsp");
@@ -24,8 +25,9 @@ public class WriteC extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		// 등록
-		BoardDAO.writeBoard(request);
-		BoardDAO.getAllBoard(request);
+		BoardDAO.getBdao().writeBoard(request);
+		BoardDAO.getBdao().getAllBoard(request);
+		BoardDAO.getBdao().boardPaging(1, request);
 		
 		AccountDAO.loginCheck(request);
 		request.setAttribute("contentPage", "board/boardMain.jsp");

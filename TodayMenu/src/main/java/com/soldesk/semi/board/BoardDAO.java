@@ -10,8 +10,18 @@ import javax.servlet.http.HttpServletRequest;
 import com.soldesk.semi.hc.DBManager;
 
 public class BoardDAO {
+	
+	private ArrayList<Board> boards;
+	// 밖에서 기본생성자 접근 못하게 함
+	private static final BoardDAO BDAO = new BoardDAO();
+	private BoardDAO() {};
 
-	public static void writeBoard(HttpServletRequest request) {
+	public static BoardDAO getBdao() {
+		return BDAO;
+	}
+
+
+	public void writeBoard(HttpServletRequest request) {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -49,7 +59,7 @@ public class BoardDAO {
 		
 	}
 
-	public static void getAllBoard(HttpServletRequest request) {
+	public void getAllBoard(HttpServletRequest request) {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -63,7 +73,7 @@ public class BoardDAO {
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			
-			ArrayList<Board> boards = new ArrayList<Board>();
+			boards = new ArrayList<Board>();
 			
 			Board b = null;
 			
@@ -87,7 +97,7 @@ public class BoardDAO {
 		}
 	}
 
-	public static void getBoard(HttpServletRequest request) {
+	public void getBoard(HttpServletRequest request) {
 		
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -124,7 +134,7 @@ public class BoardDAO {
 		}
 	}
 
-	public static void updateBoard(HttpServletRequest request) {
+	public void updateBoard(HttpServletRequest request) {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -160,7 +170,7 @@ public class BoardDAO {
 		}
 	}
 
-	public static void deleteBoard(HttpServletRequest request) {
+	public void deleteBoard(HttpServletRequest request) {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -185,6 +195,35 @@ public class BoardDAO {
 		} finally {
 			DBManager.close(con, pstmt, null);
 		}
+		
+	}
+
+	public void boardPaging(int page, HttpServletRequest request) {
+
+		// page : 현재 페이지 번호
+		request.setAttribute("curPageNo", page);
+
+		int cnt = 10;	// 한 페이지당 보여줄 개수
+		// size = 배열 length
+		int total = boards.size();	// 전체 데이터 개수
+		
+		// 총 페이지 수 계산
+		int pageCount = (int)Math.ceil((double)total / cnt);
+		request.setAttribute("pageCount", pageCount);
+		
+		// 페이지의 시작 데이터 번호 계산
+		int start = total - (cnt * (page - 1));
+		
+		// 페이지의 끝 데이터 번호 계산
+		int end = (page == pageCount) ? -1 : start - (cnt + 1);
+		
+		ArrayList<Board> items = new ArrayList<Board>();
+		for (int i = start-1; i > end; i--) {
+			items.add(boards.get(i));
+		}
+		
+		// 페이지 번호에 맞는 데이터량을 보내준다.
+		request.setAttribute("reviews", items);
 		
 	}
 

@@ -9,8 +9,16 @@
 </head>
 <body>
 	<table>
+		<c:if test="${sessionScope.accountInfo.id != null }">
+			<tr>
+				<td>
+					<button type="button" onclick="location.href='WriteC'"
+						class="regBtn">글쓰기</button>
+				</td>
+			</tr>
+		</c:if>
 		<tr>
-			<td colspan="3">
+			<td>
 				<table border="1" id="boardTable">
 					<tr>
 						<td>번호</td>
@@ -29,14 +37,45 @@
 				</table>
 			</td>
 		</tr>
-		<c:if test="${sessionScope.accountInfo.id != null }">
 			<tr>
 				<td>
-					<button type="button" onclick="location.href='WriteC'"
-						class="regBtn">글쓰기</button>
+					<c:choose>
+						<c:when test="${curPageNo == 1 }">[맨앞]</c:when>
+						<c:otherwise>
+							<a href="BoardPageController?p=1">[맨앞]</a>
+						</c:otherwise>
+					</c:choose>
+				</td>
+				<td>
+					<c:choose>
+						<c:when test="${curPageNo == 1 }">&lt;</c:when>
+						<c:otherwise>
+							<a href="BoardPageController?p=${curPageNo - 1}">&lt;</a>
+						</c:otherwise>
+					</c:choose>
+				</td>
+				<td>
+					<c:forEach var="p" begin="1" end="${pageCount }">
+						<a href="BoardPageController?p=${p }">[${p }]</a>
+					</c:forEach>
+				</td>
+				<td>
+					<c:choose>
+						<c:when test="${curPageNo == pageCount }">&gt;</c:when>
+						<c:otherwise>
+							<a href="BoardPageController?p=${curPageNo + 1}">&gt;</a>
+						</c:otherwise>
+					</c:choose>
+				</td>
+				<td>
+					<c:choose>
+						<c:when test="${curPageNo == pageCount }">[맨뒤]</c:when>
+						<c:otherwise>
+							<a href="BoardPageController?p=${pageCount }">[맨뒤]</a>
+						</c:otherwise>
+					</c:choose>
 				</td>
 			</tr>
-		</c:if>
 	</table>
 </body>
 </html>

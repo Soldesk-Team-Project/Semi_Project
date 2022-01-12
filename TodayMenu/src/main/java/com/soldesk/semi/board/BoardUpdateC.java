@@ -13,7 +13,7 @@ import com.soldesk.semi.account.AccountDAO;
 public class BoardUpdateC extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		BoardDAO.getBoard(request);		
+		BoardDAO.getBdao().getBoard(request);		
 		
 		AccountDAO.loginCheck(request);
 		request.setAttribute("contentPage", "board/updateBoard.jsp");
@@ -23,8 +23,8 @@ public class BoardUpdateC extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		BoardDAO.updateBoard(request);
-		BoardDAO.getBoard(request);
+		BoardDAO.getBdao().updateBoard(request);
+		BoardDAO.getBdao().getBoard(request);
 		
 		AccountDAO.loginCheck(request);
 		request.setAttribute("contentPage", "board/boardDetail.jsp");

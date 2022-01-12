@@ -13,7 +13,8 @@ import com.soldesk.semi.account.AccountDAO;
 public class BoardController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		BoardDAO.getAllBoard(request);
+		BoardDAO.getBdao().getAllBoard(request);
+		BoardDAO.getBdao().boardPaging(1, request);
 		
 		AccountDAO.loginCheck(request);
 		request.setAttribute("contentPage", "board/boardMain.jsp");
