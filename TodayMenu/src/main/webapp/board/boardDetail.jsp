@@ -25,7 +25,7 @@
 		<table id="boardDetailButtonTable">
 			<tr>
 				<td colspan="2">
-					<c:if test="${sessionScope.accountInfo.id != null }">
+					<c:if test="${sessionScope.accountInfo.id != null && sessionScope.accountInfo.id == board.id }">
 						<button class="boardBtn" name="no" value="${board.no }">수정</button>
 						<button class="boardBtn" type="button" onclick="deleteBoard(${board.no })">삭제</button>
 					</c:if>

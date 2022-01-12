@@ -12,6 +12,7 @@ create table account1(
 );
 
 insert into account1 values ('js', '1004', 'USER', to_date('1997-10-21', 'YYYY-MM-DD'), 'wg', '010-XXXX-XXXX', '0 0 0 0 ', '0', 'de', 'ww');
+insert into account1 values ('ss', '1004', 'USER', to_date('1997-10-21', 'YYYY-MM-DD'), 'wg', '010-XXXX-XXXX', '0 0 0 0 ', '0', 'de', 'ww');
 
 select * from account1;
 
