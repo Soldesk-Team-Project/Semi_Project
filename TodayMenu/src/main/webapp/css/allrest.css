@@ -1,17 +1,19 @@
 @charset "UTF-8";
 
 #allRestaurantTable { width: 80%; margin: 20px auto; }
-#allRestaurantTable #searchRestaurantInput { width: 100%; text-align: right; padding-bottom: 10px; }
+#allRestaurantTable #searchRestaurantInput { width: 100%; text-align: right; }
 
 #allRestaurantTable .searchTd { width: 15%; }
 #allRestaurantTable .searchTd button:hover { cursor: pointer; }
 #allRestaurantTable .searchButtonTd { width: 5%; text-align: center; font-family: 'GodoB'; font-size: 15pt; }
 #allRestaurantTable .searchButtonTd a:hover { color: #6773ad; font-size: 16pt; }
 
-#allRestaurantTable .allRestaurantDetail { position: relative; margin: 10px 15px; width: 12.5%; height: 250px; display: inline-block; }
-#allRestaurantTable .allRestaurantDetail a:hover { color: #93949a; }
+#allRestaurantTable .allRestaurantDetail { position: relative; width: 15%; height: 100%; display: inline-block; margin: 15px 3px; }
+#allRestaurantTable .allRestaurantDetail a:hover span { color: #dee1f0; }
+#allRestaurantTable .allRestaurantDetail a:hover span strong { color: #dee1f0; }
 #allRestaurantTable .allRestaurantDetail img { width: 100%; height: 130px; }
-#allRestaurantTable .allRestaurantDetail span { display: inline-block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 100%; }
+#allRestaurantTable .allRestaurantDetail span { display: inline-block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 100%; font-size: 10pt; color: gray; }
+#allRestaurantTable .allRestaurantDetail span strong { font-size: 12pt; margin: 5px 0; color: black; }
 
 #restaurantInfoTable { width: 70%; margin: 50px auto; }
 #restaurantInfoTable #map { width: 60%; }

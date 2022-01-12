@@ -47,7 +47,7 @@
 		<tr>
 			<td colspan="5">
 				<c:forEach var="i" items="${rests }">
-					<div class="allRestaurantDetail"><a href="RestaurantInfo?no=${i.no }"><img src="${i.img }"><br><span>${i.name } <br> ${i.place }</span></a></div>
+					<div class="allRestaurantDetail"><a href="RestaurantInfo?no=${i.no }"><img src="${i.img }"><br><span><strong>${i.name }</strong> <br> ${i.place }</span></a></div>
 				</c:forEach> 
 			</td>
 		</tr>
