@@ -37,9 +37,9 @@ a:hover { color: gray; }
 #header #headerLogin { width: 33.333%; margin-right: 1%; }
 /* header */
 
-#nav { height: 60px; width: 70%; margin: 0 auto; }
-#nav div { width: 15%; float: left; line-height: 80px; text-align: center; }
-#nav .navMenus { height: 65px; margin: 0 5%; font-size: 20pt; }
+#nav { height: 60px; width: 80%; margin: 0 auto; }
+#nav div { width: 12%; float: left; line-height: 80px; text-align: center; }
+#nav .navMenus { height: 65px; margin: 0 4%; font-size: 20pt; }
 .navMenus {position: relative; text-decoration: none; font-family: 'MaruburiBold';}
 .navMenus::before{
   content: "";

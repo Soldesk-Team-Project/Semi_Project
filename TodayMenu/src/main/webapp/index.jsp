@@ -74,6 +74,9 @@ $(document).ready(function(){
 					<div class="navMenus">
 						<a href="CalculatorController">계산기</a>
 					</div>
+					<div class="navMenus">
+						<a href="CalculatorController">문의게시판</a>
+					</div>
 					<hr style="border: dashed 1px gray;">
 				</div> <!-- //nav -->
 			</td>
