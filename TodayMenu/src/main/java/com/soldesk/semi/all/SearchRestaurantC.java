@@ -13,7 +13,6 @@ import com.soldesk.semi.account.AccountDAO;
 public class SearchRestaurantC extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-		// 일부 식당 조회
 		if (!request.getParameterNames().hasMoreElements()) {
 			allDAO.getAdao().getAllRestaurant(request);
 			allDAO.getAdao().paging(1, request);

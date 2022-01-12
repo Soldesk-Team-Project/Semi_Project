@@ -13,7 +13,6 @@ import com.soldesk.semi.account.AccountDAO;
 public class RestaurantInfo extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		// 레스토랑 정보 출력하기
 		allDAO.getAdao().getRestaurant(request);
 		
 		AccountDAO.loginCheck(request);

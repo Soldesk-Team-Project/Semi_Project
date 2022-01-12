@@ -21,7 +21,7 @@ insert into CON values(con_seq.nextval, 1, 48);
 insert into CON values(con_seq.nextval, 1, 57);
 insert into CON values(con_seq.nextval, 1, 58);
 insert into CON values(con_seq.nextval, 1, 62);
--- ÇÑ¼Ü
+-- í•œì†¥
 
 insert into con values(con_seq.nextval, 2, 1);
 insert into con values(con_seq.nextval, 2, 2);
@@ -43,18 +43,18 @@ insert into con values(con_seq.nextval, 2, 21);
 insert into con values(con_seq.nextval, 2, 22);
 insert into con values(con_seq.nextval, 2, 23);
 insert into con values(con_seq.nextval, 2, 25);
--- ¼ö¿î
+-- ìˆ˜ìš´
 
 insert into con values(con_seq.nextval, 3, 12);
 insert into con values(con_seq.nextval, 3, 13);
 insert into con values(con_seq.nextval, 3, 22);
 insert into con values(con_seq.nextval, 3, 25);
--- ¾ö¹é¿ë µÅÁö±¹¹ä
+-- ì—„ë°±ìš© ë¼ì§€êµ­ë°¥
 
 insert into con values(con_seq.nextval, 4, 16);
 insert into con values(con_seq.nextval, 4, 27);
 insert into con values(con_seq.nextval, 4, 28);
--- ¸·³»È¸Áı
+-- ë§‰ë‚´íšŒì§‘
 
 insert into con values(con_seq.nextval, 5, 1);
 insert into con values(con_seq.nextval, 5, 10);
@@ -62,7 +62,7 @@ insert into con values(con_seq.nextval, 5, 13);
 insert into con values(con_seq.nextval, 5, 14);
 insert into con values(con_seq.nextval, 5, 18);
 insert into con values(con_seq.nextval, 5, 19);
--- ¼÷´ŞµÅÁö
+-- ìˆ™ë‹¬ë¼ì§€
 
 insert into con values(con_seq.nextval, 6, 1);
 insert into con values(con_seq.nextval, 6, 5);
@@ -73,12 +73,12 @@ insert into con values(con_seq.nextval, 6, 17);
 insert into con values(con_seq.nextval, 6, 18);
 insert into con values(con_seq.nextval, 6, 21);
 insert into con values(con_seq.nextval, 6, 25);
--- ÇÑ¿ì°ø¹æ
+-- í•œìš°ê³µë°©
 
 insert into con values(con_seq.nextval, 7, 19);
 insert into con values(con_seq.nextval, 7, 58);
 insert into con values(con_seq.nextval, 7, 35);
--- »ï¼÷ÀÌ¶ó¸é
+-- ì‚¼ìˆ™ì´ë¼ë©´
 
 insert into con values(con_seq.nextval, 8, 1);
 insert into con values(con_seq.nextval, 8, 2);
@@ -87,11 +87,11 @@ insert into con values(con_seq.nextval, 8, 11);
 insert into con values(con_seq.nextval, 8, 13);
 insert into con values(con_seq.nextval, 8, 19);
 insert into con values(con_seq.nextval, 8, 21);
--- Àï¹İÁı
+-- ìŸë°˜ì§‘
 
 insert into con values(con_seq.nextval, 9, 9);
 insert into con values(con_seq.nextval, 9, 18);
--- ¿ìÁ¤³«Áö
+-- ìš°ì •ë‚™ì§€
 
 insert into con values(con_seq.nextval, 10, 1);
 insert into con values(con_seq.nextval, 10, 2);
@@ -100,19 +100,19 @@ insert into con values(con_seq.nextval, 10, 11);
 insert into con values(con_seq.nextval, 10, 13);
 insert into con values(con_seq.nextval, 10, 15);
 insert into con values(con_seq.nextval, 10, 21);
--- ¸ÀÂùµé
+-- ë§›ì°¬ë“¤
 
 insert into con values(con_seq.nextval, 11, 1);
 insert into con values(con_seq.nextval, 11, 2);
 insert into con values(con_seq.nextval, 11, 9);
 insert into con values(con_seq.nextval, 11, 15);
 insert into con values(con_seq.nextval, 11, 18);
--- ¹«±³µ¿³«Áö
+-- ë¬´êµë™ë‚™ì§€
 
 insert into con values(con_seq.nextval, 12, 1);
 insert into con values(con_seq.nextval, 12, 2);
 insert into con values(con_seq.nextval, 12, 4);
--- È²¼Ò°íÁı
+-- í™©ì†Œê³ ì§‘
 
 insert into con values(con_seq.nextval, 13, 1);
 insert into con values(con_seq.nextval, 13, 2);
@@ -122,11 +122,11 @@ insert into con values(con_seq.nextval, 13, 11);
 insert into con values(con_seq.nextval, 13, 17);
 insert into con values(con_seq.nextval, 13, 21);
 insert into con values(con_seq.nextval, 13, 23);
--- ¿ÕºñÁı
+-- ì™•ë¹„ì§‘
 
 insert into con values(con_seq.nextval, 14, 2);
 insert into con values(con_seq.nextval, 14, 4);
--- µÈÀå¿¹¼ú°ú¼ú
+-- ëœì¥ì˜ˆìˆ ê³¼ìˆ 
 
 insert into con values(con_seq.nextval, 15, 1);
 insert into con values(con_seq.nextval, 15, 2);
@@ -137,7 +137,7 @@ insert into con values(con_seq.nextval, 15, 17);
 insert into con values(con_seq.nextval, 15, 18);
 insert into con values(con_seq.nextval, 15, 19);
 insert into con values(con_seq.nextval, 15, 21);
--- ¹«½î
+-- ë¬´ì˜
 
 insert into con values(con_seq.nextval, 16, 1);
 insert into con values(con_seq.nextval, 16, 2);
@@ -146,7 +146,7 @@ insert into con values(con_seq.nextval, 16, 10);
 insert into con values(con_seq.nextval, 16, 11);
 insert into con values(con_seq.nextval, 16, 15);
 insert into con values(con_seq.nextval, 16, 21);
--- ¹Ìµµ°¥ºñ
+-- ë¯¸ë„ê°ˆë¹„
 
 insert into con values(con_seq.nextval, 17, 1);
 insert into con values(con_seq.nextval, 17, 10);
@@ -155,11 +155,11 @@ insert into con values(con_seq.nextval, 17, 13);
 insert into con values(con_seq.nextval, 17, 14);
 insert into con values(con_seq.nextval, 17, 21);
 insert into con values(con_seq.nextval, 17, 23);
--- ¾ç¿¬È­·Î
+-- ì–‘ì—°í™”ë¡œ
 
 insert into con values(con_seq.nextval, 18, 9);
 insert into con values(con_seq.nextval, 18, 29);
--- °³¹ÌÁı
+-- ê°œë¯¸ì§‘
 
 insert into con values(con_seq.nextval, 19, 13);
 insert into con values(con_seq.nextval, 19, 14);
@@ -167,7 +167,7 @@ insert into con values(con_seq.nextval, 19, 17);
 insert into con values(con_seq.nextval, 19, 18);
 insert into con values(con_seq.nextval, 19, 19);
 insert into con values(con_seq.nextval, 19, 21);
--- Á¾·ÎÁ¤À°½Ä´ç
+-- ì¢…ë¡œì •ìœ¡ì‹ë‹¹
 
 insert into con values(con_seq.nextval, 20, 1);
 insert into con values(con_seq.nextval, 20, 2);
@@ -176,7 +176,7 @@ insert into con values(con_seq.nextval, 20, 4);
 insert into con values(con_seq.nextval, 20, 5);
 insert into con values(con_seq.nextval, 20, 18);
 insert into con values(con_seq.nextval, 20, 20);
--- ²ÉÇÇ´Â»ê°ñ
+-- ê½ƒí”¼ëŠ”ì‚°ê³¨
 
 insert into con values(con_seq.nextval, 21, 1);
 insert into con values(con_seq.nextval, 21, 2);
@@ -184,7 +184,7 @@ insert into con values(con_seq.nextval, 21, 3);
 insert into con values(con_seq.nextval, 21, 10);
 insert into con values(con_seq.nextval, 21, 11);
 insert into con values(con_seq.nextval, 21, 21);
--- °æº¹±Ã½Ä´ç
+-- ê²½ë³µê¶ì‹ë‹¹
 
 insert into con values(con_seq.nextval, 22, 1);
 insert into con values(con_seq.nextval, 22, 2);
@@ -202,7 +202,7 @@ insert into con values(con_seq.nextval, 22, 23);
 insert into con values(con_seq.nextval, 22, 25);
 insert into con values(con_seq.nextval, 22, 35);
 insert into con values(con_seq.nextval, 22, 39);
--- ±è°¡³×
+-- ê¹€ê°€ë„¤
 
 insert into con values(con_seq.nextval, 23, 1);
 insert into con values(con_seq.nextval, 23, 2);
@@ -219,7 +219,7 @@ insert into con values(con_seq.nextval, 23, 14);
 insert into con values(con_seq.nextval, 23, 15);
 insert into con values(con_seq.nextval, 23, 17);
 insert into con values(con_seq.nextval, 23, 25);
--- ¸ÀÀÖ´Â±èÄ¡Âò
+-- ë§›ìˆëŠ”ê¹€ì¹˜ì°œ
 
 insert into con values(con_seq.nextval, 24, 1);
 insert into con values(con_seq.nextval, 24, 9);
@@ -229,17 +229,17 @@ insert into con values(con_seq.nextval, 24, 27);
 insert into con values(con_seq.nextval, 24, 28);
 insert into con values(con_seq.nextval, 24, 41);
 insert into con values(con_seq.nextval, 24, 44);
--- ¿ÀÂ¡¾îÃ»Ãá
+-- ì˜¤ì§•ì–´ì²­ì¶˜
 
 insert into con values(con_seq.nextval, 25, 7);
 insert into con values(con_seq.nextval, 25, 18);
--- À¯°¡³×
+-- ìœ ê°€ë„¤
 
 insert into con values(con_seq.nextval, 26, 1);
 insert into con values(con_seq.nextval, 26, 4);
 insert into con values(con_seq.nextval, 26, 7);
 insert into con values(con_seq.nextval, 26, 19);
--- ÀåÇõ¹ÎÀÇºÎ´ëÂî°³
+-- ì¥í˜ë¯¼ì˜ë¶€ëŒ€ì°Œê°œ
 
 insert into con values(con_seq.nextval, 27, 1);
 insert into con values(con_seq.nextval, 27, 2);
@@ -249,28 +249,28 @@ insert into con values(con_seq.nextval, 27, 10);
 insert into con values(con_seq.nextval, 27, 11);
 insert into con values(con_seq.nextval, 27, 14);
 insert into con values(con_seq.nextval, 27, 19);
--- ¹Ì´ç¼øµÎºÎ
+-- ë¯¸ë‹¹ìˆœë‘ë¶€
 
 insert into con values(con_seq.nextval, 28, 1);
 insert into con values(con_seq.nextval, 28, 30);
 insert into con values(con_seq.nextval, 28, 32);
 insert into con values(con_seq.nextval, 28, 33);
 insert into con values(con_seq.nextval, 28, 34);
--- Â«»ÍÁöÁ¸
+-- ì§¬ë½•ì§€ì¡´
 
 insert into con values(con_seq.nextval, 29, 24);
 insert into con values(con_seq.nextval, 29, 30);
 insert into con values(con_seq.nextval, 29, 32);
 insert into con values(con_seq.nextval, 29, 33);
 insert into con values(con_seq.nextval, 29, 34);
--- ¿ìÀ°¸é°ü
+-- ìš°ìœ¡ë©´ê´€
 
 insert into con values(con_seq.nextval, 30, 24);
 insert into con values(con_seq.nextval, 30, 30);
 insert into con values(con_seq.nextval, 30, 32);
 insert into con values(con_seq.nextval, 30, 33);
 insert into con values(con_seq.nextval, 30, 34);
--- »ş¿À¹Ù¿À¿ìÀ°¸é
+-- ìƒ¤ì˜¤ë°”ì˜¤ìš°ìœ¡ë©´
 
 insert into con values(con_seq.nextval, 31, 24);
 insert into con values(con_seq.nextval, 31, 30);
@@ -278,7 +278,7 @@ insert into con values(con_seq.nextval, 31, 31);
 insert into con values(con_seq.nextval, 31, 32);
 insert into con values(con_seq.nextval, 31, 33);
 insert into con values(con_seq.nextval, 31, 34);
--- ¹Ì°¢
+-- ë¯¸ê°
 
 insert into con values(con_seq.nextval, 32, 24);
 insert into con values(con_seq.nextval, 32, 30);
@@ -286,7 +286,7 @@ insert into con values(con_seq.nextval, 32, 31);
 insert into con values(con_seq.nextval, 32, 32);
 insert into con values(con_seq.nextval, 32, 33);
 insert into con values(con_seq.nextval, 32, 34);
--- »óÇØ
+-- ìƒí•´
 
 insert into con values(con_seq.nextval, 33, 24);
 insert into con values(con_seq.nextval, 33, 30);
@@ -294,25 +294,25 @@ insert into con values(con_seq.nextval, 33, 31);
 insert into con values(con_seq.nextval, 33, 32);
 insert into con values(con_seq.nextval, 33, 33);
 insert into con values(con_seq.nextval, 33, 34);
--- ¸¸º¸¼º
+-- ë§Œë³´ì„±
 
 insert into con values(con_seq.nextval, 34, 38);
 insert into con values(con_seq.nextval, 34, 39);
 insert into con values(con_seq.nextval, 34, 42);
 insert into con values(con_seq.nextval, 34, 50);
--- ½ÅÁÖÄíÄ«·¹
+-- ì‹ ì£¼ì¿ ì¹´ë ˆ
 
 insert into con values(con_seq.nextval, 35, 38);
 insert into con values(con_seq.nextval, 35, 39);
 insert into con values(con_seq.nextval, 35, 42);
 insert into con values(con_seq.nextval, 35, 50);
--- ÄÚÄÚÀÌÂî¹æ
+-- ì½”ì½”ì´ì°Œë°©
 
 insert into con values(con_seq.nextval, 36, 21);
 insert into con values(con_seq.nextval, 36, 36);
 insert into con values(con_seq.nextval, 36, 40);
 insert into con values(con_seq.nextval, 36, 43);
--- ¹ÌµµÀÎ
+-- ë¯¸ë„ì¸
 
 insert into con values(con_seq.nextval, 37, 36);
 insert into con values(con_seq.nextval, 37, 37);
@@ -321,14 +321,14 @@ insert into con values(con_seq.nextval, 37, 39);
 insert into con values(con_seq.nextval, 37, 40);
 insert into con values(con_seq.nextval, 37, 42);
 insert into con values(con_seq.nextval, 37, 43);
--- ½ÃÅ¸¹ÌÄ¡
+-- ì‹œíƒ€ë¯¸ì¹˜
 
 insert into con values(con_seq.nextval, 38, 35);
--- ¿À·ÎÁö¶ó¸à
+-- ì˜¤ë¡œì§€ë¼ë©˜
 
 insert into con values(con_seq.nextval, 39, 37);
 insert into con values(con_seq.nextval, 39, 41);
--- °«µ§½º½Ã
+-- ê°“ë´ìŠ¤ì‹œ
 
 insert into con values(con_seq.nextval, 40, 36);
 insert into con values(con_seq.nextval, 40, 37);
@@ -337,11 +337,11 @@ insert into con values(con_seq.nextval, 40, 39);
 insert into con values(con_seq.nextval, 40, 40);
 insert into con values(con_seq.nextval, 40, 42);
 insert into con values(con_seq.nextval, 40, 43);
--- Á¾·Îµ·ºÎ¸®
+-- ì¢…ë¡œëˆë¶€ë¦¬
 
 insert into con values(con_seq.nextval, 41, 37);
 insert into con values(con_seq.nextval, 41, 41);
--- ¹ÌÄ«µµ½º½Ã
+-- ë¯¸ì¹´ë„ìŠ¤ì‹œ
 
 insert into con values(con_seq.nextval, 42, 36);
 insert into con values(con_seq.nextval, 42, 37);
@@ -350,12 +350,12 @@ insert into con values(con_seq.nextval, 42, 39);
 insert into con values(con_seq.nextval, 42, 40);
 insert into con values(con_seq.nextval, 42, 42);
 insert into con values(con_seq.nextval, 42, 43);
--- ÇÏ¸¶´Ù
+-- í•˜ë§ˆë‹¤
 
 insert into con values(con_seq.nextval, 43, 44);
 insert into con values(con_seq.nextval, 43, 45);
 insert into con values(con_seq.nextval, 43, 46);
--- ºü·¹¶ßÇÑ³²
+-- ë¹ ë ˆëœ¨í•œë‚¨
 
 insert into con values(con_seq.nextval, 44, 7);
 insert into con values(con_seq.nextval, 44, 9);
@@ -378,52 +378,52 @@ insert into con values(con_seq.nextval, 44, 57);
 insert into con values(con_seq.nextval, 44, 58);
 insert into con values(con_seq.nextval, 44, 59);
 insert into con values(con_seq.nextval, 44, 60);
--- ¾Ö½¶¸®
+-- ì• ìŠë¦¬
 
 insert into con values(con_seq.nextval, 45, 18);
 insert into con values(con_seq.nextval, 45, 44);
 insert into con values(con_seq.nextval, 45, 45);
 insert into con values(con_seq.nextval, 45, 46);
--- ¹Ùºñ·¹µå
+-- ë°”ë¹„ë ˆë“œ
 
 insert into con values(con_seq.nextval, 46, 23);
 insert into con values(con_seq.nextval, 46, 40);
 insert into con values(con_seq.nextval, 46, 50);
 insert into con values(con_seq.nextval, 46, 61);
--- ½´°¡½ºÄÃ
+-- ìŠˆê°€ìŠ¤ì»¬
 
 insert into con values(con_seq.nextval, 47, 44);
 insert into con values(con_seq.nextval, 47, 45);
 insert into con values(con_seq.nextval, 47, 46);
 insert into con values(con_seq.nextval, 47, 48);
--- ¸£ºê¿Í
+-- ë¥´ë¸Œì™€
 
 insert into con values(con_seq.nextval, 48, 44);
 insert into con values(con_seq.nextval, 48, 47);
--- ´õÇÇÀÚÇÊ
+-- ë”í”¼ìí•„
 
 insert into con values(con_seq.nextval, 49, 44);
 insert into con values(con_seq.nextval, 49, 48);
 insert into con values(con_seq.nextval, 49, 49);
 insert into con values(con_seq.nextval, 49, 61);
 insert into con values(con_seq.nextval, 49, 62);
--- ¾î°ÔÀÎ¸®ÇÁ·¹½¬
+-- ì–´ê²Œì¸ë¦¬í”„ë ˆì‰¬
 
 insert into con values(con_seq.nextval, 50, 44);
 insert into con values(con_seq.nextval, 50, 49);
 insert into con values(con_seq.nextval, 50, 61);
 insert into con values(con_seq.nextval, 50, 62);
 insert into con values(con_seq.nextval, 50, 63);
--- ºñ½ºÆ®·Î¶ó²Ä¸¶
+-- ë¹„ìŠ¤íŠ¸ë¡œë¼ê¼¼ë§ˆ
 
 insert into con values(con_seq.nextval, 51, 49);
 insert into con values(con_seq.nextval, 51, 57);
 insert into con values(con_seq.nextval, 51, 59);
--- ¸¾½ºÅÍÄ¡
+-- ë§˜ìŠ¤í„°ì¹˜
 
 insert into con values(con_seq.nextval, 52, 62);
 insert into con values(con_seq.nextval, 52, 63);
--- ½áºê¿şÀÌ
+-- ì¨ë¸Œì›¨ì´
 
 insert into con values(con_seq.nextval, 53, 44);
 insert into con values(con_seq.nextval, 53, 49);
@@ -436,19 +436,19 @@ insert into con values(con_seq.nextval, 54, 44);
 insert into con values(con_seq.nextval, 54, 49);
 insert into con values(con_seq.nextval, 54, 57);
 insert into con values(con_seq.nextval, 54, 59);
--- ±³ÃÌÄ¡Å²
+-- êµì´Œì¹˜í‚¨
 
 insert into con values(con_seq.nextval, 55, 57);
 insert into con values(con_seq.nextval, 55, 59);
 insert into con values(con_seq.nextval, 55, 62);
 insert into con values(con_seq.nextval, 55, 63);
--- ¶Çº¸°ÚÁö
+-- ë˜ë³´ê² ì§€
 
 insert into con values(con_seq.nextval, 56, 57);
 insert into con values(con_seq.nextval, 56, 59);
 insert into con values(con_seq.nextval, 56, 62);
 insert into con values(con_seq.nextval, 56, 63);
--- ÁÒ½º¶±ººÀÌ
+-- ì£ ìŠ¤ë–¡ë³¶ì´
 
 insert into con values(con_seq.nextval, 57, 13);
 insert into con values(con_seq.nextval, 57, 21);
@@ -459,7 +459,7 @@ insert into con values(con_seq.nextval, 57, 54);
 insert into con values(con_seq.nextval, 57, 55);
 insert into con values(con_seq.nextval, 57, 56);
 insert into con values(con_seq.nextval, 57, 62);
--- Æ÷ºê¶ó´õ½º
+-- í¬ë¸Œë¼ë”ìŠ¤
 
 insert into con values(con_seq.nextval, 58, 50);
 insert into con values(con_seq.nextval, 58, 51);
@@ -469,7 +469,7 @@ insert into con values(con_seq.nextval, 58, 54);
 insert into con values(con_seq.nextval, 58, 55);
 insert into con values(con_seq.nextval, 58, 56);
 insert into con values(con_seq.nextval, 58, 62);
--- ¿¡¸ÓÀÌ
+-- ì—ë¨¸ì´
 
 insert into con values(con_seq.nextval, 59, 62);
 insert into con values(con_seq.nextval, 59, 63);
@@ -484,7 +484,7 @@ insert into con values(con_seq.nextval, 59, 73);
 insert into con values(con_seq.nextval, 59, 74);
 insert into con values(con_seq.nextval, 59, 75);
 insert into con values(con_seq.nextval, 59, 77);
--- ½ºÅ¸¹÷½º
+-- ìŠ¤íƒ€ë²…ìŠ¤
 
 insert into con values(con_seq.nextval, 60, 65);
 insert into con values(con_seq.nextval, 60, 66);
@@ -495,7 +495,7 @@ insert into con values(con_seq.nextval, 60, 72);
 insert into con values(con_seq.nextval, 60, 73);
 insert into con values(con_seq.nextval, 60, 74);
 insert into con values(con_seq.nextval, 60, 75);
--- º£½ºÅ²¶óºó½º
+-- ë² ìŠ¤í‚¨ë¼ë¹ˆìŠ¤
 
 insert into con values(con_seq.nextval, 61, 62);
 insert into con values(con_seq.nextval, 61, 63);
@@ -513,7 +513,7 @@ insert into con values(con_seq.nextval, 61, 75);
 insert into con values(con_seq.nextval, 61, 76);
 insert into con values(con_seq.nextval, 61, 77);
 insert into con values(con_seq.nextval, 61, 78);
--- »ª´Ù¹æ
+-- ë¹½ë‹¤ë°©
 
 insert into con values(con_seq.nextval, 62, 30);
 insert into con values(con_seq.nextval, 62, 33);
@@ -530,7 +530,7 @@ insert into con values(con_seq.nextval, 62, 74);
 insert into con values(con_seq.nextval, 62, 75);
 insert into con values(con_seq.nextval, 62, 76);
 insert into con values(con_seq.nextval, 62, 77);
--- ¼³ºù
+-- ì„¤ë¹™
 
 insert into con values(con_seq.nextval, 63, 62);
 insert into con values(con_seq.nextval, 63, 63);
@@ -546,7 +546,7 @@ insert into con values(con_seq.nextval, 63, 74);
 insert into con values(con_seq.nextval, 63, 75);
 insert into con values(con_seq.nextval, 63, 77);
 insert into con values(con_seq.nextval, 63, 78);
--- Åõ½æÇÃ·¹ÀÌ½º
+-- íˆ¬ì¸í”Œë ˆì´ìŠ¤
 
 insert into con values(con_seq.nextval, 64, 62);
 insert into con values(con_seq.nextval, 64, 63);
@@ -562,11 +562,11 @@ insert into con values(con_seq.nextval, 64, 74);
 insert into con values(con_seq.nextval, 64, 75);
 insert into con values(con_seq.nextval, 64, 77);
 insert into con values(con_seq.nextval, 64, 78);
--- ÇÒ¸®½º
+-- í• ë¦¬ìŠ¤
 
 insert into con values(con_seq.nextval, 65, 28);
 insert into con values(con_seq.nextval, 65, 41);
--- ½º½Ã¼Ò¶ó
+-- ìŠ¤ì‹œì†Œë¼
 
 insert into con values(con_seq.nextval, 66, 65);
 insert into con values(con_seq.nextval, 66, 66);
@@ -581,7 +581,7 @@ insert into con values(con_seq.nextval, 66, 75);
 insert into con values(con_seq.nextval, 66, 76);
 insert into con values(con_seq.nextval, 66, 77);
 insert into con values(con_seq.nextval, 66, 78);
--- Æú·çÀÌÆ®
+-- í´ë£¨ì´íŠ¸
 
 insert into con values(con_seq.nextval, 67, 65);
 insert into con values(con_seq.nextval, 67, 66);
@@ -590,7 +590,7 @@ insert into con values(con_seq.nextval, 67, 69);
 insert into con values(con_seq.nextval, 67, 73);
 insert into con values(con_seq.nextval, 67, 74);
 insert into con values(con_seq.nextval, 67, 75);
--- ¹İÁì
+-- ë°˜ì¥´
 
 select * from con;
 
