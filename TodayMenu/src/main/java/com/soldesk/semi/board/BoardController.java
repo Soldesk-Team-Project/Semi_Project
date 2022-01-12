@@ -1,4 +1,4 @@
-package com.soldesk.semi.hc;
+package com.soldesk.semi.board;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,19 +8,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.soldesk.semi.account.AccountDAO;
-import com.soldesk.semi.board.BoardDAO;
 
-@WebServlet("/HomeController")
-public class HomeController extends HttpServlet {
+@WebServlet("/BoardController")
+public class BoardController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		BoardDAO.getAllBoard(request);
+		
 		AccountDAO.loginCheck(request);
-		request.setAttribute("contentPage", "home/home.jsp");
+		request.setAttribute("contentPage", "board/boardMain.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		
 	}
 
 }
