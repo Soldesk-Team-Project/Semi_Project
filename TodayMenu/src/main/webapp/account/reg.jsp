@@ -68,7 +68,7 @@
 			</td>
 			</tr>
 			<tr>
-				<td colspan="2"><button id="regBtn">가입!</button></td>
+				<td colspan="2"><button class="regBtn">가입!</button></td>
 			</tr>
 		</table>
 	</form>

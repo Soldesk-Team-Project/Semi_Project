@@ -41,7 +41,7 @@
 			</tr>
 
 			<tr>
-				<td><button class="regBtn">조회!</button>
+				<td colspan="2"><button class="regBtn">조회!</button>
 				<button type="button" onclick="history.back()" class="regBtn">취소</button></td>
 			</tr>
 

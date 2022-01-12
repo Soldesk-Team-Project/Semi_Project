@@ -11,7 +11,7 @@
 .indexButton:hover { cursor: pointer; color: #eeeeee; }
 /* Login system */
 
-#regTable2 { width: 60%; height: 700px; margin: 50px auto; }
+#regTable2 { width: 40%; height: 700px; margin: 50px auto; }
 #regTable2 #title{ font-family: 'GodoB'; font-size: 28px; background-color: #d3d7e8; height:15%; }
 
 .regBtn {
@@ -35,9 +35,10 @@
  /* Reg System */
 
 
-#regTable { width: 60%; height: 300px; margin: 50px auto; }
+#regTable { width: 30%; height: 300px; margin: 50px auto; }
 #regTable #title{font-family: 'GodoB'; font-size: 28px; background-color: #d3d7e8; height:30%;}
-#regTable .regTd1{font-size: 13pt;}
+#regTable .regTd1{ font-size: 13pt; width: 30%; }
+#regTable .regTd2{ width: 70%; }
 
 #regTable .regBtn{border-color: #d3d7e8;
     padding: 8px 16px;
@@ -48,18 +49,19 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
-  	include: transition;}
+  	include: transition;
+  	cursor: pointer;
+}
   	
  #regTable .regBtn:hover{
    	 color: white;
      background-position: 99% 50%;
-  	float: right;
 }
 
 
 /*ID PW*/
-
-
+.findBtn { width: 90%; height: 90%; border-color: #d3d7e8; padding: 8px 16px; background-color:#d3d7e8; color: black ; font-family:'MaruburiBold'; font-size: 20pt; }
+.findBtn:hover { color: white; cursor: pointer; }
 
 
 
