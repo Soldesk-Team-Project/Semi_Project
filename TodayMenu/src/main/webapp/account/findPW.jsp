@@ -9,7 +9,7 @@
 <body>
 	<form action="PW_FindAccountC" onsubmit="return check()" name="myForm"
 		method="post">
-		<table id="regTable">
+		<table id="regTable" border="1">
 			<tr>
 				<td colspan="2" id="title">PW 찾기</td>
 			</tr>
@@ -36,8 +36,8 @@
 			</tr>
 
 			<tr>
-				<td><button id="regBtn">조회!</button></td>
-				<td><button type="button" onclick="history.back()">취소</button></td>
+				<td colspan="2"><button class="regBtn">조회!</button>
+				<button type="button" onclick="history.back()" class="regBtn">취소</button></td>
 			</tr>
 		</table>
 	</form>

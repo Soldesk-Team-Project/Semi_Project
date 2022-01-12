@@ -8,7 +8,7 @@
 </head>
 <body>
 	<form action="FindAccountC" method="post">
-		<table id="regTable">
+		<table id="regTable" border="1">
 			<tr>
 				<td colspan="2" id="title">회원 정보 찾기</td>
 			</tr>
