@@ -95,7 +95,5 @@ select * from restaurant1;
 
 delete RESTAURANT1 where r_no = 81;
 
-select * from restaurant1 where r_name like '%����%';
-
 drop sequence restaurant1_seq;
 drop table restaurant1 cascade constraint purge;
