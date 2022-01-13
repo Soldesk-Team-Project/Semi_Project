@@ -1,5 +1,6 @@
 package com.soldesk.semi.board;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -227,11 +228,13 @@ public class BoardDAO {
 		
 	}
 
-	public void serachBoard(HttpServletRequest request) {
+	public void serachBoard(HttpServletRequest request) throws UnsupportedEncodingException {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
+		
+		request.setCharacterEncoding("UTF-8");
 		
 		String type = request.getParameter("searchType");
 		String content = request.getParameter("searchContent");
@@ -253,6 +256,7 @@ public class BoardDAO {
 		}
 		
 		try {
+			
 			con = DBManager.connect();
 			
 			if (!content.equals(" ") && content != null) {

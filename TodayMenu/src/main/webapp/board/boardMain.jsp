@@ -28,24 +28,14 @@
 			<td>작성일</td>
 			<td>작성자</td>
 		</tr>
-		<c:if test="${not empty boards }">
-			<c:forEach var="b" items="${boards }">
-				<tr id="boardContentTr">
-					<td class="contentTd1">${b.no }</td>
-					<td class="contentTd2" colspan="2" onclick="location.href='BoardDetailC?no=${b.no }'">${b.title }</td>
-					<td class="contentTd3">${b.date }</td>
-					<td class="contentTd4">${b.id }</td>
-				</tr>
-			</c:forEach>
-		</c:if>
-		<c:if test ="${empty boards }">
-			<tr>
-				<td class="contentTd1"></td>
-				<td class="contentTd2"></td>
-				<td class="contentTd3"></td>
-				<td class="contentTd4"></td>
+		<c:forEach var="b" items="${boards }">
+			<tr id="boardContentTr">
+				<td class="contentTd1">${b.no }</td>
+				<td class="contentTd2" colspan="2" onclick="location.href='BoardDetailC?no=${b.no }'">${b.title }</td>
+				<td class="contentTd3">${b.date }</td>
+				<td class="contentTd4">${b.id }</td>
 			</tr>
-		</c:if>
+		</c:forEach>
 	</table>
 	<table id="boardPagingTable">
 		<tr>
