@@ -8,6 +8,7 @@ create table board (
 
 create sequence board_seq increment by 1;
 
+select * from board where b_title like '%1%' order by b_no; 
 
 insert into board values(board_seq.nextval, '제목', sysdate, '유저ID', '내용');
 

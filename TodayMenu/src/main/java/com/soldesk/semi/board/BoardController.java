@@ -13,7 +13,11 @@ import com.soldesk.semi.account.AccountDAO;
 public class BoardController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		if (!request.getParameterNames().hasMoreElements()) {
 		BoardDAO.getBdao().getAllBoard(request);
+		} else {
+			BoardDAO.getBdao().serachBoard(request);
+		}		
 		BoardDAO.getBdao().boardPaging(1, request);
 		
 		AccountDAO.loginCheck(request);

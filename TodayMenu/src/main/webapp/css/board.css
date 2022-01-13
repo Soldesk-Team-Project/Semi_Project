@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
-#boardMainTable { width: 60%; margin: 20px auto 0 auto; }
+#boardSearchTable { width: 60%; margin: 20px auto 0 auto; }
+#boardSearchTable .boardSearchTd1 { width: 65%; }
+#boardSearchTable .boardSearchTd2 { width: 10%; text-align: right; }
+#boardSearchTable .boardSearchTd2 select { vertical-align: bottom; }
+#boardSearchTable .boardSearchTd3 { width: 25%; text-align: left; }
+/* //Search */
+
+#boardMainTable { width: 60%; margin: 0 auto; }
 #boardMainTable #boardMainTitleTr { background: #e3f2fd; font-weight: bold; font-size: 13pt; }
 #boardMainTable #boardContentTr { height: 50px; }
 #boardMainTable #boardContentTr .contentTd1 { width: 5%; }

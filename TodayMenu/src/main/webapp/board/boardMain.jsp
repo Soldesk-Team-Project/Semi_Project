@@ -8,6 +8,19 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<form action="BoardController">
+		<table border="0" id="boardSearchTable">
+			<tr>
+				<td class="boardSearchTd1"></td>
+				<td class="boardSearchTd2"><select name="searchType">
+					<option value="1">제목
+					<option value="2">작성자
+				</select></td>
+				<td class="boardSearchTd3"><input name="searchContent">
+				<button><img alt="" src="img/icon/돋보기.png" width="20px"></button></td>
+			</tr>
+		</table>
+	</form>
 	<table border="1" id="boardMainTable">
 		<tr id="boardMainTitleTr">
 			<td>번호</td>
@@ -15,14 +28,24 @@
 			<td>작성일</td>
 			<td>작성자</td>
 		</tr>
-		<c:forEach var="b" items="${boards }">
-			<tr id="boardContentTr">
-				<td class="contentTd1">${b.no }</td>
-				<td class="contentTd2" colspan="2" onclick="location.href='BoardDetailC?no=${b.no }'">${b.title }</td>
-				<td class="contentTd3">${b.date }</td>
-				<td class="contentTd4">${b.id }</td>
+		<c:if test="${not empty boards }">
+			<c:forEach var="b" items="${boards }">
+				<tr id="boardContentTr">
+					<td class="contentTd1">${b.no }</td>
+					<td class="contentTd2" colspan="2" onclick="location.href='BoardDetailC?no=${b.no }'">${b.title }</td>
+					<td class="contentTd3">${b.date }</td>
+					<td class="contentTd4">${b.id }</td>
+				</tr>
+			</c:forEach>
+		</c:if>
+		<c:if test ="${empty boards }">
+			<tr>
+				<td class="contentTd1"></td>
+				<td class="contentTd2"></td>
+				<td class="contentTd3"></td>
+				<td class="contentTd4"></td>
 			</tr>
-		</c:forEach>
+		</c:if>
 	</table>
 	<table id="boardPagingTable">
 		<tr>

@@ -227,5 +227,67 @@ public class BoardDAO {
 		
 	}
 
+	public void serachBoard(HttpServletRequest request) {
+
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String type = request.getParameter("searchType");
+		String content = request.getParameter("searchContent");
+		System.out.println(type);
+		System.out.println(content);
+
+		System.out.println("type = " + type);
+		
+		String sql = "";
+		
+		if (!content.equals(" ") && content != null) {
+			if (type.equals("1")) {
+				sql = "select * from board where b_title like '%'||?||'%' order by b_no";
+			} else if (type.equals("2")) {
+				sql = "select * from board where b_id like '%'||?||'%' order by b_no";
+			}
+		} else {
+			sql = "select * from board order by b_no";
+		}
+		
+		try {
+			con = DBManager.connect();
+			
+			if (!content.equals(" ") && content != null) {
+				pstmt= con.prepareStatement(sql);
+			
+				pstmt.setString(1, content);
+			} else {
+				pstmt= con.prepareStatement(sql);
+			}
+			
+			rs = pstmt.executeQuery();
+			
+			boards = new ArrayList<Board>();				
+			Board b = null;
+			
+			while (rs.next()) {
+				System.out.println(rs.getString("b_title"));
+				
+				b = new Board();
+				b.setNo(rs.getInt("b_no"));
+				b.setTitle(rs.getString("b_title"));
+				b.setDate(rs.getDate("b_date"));
+				b.setId(rs.getString("b_id"));
+				b.setContent(rs.getString("b_content"));
+				
+				boards.add(b);
+			}
+			
+			request.setAttribute("boards", boards);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(con, pstmt, rs);
+		}		
+	}
 	
 }
