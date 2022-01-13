@@ -14,7 +14,7 @@ public class Cal_oneC extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		AccountDAO.loginCheck(request);
-		request.setAttribute("contentPage", "cal/cal_one.jsp");
+		request.setAttribute("contentPage", "cal/WinWheel.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	
 	}

@@ -56,7 +56,7 @@ lightbox.options.albumLabel = "%1 / %2";
 				<meta name="google-site-verification" content="sC8IYEbP8ep-QL9z8ISdkmF8c-IzPgVUubhQfNJDq6Y" />
         <!-- Bootstrap core CSS -->
         <link href="https://tistory2.daumcdn.net/tistory/4319786/skin/images/bootstrap.min.css" rel="stylesheet">
-        <link href="https://tistory2.daumcdn.net/tistory/4319786/skin/images/cover.css" rel="stylesheet">
+        <link href="css/WinWheel.css" rel="stylesheet">
 
         <style>
           .bd-placeholder-img {
@@ -266,7 +266,7 @@ lightbox.options.albumLabel = "%1 / %2";
       <p><br/>(2개~8개 설정가능)</p>
 
 
-      <canvas id="ex_canvas" width="200" height="200" style="background-color: dark;" data-responsiveMinWidth="180" data-responsiveScaleHeight="true">
+      <canvas id="ex_canvas" width="200" height="200"  data-responsiveMinWidth="180" data-responsiveScaleHeight="true">
           <p style="color: white" align="center">현재 브라우저는 룰렛(원판)을 지원하지 않습니다.</p>
       </canvas>
 

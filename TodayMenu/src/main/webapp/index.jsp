@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="css/articleMain.css">
 <link rel="stylesheet" href="css/articleContent.css">
 <link rel="stylesheet" href="css/board.css">
+<link rel="stylesheet" href="css/winWheel.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script type="text/javascript" src="js/board.js"></script>
 <script type="text/javascript" src="js/account.js"></script>
