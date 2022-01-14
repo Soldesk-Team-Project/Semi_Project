@@ -206,6 +206,8 @@ public class BoardDAO {
 
 		int cnt = 8;	// 한 페이지당 보여줄 개수
 		// size = 배열 length
+		
+		System.out.println(boards.size());
 		int total = boards.size();	// 전체 데이터 개수
 		
 		// 총 페이지 수 계산
@@ -219,8 +221,11 @@ public class BoardDAO {
 		int end = (page == pageCount) ? -1 : start - (cnt + 1);
 		
 		ArrayList<Board> items = new ArrayList<Board>();
-		for (int i = start-1; i > end; i--) {
-			items.add(boards.get(i));
+		
+		if (boards.size() != 0) {
+			for (int i = start-1; i > end; i--) {
+				items.add(boards.get(i));
+			}			
 		}
 		
 		// 페이지 번호에 맞는 데이터량을 보내준다.

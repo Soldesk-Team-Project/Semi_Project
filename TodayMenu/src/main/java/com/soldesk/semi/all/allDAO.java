@@ -41,10 +41,13 @@ public class allDAO {
 		int end = (page == pageCount) ? -1 : start - (cnt + 1);
 		
 		ArrayList<AllRestaurant> items = new ArrayList<AllRestaurant>();
-		for (int i = start-1; i > end; i--) {
-			// movies를 인덱스번호에 맞춰서 가지고 온다
-				// movies = 모든 데이터가 들어있는 배열
-			items.add(rests.get(i));
+		
+		if (rests.size() != 0) {
+			for (int i = start-1; i > end; i--) {
+				// movies를 인덱스번호에 맞춰서 가지고 온다
+					// movies = 모든 데이터가 들어있는 배열
+				items.add(rests.get(i));
+			}
 		}
 		
 		// 페이지 번호에 맞는 데이터량을 보내준다.
