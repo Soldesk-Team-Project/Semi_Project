@@ -14,7 +14,7 @@
 			</tr>
 			<tr id="boardWriteTr2">
 				<td class="boardWriteTdleft">제목</td>
-				<td class="boardWriteTdRight"><input type="text" placeholder="글 제목" name="title" maxlength="20"></td>
+				<td class="boardWriteTdRight"><input type="text" placeholder="글 제목" name="title" maxlength="20" value="${board.title }"></td>
 			</tr>
 			<tr id="boardWriteTr3">
 				<td class="boardWriteTdleft">작성자</td>
@@ -22,7 +22,7 @@
 			</tr>
 			<tr id="boardWriteTr4">
 				<td class="boardWriteTdleft">내용</td>
-				<td class="boardWriteTdRight"><textarea placeholder="글 내용" name="content" maxlength="200"></textarea></td>
+				<td class="boardWriteTdRight"><textarea placeholder="글 내용" name="content" maxlength="200">${board.content }</textarea></td>
 			</tr>
 		</table>
 		<table id="boardWriteButtonTable">

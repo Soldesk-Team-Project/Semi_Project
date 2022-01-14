@@ -13,7 +13,7 @@
 				<td id="Cal_divTitle"><img src="img/cal/cal.png"></td>
 			</tr>
 			<tr>
-				<td class="Cal_divPut">금액 : <input type="text" name="cost"> 원
+				<td class="Cal_divPut">금액 : <input type="number" min="0" name="cost"> 원
 				</td>
 			</tr>
 			<tr>
