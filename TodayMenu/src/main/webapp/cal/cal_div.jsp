@@ -8,7 +8,7 @@
 </head>
 <body>
 	<form action="Cal_divC" name="div" method="post" onsubmit="return check();">
-		<table border="1" id="Cal_divTable">
+		<table border="0" id="Cal_divTable">
 			<tr>
 				<td id="Cal_divTitle"><img src="img/cal/cal.png"></td>
 			</tr>

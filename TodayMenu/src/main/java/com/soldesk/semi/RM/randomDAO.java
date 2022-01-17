@@ -49,8 +49,6 @@ public class randomDAO {
 				
 				request.setAttribute("menu", m);
 				
-			} else {
-				System.out.println("에러발생");
 			}
 			
 		} catch (Exception e) {
@@ -90,8 +88,6 @@ public class randomDAO {
 				
 				request.setAttribute("menu", m);
 				
-			} else {
-				System.out.println("에러발생");
 			}
 			
 		} catch (Exception e) {
@@ -139,8 +135,6 @@ public class randomDAO {
 				
 				request.setAttribute("dessert", m);
 				
-			} else {
-				System.out.println("에러발생");
 			}
 			
 		} catch (Exception e) {

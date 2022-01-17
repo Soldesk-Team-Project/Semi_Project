@@ -9,7 +9,7 @@
 </head>
 <body>
 	<form action="RandomMenuC">
-		<table border="1" id="randomMenuTable">
+		<table border="0" id="randomMenuTable">
 			<tr id="randomMenuButton">
 				<td>
 					<div class="page">

@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border=1 id="CaMainTable">
+	<table border="0" id="CaMainTable">
 		<tr>
 			<td class="calImg"><a href="Cal_divC"><img
 					src="img/cal/dutch2.jpg"></a></td>

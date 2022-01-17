@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="1" id="articleContentTable">
+	<table border="0" id="articleContentTable">
 		<tr>
 			<td>
-				<table border="1" id="articleMainTitle">
+				<table border="0" id="articleMainTitle">
 					<tr>
 						<td><img class="deco" src="img/icon/deco2.png"></td>
 					</tr>
@@ -37,7 +37,7 @@
 		</tr>
 		<tr>
 			<td>
-				<table border="1" class="infoTable">
+				<table border="0" class="infoTable">
 					<tr>
 						<td class="infoLeft">주소</td>
 						<td>서울특별시 종로구 종로 51 종로타워 B2</td>

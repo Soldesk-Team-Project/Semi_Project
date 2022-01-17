@@ -98,14 +98,14 @@ var chart = new google.visualization.PieChart(document.getElementById('piechart_
 					</tr>
 					<tr>
 						<td id="accountBook">
-							<table id="accountBookTable" border="1">
+							<table id="accountBookTable" border="0">
 								<tr style="height: 30%;">
 									<td colspan="2">
 										<form action="AccountBookC" method="post">
 											<table border="1" style="width: 100%;">
 												<tr>
 													<td class="accountBookInputLeft">사용 금액</td>
-													<td class="accountBookInputRight"><input name="pay"></td>
+													<td class="accountBookInputRight"><input name="pay" type="number"></td>
 												</tr>
 												<tr>
 													<td class="accountBookInputLeft">사용처</td>

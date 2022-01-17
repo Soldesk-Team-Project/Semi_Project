@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="1" id="articleTable">
+	<table border="0" id="articleTable">
 		<tr>
 			<td>
-				<table border="1" id="articleHead">
+				<table border="0" id="articleHead">
 					<tr>
 						<td><img class="deco" src="img/icon/deco.png"></td>
 					</tr>
@@ -30,12 +30,12 @@
 		<tr>
 			<td>
 				<!-- article -->
-				<table border="1" id="article">
+				<table border="0" id="article">
 					<!-- //content1 -->
 					<tr>
 
 						<td>
-							<table border="1" id="article1">
+							<table border="0" id="article1">
 								<tr>
 
 									<td class="articleImg"><a href="AC1"><img alt="01"
@@ -58,7 +58,7 @@
 								</tr>
 							</table>
 
-							<table border="1" id="article2">
+							<table border="0" id="article2">
 								<tr>
 									<td class="articleImg"><a href="AC3"><img alt="03"
 											src="img/articleImg/03.jpg"></a></td>
@@ -77,7 +77,7 @@
 											간의 종각역 점심 메뉴 전격 공개</a></td>
 								</tr>
 							</table>
-							<table border="1" id="article3">
+							<table border="0" id="article3">
 								<tr>
 									<td class="articleImg"><a href="AC5"><img alt="05"
 											src="img/articleImg/05.jpg"></a></td>

@@ -8,11 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="1" id="allRestaurantTable">
+	<table border="0" id="allRestaurantTable">
 		<tr>
 			<td colspan="5">
 				<form action="SearchRestaurantC">
-					<table border="1" id="searchRestaurantInput">
+					<table border="0" id="searchRestaurantInput">
 						<tr>
 							<td class="searchButtonTd">
 								<a href="allRestaurantWhat?what=1">한식</a>

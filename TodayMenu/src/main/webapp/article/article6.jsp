@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="1" id="articleContentTable">
+	<table border="0" id="articleContentTable">
 		<tr>
 			<td>
-				<table border="1" id="articleMainTitle">
+				<table border="0" id="articleMainTitle">
 					<tr>
 						<td><img class="deco" src="img/icon/deco2.png"></td>
 					</tr>
@@ -44,7 +44,7 @@
 		</tr>
 		<tr>
 			<td>
-				<table border="1" class="infoTable">
+				<table border="0" class="infoTable">
 					<tr>
 						<td class="infoLeft">주소</td>
 						<td>서울특별시 종로구 삼일대로15길 6</td>
@@ -110,7 +110,7 @@
 		</tr>
 		<tr>
 			<td>
-				<table border="1" class="infoTable">
+				<table border="0" class="infoTable">
 					<tr>
 						<td class="infoLeft">주소</td>
 						<td>서울특별시 종로구 종로 19 르메이에르종로타운 B동 B116 B-1호</td>
@@ -178,7 +178,7 @@
 		</tr>
 		<tr>
 			<td><img src="">
-				<table border="1" class="infoTable">
+				<table border="0" class="infoTable">
 					<tr>
 						<td class="infoLeft">주소</td>
 						<td>서울특별시 종로구 종로12길 14</td>

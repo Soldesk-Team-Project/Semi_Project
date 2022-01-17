@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="1" id="Cal_divResultTable">
+	<table border="0" id="Cal_divResultTable">
 		<tr>
 			<td id="Cal_divTitle"><img src="img/cal/divResult.png"></td>
 		</tr>

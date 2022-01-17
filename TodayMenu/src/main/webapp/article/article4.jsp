@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="1" id="articleContentTable">
+	<table border="0" id="articleContentTable">
 		<tr>
 			<td>
-				<table border="1" id="articleMainTitle">
+				<table border="0" id="articleMainTitle">
 					<tr>
 						<td><img class="deco" src="img/icon/deco2.png"></td>
 					</tr>
@@ -43,7 +43,7 @@
 		</tr>
 		<tr>
 			<td>
-				<table border="1" class="infoTable">
+				<table border="0" class="infoTable">
 					<tr>
 						<td class="infoLeft">주소</td>
 						<td>서울특별시 종로구 우정국로2길 37 청문외국어학원</td>
@@ -102,7 +102,7 @@
 		</tr>
 		<tr>
 			<td>
-				<table border="1" class="infoTable">
+				<table border="0" class="infoTable">
 					<tr>
 						<td class="infoLeft">주소</td>
 						<td>서울특별시 용산구 이태원로 180 스카이하이</td>
@@ -164,7 +164,7 @@
 		</tr>
 		<tr>
 			<td><img src="">
-				<table border="1" class="infoTable">
+				<table border="0" class="infoTable">
 					<tr>
 						<td class="infoLeft">주소</td>
 						<td>서울특별시 종로구 종로 51 종로타워 B1</td>
